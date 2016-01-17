@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B49A52F8-EFAA-4E69-B92F-34B95DC32918}</ProjectGuid>
+    <RootNamespace>PeraTaskService</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(SolutionDir)Import;$(SolutionDir)Depends\Ice;$(SolutionDir)Depends;$(SolutionDir)Common;$(SolutionDir)Depends\log4cplus\include;$(SolutionDir)Depends\json\include\json;$(SolutionDir)Depends\json\include;$(SolutionDir)Depends\tinyxml\include;..\common;..\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)libd;..\lib;..\libd;$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)$(Configuration)\Depends\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(SolutionDir)Import;$(SolutionDir)Depends\Ice;$(SolutionDir)Depends;$(SolutionDir)Common;$(SolutionDir)Depends\log4cplus\include;$(SolutionDir)Depends\json\include\json;$(SolutionDir)Depends\json\include;$(SolutionDir)Depends\tinyxml\include;..\common;..\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)lib;..\lib;..\libr;$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)PeraPcIce\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <DisableSpecificWarnings>4290</DisableSpecificWarnings>
+      <MinimalRebuild>false</MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories);$(SolutionDir)Common</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4290</DisableSpecificWarnings>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories);$(SolutionDir)Common</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <PostBuildEvent>
+      <Command>xcopy "$(SolutionDir)\PeraTask\bin" "$(SolutionDir)$(Configuration)\Depends\" /E /Y
+xcopy "$(OutDir)$(TargetName)$(TargetExt)" "$(SolutionDir)$(Configuration)\Depends\" /Y</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>"$(SolutionDir)Depends\RcUpdateTool\RcUpdateTool.exe" 131 "$(ProjectDir)$(ProjectName).rc"</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="ntserv_msg.mc">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Compiling messages...命令行【mc.exe -u -U -r "%(RootDir)%(Directory)." -h "%(RootDir)%(Directory)." "%(FullPath)"】输出【%(RootDir)%(Directory)%(Filename).rc;%(RootDir)%(Directory)\%(Filename).h;%(Outputs)】</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Outputs>
+    </CustomBuild>
+    <None Include="ReadMe.txt" />
+    <None Include="res\PeraTaskService.ico" />
+    <None Include="res\PeraTaskService.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Common\ConfigFunc.h" />
+    <ClInclude Include="..\..\Common\ConvertData.h" />
+    <ClInclude Include="..\..\Common\csharedmemory.h" />
+    <ClInclude Include="..\..\Common\DownUploadCommonFunc.h" />
+    <ClInclude Include="..\..\Common\DownUploadDataFileObject.h" />
+    <ClInclude Include="..\..\Common\DownUploadFileCacheFinder.h" />
+    <ClInclude Include="..\..\Common\FileFunc.h" />
+    <ClInclude Include="..\..\Common\GetFlexwareBin.h" />
+    <ClInclude Include="..\..\Common\GetGlobalDataFromReg.h" />
+    <ClInclude Include="..\..\Common\InvokeLocalWsFunc.h" />
+    <ClInclude Include="..\..\Common\InvokeWsFunc.h" />
+    <ClInclude Include="..\..\Common\PeraIceBase.h" />
+    <ClInclude Include="..\..\Common\PeraIceLocalWs.h" />
+    <ClInclude Include="..\..\Common\PeraIceRunRobot.h" />
+    <ClInclude Include="..\..\Common\PeraIceWs.h" />
+    <ClInclude Include="..\..\Common\PeraIceWsBase.h" />
+    <ClInclude Include="..\..\Common\Tools.h" />
+    <ClInclude Include="..\..\Import\RobotRemoteService.h" />
+    <ClInclude Include="..\..\Import\RunTimeICEService.h" />
+    <ClInclude Include="..\..\Import\WsICEService.h" />
+    <ClInclude Include="..\Common\CallFileUpDown.h" />
+    <ClInclude Include="..\Common\CallRunTimeIce.h" />
+    <ClInclude Include="..\Common\JsonData.h" />
+    <ClInclude Include="CrashHandler.h" />
+    <ClInclude Include="IceService.h" />
+    <ClInclude Include="ntserv.h" />
+    <ClInclude Include="ntservCmdLineInfo.h" />
+    <ClInclude Include="ntservEventLog.h" />
+    <ClInclude Include="ntservEventLogRecord.h" />
+    <ClInclude Include="ntservEventLogSource.h" />
+    <ClInclude Include="ntservScmService.h" />
+    <ClInclude Include="ntservServiceControlManager.h" />
+    <ClInclude Include="ntserv_msg.h" />
+    <ClInclude Include="PeraTaskService.h" />
+    <ClInclude Include="PeraTaskServiceDlg.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="RobotRemoteServiceI.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="ThreadData.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Common\ConfigFunc.cpp" />
+    <ClCompile Include="..\..\Common\ConvertData.cpp" />
+    <ClCompile Include="..\..\Common\DownUploadCommonFunc.cpp" />
+    <ClCompile Include="..\..\Common\DownUploadDataFileObject.cpp" />
+    <ClCompile Include="..\..\Common\DownUploadFileCacheFinder.cpp" />
+    <ClCompile Include="..\..\Common\FileFunc.cpp" />
+    <ClCompile Include="..\..\Common\GetFlexwareBin.cpp" />
+    <ClCompile Include="..\..\Common\GetGlobalDataFromReg.cpp" />
+    <ClCompile Include="..\..\Common\InvokeLocalWsFunc.cpp" />
+    <ClCompile Include="..\..\Common\InvokeWsFunc.cpp" />
+    <ClCompile Include="..\..\Common\PeraIceBase.cpp" />
+    <ClCompile Include="..\..\Common\PeraIceLocalWs.cpp" />
+    <ClCompile Include="..\..\Common\PeraIceRunRobot.cpp" />
+    <ClCompile Include="..\..\Common\PeraIceWs.cpp" />
+    <ClCompile Include="..\..\Common\PeraIceWsBase.cpp" />
+    <ClCompile Include="..\..\Common\Tools.cpp" />
+    <ClCompile Include="..\..\Import\RobotRemoteService.cpp" />
+    <ClCompile Include="..\..\Import\RunTimeICEService.cpp" />
+    <ClCompile Include="..\..\Import\WsICEService.cpp" />
+    <ClCompile Include="..\Common\CallFileUpDown.cpp" />
+    <ClCompile Include="..\Common\CallRunTimeIce.cpp" />
+    <ClCompile Include="..\Common\JsonData.cpp" />
+    <ClCompile Include="CrashHandler.cpp" />
+    <ClCompile Include="IceService.cpp" />
+    <ClCompile Include="ntserv.cpp" />
+    <ClCompile Include="ntservCmdLineInfo.cpp" />
+    <ClCompile Include="ntservEventLog.cpp" />
+    <ClCompile Include="ntservEventLogRecord.cpp" />
+    <ClCompile Include="ntservEventLogSource.cpp" />
+    <ClCompile Include="ntservScmService.cpp" />
+    <ClCompile Include="ntservServiceControlManager.cpp" />
+    <ClCompile Include="PeraTaskService.cpp" />
+    <ClCompile Include="PeraTaskServiceDlg.cpp" />
+    <ClCompile Include="RobotRemoteServiceI.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="PeraTaskService.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties ZerocIce_Enabled="False" ZerocIce_ProjectVersion="1" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

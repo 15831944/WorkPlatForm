@@ -1,0 +1,85 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 10.00.40219.01 (02e4115d).
+//
+// e:\code\workplatform\peraworkspace\peraworkspace\debug\peraclientconfig.tlh
+//
+// C++ source equivalent of Win32 type library PeraClientConfig.tlb
+// compiler-generated file created 07/30/14 at 11:56:47 - DO NOT EDIT!
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+namespace PeraClientConfigLib {
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("ecbccc83-f592-4fe3-8446-e60bebcc503b"))
+/* LIBID */ __PeraClientConfigLib;
+struct __declspec(uuid("3680d0bf-da48-421b-b428-d8d75a05a7b8"))
+/* dispinterface */ _IClientConfigEvents;
+struct /* coclass */ ClientConfig;
+struct __declspec(uuid("1f779724-b579-435e-8535-50f1e1b0c6c2"))
+/* dual interface */ IClientConfig;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(_IClientConfigEvents, __uuidof(_IClientConfigEvents));
+_COM_SMARTPTR_TYPEDEF(IClientConfig, __uuidof(IClientConfig));
+
+//
+// Type library items
+//
+
+struct __declspec(uuid("3680d0bf-da48-421b-b428-d8d75a05a7b8"))
+_IClientConfigEvents : IDispatch
+{};
+
+struct __declspec(uuid("917b1283-8647-496c-9f8c-58e5b31c949b"))
+ClientConfig;
+    // [ default ] interface IClientConfig
+    // [ default, source ] dispinterface _IClientConfigEvents
+
+struct __declspec(uuid("1f779724-b579-435e-8535-50f1e1b0c6c2"))
+IClientConfig : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    _variant_t Set (
+        _bstr_t bstrSection,
+        _bstr_t bstrKey,
+        _bstr_t bstrValue );
+    _variant_t Get (
+        _bstr_t bstrSection,
+        _bstr_t bstrKey );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_Set (
+        /*[in]*/ BSTR bstrSection,
+        /*[in]*/ BSTR bstrKey,
+        /*[in]*/ BSTR bstrValue,
+        /*[out,retval]*/ VARIANT * pvRet ) = 0;
+      virtual HRESULT __stdcall raw_Get (
+        /*[in]*/ BSTR bstrSection,
+        /*[in]*/ BSTR bstrKey,
+        /*[out,retval]*/ VARIANT * pvRet ) = 0;
+};
+
+//
+// Wrapper method implementations
+//
+
+#include "peraclientconfig.tli"
+
+} // namespace PeraClientConfigLib
+
+#pragma pack(pop)

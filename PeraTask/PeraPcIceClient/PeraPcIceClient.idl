@@ -1,0 +1,47 @@
+// PeraPcIceClient.idl : PeraPcIceClient 的 IDL 源
+//
+
+// 此文件将由 MIDL 工具处理以
+// 产生类型库(PeraPcIceClient.tlb)和封送处理代码。
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(F9B0656F-004F-47A6-9E5A-6A503B102958),
+	dual,
+	nonextensible,
+	pointer_default(unique)
+]
+interface IRunRobotClient : IDispatch{
+	[id(1)] HRESULT RunRobotFinished([in] BSTR bstrFlag, [in] BSTR bstrTaskId, [in] BSTR bstrOutxmlPath, [in] BSTR bstrRunType, [out,retval] VARIANT* pvReturn);
+	[id(2)] HRESULT RunRobotLog([in] BSTR bstrFlag, [in] BSTR bstrLogInfo, [out,retval] VARIANT* pvReturn);
+	[id(3)] HRESULT RunRobotRate([in] BSTR bstrFlag, [in] BSTR bstrRateInfo, [out,retval] VARIANT* pvReturn);
+	[id(4)] HRESULT GetIP([out,retval] VARIANT* pvReturn);
+};
+[
+	uuid(37B4EB9E-2030-4181-BCE8-31B55A59A9E9),
+	version(1.0),
+]
+library PeraPcIceClientLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(9922F416-2E55-4CBA-A415-88BC52A9F4D8)		
+	]
+	dispinterface _IRunRobotClientEvents
+	{
+		properties:
+		methods:
+	};
+	[
+		uuid(34A7C06A-83D9-4050-BB3E-306F1C07E1B6)		
+	]
+	coclass RunRobotClient
+	{
+		[default] interface IRunRobotClient;
+		[default, source] dispinterface _IRunRobotClientEvents;
+	};
+};
+

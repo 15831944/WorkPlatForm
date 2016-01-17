@@ -1,0 +1,69 @@
+// PeraFileManage.idl : PeraFileManage 的 IDL 源
+//
+
+// 此文件将由 MIDL 工具处理以
+// 产生类型库(PeraFileManage.tlb)和封送处理代码。
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(16EF2DCD-550D-49D4-9196-9A2EF3860371),
+	dual,
+	nonextensible,
+	pointer_default(unique)
+]
+interface IFileManage : IDispatch{
+	[id(1)] HRESULT SaveFile([in] BSTR bstrFile, [in] BSTR bstrContent, [out,retval] VARIANT* pvRet);
+	[id(2)] HRESULT OpenFile([in] BSTR bstrFile, [out,retval] VARIANT* pvRet);
+	[id(3)] HRESULT CopyFile([in] BSTR bstrSrcFile, [in] BSTR bstrDstFile, [out,retval] VARIANT* pvRet);
+	[id(4)] HRESULT CopyDir([in] BSTR bstrSrcDir, [in] BSTR bstrDstDir, [out,retval] VARIANT* pvRet);
+	[id(5)] HRESULT CreateDir([in] BSTR bstrDir, [out,retval] VARIANT* pvRet);
+	[id(6)] HRESULT DeleteFile([in] BSTR bstrFile, [out,retval] VARIANT* pvRet);
+	[id(7)] HRESULT DeleteDir([in] BSTR bstrDir, [out,retval] VARIANT* pvRet);
+	[id(8)] HRESULT SelectFile([out,retval] VARIANT* pvRet);
+	[id(9)] HRESULT SelectDir([out,retval] VARIANT* pvRet);
+	[id(10)] HRESULT GetFileList([in] BSTR bstrDir, [out,retval] VARIANT* pvRet);
+	[id(11)] HRESULT ClearDir([in] BSTR bstrDir, [out,retval] VARIANT* pvRet);
+	[id(12)] HRESULT RenameFile([in] BSTR bstrOldName, [in] BSTR bstrNewName, [out,retval] VARIANT* pvRet);
+	[id(13)] HRESULT MoveFile([in] BSTR srcFilePath, [in] BSTR dstFilePath, [out,retval] VARIANT* pvRet);
+	[id(14)] HRESULT MoveDir([in] BSTR srcDir, [in] BSTR dstDir, [out,retval] VARIANT* pvRet);
+	[id(15)] HRESULT CompareFile([in] BSTR srcFilePath, [in] BSTR dstFilePath, [out,retval] VARIANT* pvRet);
+	[id(16)] HRESULT GetContentFromZip([in] BSTR bstrZip, [in] BSTR bstrFile, [out,retval] VARIANT* pvRet);
+	[id(17)] HRESULT UnzipFile([in] BSTR bstrZip, [in] BSTR bstrFileSrc, [in] BSTR bstrFileDst, [out,retval] VARIANT* pvRet);
+	[id(18)] HRESULT Unzip([in] BSTR bstrZip, [in] BSTR bstrDir, [out,retval] VARIANT* pvRet);
+	[id(19)] HRESULT UnzipDir([in] BSTR bstrZip, [in] BSTR bstrDir, [in] BSTR bstrDirDst, [out,retval] VARIANT* pvRet);
+	[id(20)] HRESULT ZipFromDir([in] BSTR bstrZip, [in] BSTR bstrDir, [out,retval] VARIANT* pvRet);
+	[id(21)] HRESULT ZipFromJsonString([in] BSTR bstrZip, [in] BSTR bstrJson, [out,retval] VARIANT* pvRet);
+	[id(22)] HRESULT SaveFileDefault([in] BSTR bstrFile, [in] BSTR bstrContent, [out,retval] VARIANT* pvRet);
+	[id(23)] HRESULT OpenFileDefault([in] BSTR bstrFile, [out,retval] VARIANT* pvRet);
+	[id(24)] HRESULT GetUtf8ContentFromZip([in] BSTR bstrZip, [in] BSTR bstrFile, [out,retval] VARIANT* pvRet);
+	[id(25)] HRESULT ZipFromDirDeflate([in] BSTR bstrZip, [in] BSTR bstrDir, [out,retval] VARIANT* pvRet);
+	[id(26)] HRESULT ZipFromJsonStringDeflate([in] BSTR bstrZip, [in] BSTR bstrJson, [out,retval] VARIANT* pvRet);
+};
+[
+	uuid(93A8718F-6DE6-484A-A5E8-7F42FEF46019),
+	version(1.0),
+]
+library PeraFileManageLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(509F11E5-710E-4BC2-B325-FE5DD136D4B1)		
+	]
+	dispinterface _IFileManageEvents
+	{
+		properties:
+		methods:
+	};
+	[
+		uuid(879D4BD3-6B57-4DFA-B6CD-A2D4BA73E672)		
+	]
+	coclass FileManage
+	{
+		[default] interface IFileManage;
+		[default, source] dispinterface _IFileManageEvents;
+	};
+};
+

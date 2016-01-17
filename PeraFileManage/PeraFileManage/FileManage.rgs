@@ -1,0 +1,26 @@
+HKCR
+{
+	PeraFileManage.FileManage.1 = s 'FileManage Class'
+	{
+		CLSID = s '{879D4BD3-6B57-4DFA-B6CD-A2D4BA73E672}'
+	}
+	PeraFileManage.FileManage = s 'FileManage Class'
+	{		
+		CurVer = s 'PeraFileManage.FileManage.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {879D4BD3-6B57-4DFA-B6CD-A2D4BA73E672} = s 'FileManage Class'
+		{
+			ProgID = s 'PeraFileManage.FileManage.1'
+			VersionIndependentProgID = s 'PeraFileManage.FileManage'
+			ForceRemove Programmable
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			TypeLib = s '{93A8718F-6DE6-484A-A5E8-7F42FEF46019}'
+			Version = s '1.0'
+		}
+	}
+}

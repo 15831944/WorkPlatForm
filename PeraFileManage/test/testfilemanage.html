@@ -1,0 +1,221 @@
+﻿<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+
+<SCRIPT type=text/javascript>
+	
+		function test(){
+		var obj;
+		obj = new ActiveXObject("PeraFileManage.FileManage");
+		var v = obj.SaveFile("d:\\test123汉字\\123汉字.txt","123汉字");
+		alert(v);
+	 	}	
+	 	
+		function SaveFile(){
+		var obj;
+		obj = new ActiveXObject("PeraFileManage.FileManage");
+		var v = obj.SaveFile("d:\\test123汉字\\123汉字.txt","123汉字");
+		alert(v);
+	 	}	
+	 	
+		function OpenFile(){
+		var obj;
+		obj = new ActiveXObject("PeraFileManage.FileManage");
+		var v = obj.OpenFile("d:\\test123汉字\\123汉字.txt");
+		alert(v);
+	 	}	
+	 	
+		function CopyFile(){
+		var obj;
+		obj = new ActiveXObject("PeraFileManage.FileManage");
+		var v = obj.CopyFile("d:\\test123汉字\\123汉字.txt","d:\\test123汉字\\123\\123汉字.txt");
+		alert(v);
+	 	}	
+	 	
+		function CopyDir(){
+		var obj;
+		obj = new ActiveXObject("PeraFileManage.FileManage");
+		var v = obj.CopyDir("D:\\test123汉字\\PESOFT\\","D:\\test123汉字\\PESOFT1\\");
+		alert(v);
+	 	}	
+	 	
+		function CreateDir(){
+		var obj;
+		obj = new ActiveXObject("PeraFileManage.FileManage");
+		var v = obj.CreateDir("D:\\test123汉字\\PESOFT2/");
+		alert(v);
+	 	}	
+	 	
+		function DeleteFile(){
+		var obj;
+		obj = new ActiveXObject("PeraFileManage.FileManage");
+		var v = obj.DeleteFile("d:\\test123汉字\\123\\123汉字.txt");
+		alert(v);
+	 	}	
+	 	
+		function DeleteDir(){
+		var obj;
+		obj = new ActiveXObject("PeraFileManage.FileManage");
+		var v = obj.DeleteDir("d:\\test123汉字\\123\\");
+		alert(v);
+	 	}	
+	 	
+		function SelectFile(){
+		var obj;
+		obj = new ActiveXObject("PeraFileManage.FileManage");
+		var v = obj.SelectFile();
+		alert(v);
+	 	}	
+	 	
+		function SelectDir(){
+		var obj;
+		obj = new ActiveXObject("PeraFileManage.FileManage");
+		var v = obj.SelectDir();
+		alert(v);
+	 	}	
+	 	
+		function GetFileList(){
+		var obj;
+		obj = new ActiveXObject("PeraFileManage.FileManage");
+		var v = obj.GetFileList(obj.SelectDir());
+		alert(v);
+	 	}
+
+                                function ClearDir(){
+		var obj;
+		obj = new ActiveXObject("PeraFileManage.FileManage");
+		var v = obj.ClearDir("d:\\test123汉字\\123\\");
+		alert(v);
+	 	}
+
+                               function RenameFile(){
+		var obj;
+		obj = new ActiveXObject("PeraFileManage.FileManage");
+		var v = obj.RenameFile("d:\\test123汉字\\123\\123汉字.txt", "d:\\test123汉字\\123\\汉字321.txt");
+		alert(v);
+	 	}
+
+                               function MoveFile(){
+		var obj;
+		obj = new ActiveXObject("PeraFileManage.FileManage");
+		var v = obj.MoveFile("d:\\test123汉字\\123\\123汉字.txt", "d:\\test123汉字\\123汉字.txt");
+		alert(v);
+	 	}
+
+                               function MoveDir(){
+		var obj;
+		obj = new ActiveXObject("PeraFileManage.FileManage");
+		var v = obj.MoveDir("d:\\test123汉字\\123\\", "d:\\123\\");
+		alert(v);
+	 	}
+
+                               function CompareFile(){
+		var obj;
+		obj = new ActiveXObject("PeraFileManage.FileManage");
+		var v = obj.CompareFile("d:\\test123汉字\\123\\123汉字.txt", "d:\\test123汉字\\123汉字.txt");
+		alert(v);
+	 	}		
+
+		                       function GetContentFromZip(){
+		var obj;
+		obj = new ActiveXObject("PeraFileManage.FileManage");
+		var v = obj.GetContentFromZip("e:\\a.zip", "data\\paradata.xml");
+		alert(v);
+	 	}		
+
+                                                       function GetUtf8ContentFromZip(){
+		var obj;
+		obj = new ActiveXObject("PeraFileManage.FileManage");
+		var v = obj.GetUtf8ContentFromZip("e:\\a.zip", "data\\paradata.xml");
+		alert(v);
+	 	}		
+
+		                       function UnzipFile(){
+		var obj;
+		obj = new ActiveXObject("PeraFileManage.FileManage");
+		var v = obj.UnzipFile("e:\\a.zip", "data\\paradata.xml", "e:\\aaa\\bbb.txt");
+		alert(v);
+	 	}		
+
+		                       function Unzip(){
+		var obj;
+		obj = new ActiveXObject("PeraFileManage.FileManage");
+		var v = obj.Unzip("e:\\a.zip", "e:\\ziptest");
+		alert(v);
+	 	}		
+
+		                       function UnzipDir(){
+		var obj;
+		obj = new ActiveXObject("PeraFileManage.FileManage");
+		var v = obj.UnzipDir("e:\\a.zip", "Output", "e:\\aaa\\bbb");
+		alert(v);
+	 	}		
+
+		                       function ZipFromDir(){
+		var obj;
+		obj = new ActiveXObject("PeraFileManage.FileManage");
+		var v = obj.ZipFromDir("e:\\zf.zip", "e:\\ziptest");
+		alert(v);
+	 	}		
+
+		                       function ZipFromJsonString(){
+		var obj;
+		obj = new ActiveXObject("PeraFileManage.FileManage");
+		var v = obj.ZipFromJsonString("e:\\zfjson.zip", "[{\"src\" : \"e:\\\\ziptest\\\\data\\\\paradata.xml\", \"dst\" : \"paradata1.xml\"}, {\"src\" : \"e:\\\\ziptest\\\\Bodies\", \"dst\" : \"Bodies1\"}, {\"src\" : \"e:\\\\ziptest\\\\Forms\", \"dst\" : \"我的文件夹\"}]");
+		alert(v);
+	 	}		
+
+		</SCRIPT>
+		
+</HEAD>
+<BODY>
+
+
+<button ID="Button7" onclick="test();">test</button>
+<br>
+<button ID="Button7" onclick="SaveFile();">SaveFile</button>
+<br>
+<button ID="Button7" onclick="OpenFile();">OpenFile</button>
+<br>
+<button ID="Button7" onclick="CopyFile();">CopyFile</button>
+<br>
+<button ID="Button7" onclick="CopyDir();">CopyDir</button>
+<br>
+<button ID="Button7" onclick="CreateDir();">CreateDir</button>
+<br>
+<button ID="Button7" onclick="DeleteFile();">DeleteFile</button>
+<br>
+<button ID="Button7" onclick="DeleteDir();">DeleteDir</button>
+<br>
+<button ID="Button7" onclick="SelectFile();">SelectFile</button>
+<br>
+<button ID="Button7" onclick="SelectDir();">SelectDir</button>
+<br>
+<button ID="Button7" onclick="GetFileList();">GetFileList</button>
+<br>
+<button ID="Button7" onclick="ClearDir();">ClearDir</button>
+<br>
+<button ID="Button7" onclick="RenameFile();">RenameFile</button>
+<br>
+<button ID="Button7" onclick="MoveFile();">MoveFile</button>
+<br>
+<button ID="Button7" onclick="MoveDir();">MoveDir</button>
+<br>
+<button ID="Button7" onclick="CompareFile();">CompareFile</button>
+<br>
+<button ID="Button7" onclick="GetContentFromZip();">GetContentFromZip</button>
+<br>
+<button ID="Button7" onclick="GetUtf8ContentFromZip();">GetUtf8ContentFromZip</button>
+<br>
+<button ID="Button7" onclick="UnzipFile();">UnzipFile</button>
+<br>
+<button ID="Button7" onclick="Unzip();">Unzip</button>
+<br>
+<button ID="Button7" onclick="UnzipDir();">UnzipDir</button>
+<br>
+<button ID="Button7" onclick="ZipFromDir();">ZipFromDir</button>
+<br>
+<button ID="Button7" onclick="ZipFromJsonString();">ZipFromJsonString</button>
+
+</BODY>
+</HTML>

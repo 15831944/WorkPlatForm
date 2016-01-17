@@ -1,0 +1,3 @@
+mkdir output
+..\bin\wsdl2h.exe hrSyncer.wsdl -ohrSyncer.h -nhrSyncer -qhrSyncer
+..\bin\soapcpp2.exe -j hrSyncer.h -I..\bin\import -x -C -phrSyncer -doutput -n

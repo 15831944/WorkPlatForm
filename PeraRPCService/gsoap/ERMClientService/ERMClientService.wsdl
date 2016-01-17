@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='UTF-8'?><wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://remoting.erm.norteksoft.com" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns1="http://schemas.xmlsoap.org/soap/http" name="remoting/ERMClientService" targetNamespace="http://remoting.erm.norteksoft.com">
+  <wsdl:types>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://remoting.erm.norteksoft.com" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://remoting.erm.norteksoft.com">
+<xsd:element name="updateLastAccessedTime" nillable="true" type="xsd:string"/>
+<xsd:element name="updateLastAccessedTimeResponse" nillable="true" type="xsd:string"/>
+<xsd:element name="logout" nillable="true" type="xsd:string"/>
+<xsd:element name="logoutResponse" nillable="true" type="xsd:string"/>
+<xsd:element name="dologin" nillable="true" type="xsd:string"/>
+<xsd:element name="dologinResponse" nillable="true" type="xsd:string"/>
+<xsd:element name="getUserByUserName" nillable="true" type="xsd:string"/>
+<xsd:element name="getUserByUserNameResponse" nillable="true" type="xsd:string"/>
+</xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="logoutResponse">
+    <wsdl:part element="tns:logoutResponse" name="logoutResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="updateLastAccessedTime">
+    <wsdl:part element="tns:updateLastAccessedTime" name="updateLastAccessedTime">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="updateLastAccessedTimeResponse">
+    <wsdl:part element="tns:updateLastAccessedTimeResponse" name="updateLastAccessedTimeResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="dologinResponse">
+    <wsdl:part element="tns:dologinResponse" name="dologinResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getUserByUserName">
+    <wsdl:part element="tns:getUserByUserName" name="getUserByUserName">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="dologin">
+    <wsdl:part element="tns:dologin" name="dologin">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getUserByUserNameResponse">
+    <wsdl:part element="tns:getUserByUserNameResponse" name="getUserByUserNameResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="logout">
+    <wsdl:part element="tns:logout" name="logout">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="ERMClientPortType">
+    <wsdl:operation name="updateLastAccessedTime">
+      <wsdl:input message="tns:updateLastAccessedTime" name="updateLastAccessedTime">
+    </wsdl:input>
+      <wsdl:output message="tns:updateLastAccessedTimeResponse" name="updateLastAccessedTimeResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="logout">
+      <wsdl:input message="tns:logout" name="logout">
+    </wsdl:input>
+      <wsdl:output message="tns:logoutResponse" name="logoutResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="dologin">
+      <wsdl:input message="tns:dologin" name="dologin">
+    </wsdl:input>
+      <wsdl:output message="tns:dologinResponse" name="dologinResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUserByUserName">
+      <wsdl:input message="tns:getUserByUserName" name="getUserByUserName">
+    </wsdl:input>
+      <wsdl:output message="tns:getUserByUserNameResponse" name="getUserByUserNameResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="remoting/ERMClientServiceSoapBinding" type="tns:ERMClientPortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="dologin">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="dologin">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="dologinResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="logout">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="logout">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="logoutResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateLastAccessedTime">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="updateLastAccessedTime">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="updateLastAccessedTimeResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUserByUserName">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getUserByUserName">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getUserByUserNameResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="remoting/ERMClientService">
+    <wsdl:port binding="tns:remoting/ERMClientServiceSoapBinding" name="ERMClientPortTypePort">
+      <soap:address location="http://192.168.50.165/portal/remoting/ERMClientService"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,41 @@
+﻿<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+
+<SCRIPT type=text/javascript>
+
+		var obj;
+		obj = new ActiveXObject("ProcessClientServices.RpcCallHelper");
+	
+		function InvokeWsMethod(){
+		var v = obj.InvokeWsMethod("aaaa","bbbb");
+		alert(v);
+	 	}				
+	 	
+function InvokeWsMethodOrignal(){
+		var v = obj.InvokeWsMethodOrignal("aaaa","bbbb");
+		alert(v);
+	 	}
+function InvokeLocalWsMethod(){
+		var v = obj.InvokeLocalWsMethod("aaaa","bbbb");
+		alert(v);
+	 	}
+function InvokeLocalWsMethodOrignal(){
+		var v = obj.InvokeLocalWsMethodOrignal("aaaa","bbbb");
+		alert(v);
+	 	}
+	
+		</SCRIPT>
+		
+</HEAD>
+<BODY>
+
+
+<button ID="Button7" onclick="InvokeWsMethod();">InvokeWsMethod</button>
+<button ID="Button7" onclick="InvokeWsMethodOrignal();">InvokeWsMethodOrignal</button>
+<button ID="Button7" onclick="InvokeLocalWsMethod();">InvokeLocalWsMethod</button>
+<button ID="Button7" onclick="InvokeLocalWsMethodOrignal();">InvokeLocalWsMethodOrignal</button>
+
+
+</BODY>
+</HTML>

@@ -1,0 +1,26 @@
+HKCR
+{
+	PeraPcIceClient.RunRobotClient.1 = s 'RunRobotClient Class'
+	{
+		CLSID = s '{34A7C06A-83D9-4050-BB3E-306F1C07E1B6}'
+	}
+	PeraPcIceClient.RunRobotClient = s 'RunRobotClient Class'
+	{		
+		CurVer = s 'PeraPcIceClient.RunRobotClient.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {34A7C06A-83D9-4050-BB3E-306F1C07E1B6} = s 'RunRobotClient Class'
+		{
+			ProgID = s 'PeraPcIceClient.RunRobotClient.1'
+			VersionIndependentProgID = s 'PeraPcIceClient.RunRobotClient'
+			ForceRemove Programmable
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			TypeLib = s '{37B4EB9E-2030-4181-BCE8-31B55A59A9E9}'
+			Version = s '1.0'
+		}
+	}
+}

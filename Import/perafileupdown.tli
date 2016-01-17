@@ -1,0 +1,68 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 10.00.40219.01 (a6e10475).
+//
+// e:\code\workplatform\peraworkspace\peraworkspace\debug\perafileupdown.tli
+//
+// Wrapper implementations for Win32 type library PeraFileUpDown.tlb
+// compiler-generated file created 07/30/14 at 12:06:22 - DO NOT EDIT!
+
+#pragma once
+
+//
+// interface IFileUpDown wrapper method implementations
+//
+
+inline _variant_t IFileUpDown::Upload ( _bstr_t bstrHprose, _bstr_t bstrFilePath ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = raw_Upload(bstrHprose, bstrFilePath, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline _variant_t IFileUpDown::Download ( _bstr_t bstrHprose, _bstr_t bstrDir, _bstr_t bstrFileName ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = raw_Download(bstrHprose, bstrDir, bstrFileName, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline _variant_t IFileUpDown::Upload2 ( _bstr_t bstrHprose, _bstr_t bstrFilePath, _bstr_t bstrBoolMove ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = raw_Upload2(bstrHprose, bstrFilePath, bstrBoolMove, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline _variant_t IFileUpDown::Download2 ( _bstr_t bstrHproseBaseUrl, _bstr_t bstrFileId, _bstr_t bstrFileName ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = raw_Download2(bstrHproseBaseUrl, bstrFileId, bstrFileName, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline _variant_t IFileUpDown::UploadFiles ( _bstr_t bstrHprose, _bstr_t bstrJson, _bstr_t bstrBoolMove ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = raw_UploadFiles(bstrHprose, bstrJson, bstrBoolMove, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline _variant_t IFileUpDown::DownloadFiles ( _bstr_t bstrHproseBaseUrl, _bstr_t bstrJson ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = raw_DownloadFiles(bstrHproseBaseUrl, bstrJson, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline _variant_t IFileUpDown::Upload3 ( _bstr_t bstrHprose, _bstr_t bstrFilePath, _bstr_t bstrFileMd5, _bstr_t bstrBoolMove ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = raw_Upload3(bstrHprose, bstrFilePath, bstrFileMd5, bstrBoolMove, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}

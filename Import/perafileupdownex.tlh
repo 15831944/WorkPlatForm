@@ -1,0 +1,76 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 10.00.40219.01 (8645dcf5).
+//
+// e:\code\workplatform\perarunwsdemo\perarunwsdemo\debug\perafileupdownex.tlh
+//
+// C++ source equivalent of Win32 type library PeraFileUpDownEx.tlb
+// compiler-generated file created 06/26/14 at 15:08:21 - DO NOT EDIT!
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+namespace PeraFileUpDownExLib {
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("388f9dd0-e499-4967-ac7c-c9c868b51ed8"))
+/* LIBID */ __PeraFileUpDownExLib;
+struct /* coclass */ FileUpDownEx;
+struct __declspec(uuid("e0f5c258-af0c-4af9-998d-5b98df471ecd"))
+/* dual interface */ IFileUpDownEx;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(IFileUpDownEx, __uuidof(IFileUpDownEx));
+
+//
+// Type library items
+//
+
+struct __declspec(uuid("b6067ccc-7bab-496c-a9a8-3a37aff0cacc"))
+FileUpDownEx;
+    // [ default ] interface IFileUpDownEx
+
+struct __declspec(uuid("e0f5c258-af0c-4af9-998d-5b98df471ecd"))
+IFileUpDownEx : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    _variant_t StartUpload (
+        _bstr_t bstrJson );
+    _variant_t QueryUpload (
+        _bstr_t bstrJson );
+    _variant_t CancelUpload (
+        _bstr_t bstrJson );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_StartUpload (
+        /*[in]*/ BSTR bstrJson,
+        /*[out,retval]*/ VARIANT * pvRet ) = 0;
+      virtual HRESULT __stdcall raw_QueryUpload (
+        /*[in]*/ BSTR bstrJson,
+        /*[out,retval]*/ VARIANT * pvRet ) = 0;
+      virtual HRESULT __stdcall raw_CancelUpload (
+        /*[in]*/ BSTR bstrJson,
+        /*[out,retval]*/ VARIANT * pvRet ) = 0;
+};
+
+//
+// Wrapper method implementations
+//
+
+#include "perafileupdownex.tli"
+
+} // namespace PeraFileUpDownExLib
+
+#pragma pack(pop)

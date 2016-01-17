@@ -1,0 +1,76 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 10.00.40219.01 (7b8773ea).
+//
+// e:\code\workplatform\peraworkspace\peraworkspace\debug\processclientservices.tli
+//
+// Wrapper implementations for Win32 type library ProcessClientServices.tlb
+// compiler-generated file created 07/30/14 at 12:16:03 - DO NOT EDIT!
+
+#pragma once
+
+//
+// interface IRpcCallHelper wrapper method implementations
+//
+
+inline _variant_t IRpcCallHelper::InvokeWsMethod ( _bstr_t bstrMethod, _bstr_t bstrJsonParams ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = raw_InvokeWsMethod(bstrMethod, bstrJsonParams, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline _variant_t IRpcCallHelper::ERMDoLogin ( _bstr_t bstrUser, _bstr_t bstrPassword, _bstr_t bstrIp, _bstr_t bstrForce ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = raw_ERMDoLogin(bstrUser, bstrPassword, bstrIp, bstrForce, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline _variant_t IRpcCallHelper::ERMLogout ( _bstr_t bstrTicket ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = raw_ERMLogout(bstrTicket, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline _variant_t IRpcCallHelper::ClientLogin ( _bstr_t bstrUser, _bstr_t bstrPassword ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = raw_ClientLogin(bstrUser, bstrPassword, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline _variant_t IRpcCallHelper::ERMKeepTicket ( _bstr_t bstrJsonIn ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = raw_ERMKeepTicket(bstrJsonIn, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline _variant_t IRpcCallHelper::InvokeWsMethodOrignal ( _bstr_t bstrMethod, _bstr_t bstrJsonParams ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = raw_InvokeWsMethodOrignal(bstrMethod, bstrJsonParams, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline _variant_t IRpcCallHelper::InvokeLocalWsMethod ( _bstr_t bstrMethod, _bstr_t bstrJsonParams ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = raw_InvokeLocalWsMethod(bstrMethod, bstrJsonParams, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline _variant_t IRpcCallHelper::InvokeLocalWsMethodOrignal ( _bstr_t bstrMethod, _bstr_t bstrJsonParams ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = raw_InvokeLocalWsMethodOrignal(bstrMethod, bstrJsonParams, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}

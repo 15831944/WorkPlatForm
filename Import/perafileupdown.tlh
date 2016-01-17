@@ -1,0 +1,130 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 10.00.40219.01 (a6e10475).
+//
+// e:\code\workplatform\peraworkspace\peraworkspace\debug\perafileupdown.tlh
+//
+// C++ source equivalent of Win32 type library PeraFileUpDown.tlb
+// compiler-generated file created 07/30/14 at 12:06:22 - DO NOT EDIT!
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+namespace PeraFileUpDown {
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("35deb736-562d-4770-a846-10a1fb55d8c0"))
+/* LIBID */ __PeraFileUpDown;
+struct __declspec(uuid("db4b87c6-211b-4d19-a0b6-d4ed6bd16271"))
+/* dispinterface */ _IFileUpDownEvents;
+struct /* coclass */ FileUpDown;
+struct __declspec(uuid("0a11304a-bb0d-41b8-adfb-5e18134226ca"))
+/* dual interface */ IFileUpDown;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(_IFileUpDownEvents, __uuidof(_IFileUpDownEvents));
+_COM_SMARTPTR_TYPEDEF(IFileUpDown, __uuidof(IFileUpDown));
+
+//
+// Type library items
+//
+
+struct __declspec(uuid("db4b87c6-211b-4d19-a0b6-d4ed6bd16271"))
+_IFileUpDownEvents : IDispatch
+{};
+
+struct __declspec(uuid("fc111f9a-574d-44d9-9b74-86226e6c28af"))
+FileUpDown;
+    // [ default ] interface IFileUpDown
+    // [ default, source ] dispinterface _IFileUpDownEvents
+
+struct __declspec(uuid("0a11304a-bb0d-41b8-adfb-5e18134226ca"))
+IFileUpDown : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    _variant_t Upload (
+        _bstr_t bstrHprose,
+        _bstr_t bstrFilePath );
+    _variant_t Download (
+        _bstr_t bstrHprose,
+        _bstr_t bstrDir,
+        _bstr_t bstrFileName );
+    _variant_t Upload2 (
+        _bstr_t bstrHprose,
+        _bstr_t bstrFilePath,
+        _bstr_t bstrBoolMove );
+    _variant_t Download2 (
+        _bstr_t bstrHproseBaseUrl,
+        _bstr_t bstrFileId,
+        _bstr_t bstrFileName );
+    _variant_t UploadFiles (
+        _bstr_t bstrHprose,
+        _bstr_t bstrJson,
+        _bstr_t bstrBoolMove );
+    _variant_t DownloadFiles (
+        _bstr_t bstrHproseBaseUrl,
+        _bstr_t bstrJson );
+    _variant_t Upload3 (
+        _bstr_t bstrHprose,
+        _bstr_t bstrFilePath,
+        _bstr_t bstrFileMd5,
+        _bstr_t bstrBoolMove );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_Upload (
+        /*[in]*/ BSTR bstrHprose,
+        /*[in]*/ BSTR bstrFilePath,
+        /*[out,retval]*/ VARIANT * pvRet ) = 0;
+      virtual HRESULT __stdcall raw_Download (
+        /*[in]*/ BSTR bstrHprose,
+        /*[in]*/ BSTR bstrDir,
+        /*[in]*/ BSTR bstrFileName,
+        /*[out,retval]*/ VARIANT * pvRet ) = 0;
+      virtual HRESULT __stdcall raw_Upload2 (
+        /*[in]*/ BSTR bstrHprose,
+        /*[in]*/ BSTR bstrFilePath,
+        /*[in]*/ BSTR bstrBoolMove,
+        /*[out,retval]*/ VARIANT * pvRet ) = 0;
+      virtual HRESULT __stdcall raw_Download2 (
+        /*[in]*/ BSTR bstrHproseBaseUrl,
+        /*[in]*/ BSTR bstrFileId,
+        /*[in]*/ BSTR bstrFileName,
+        /*[out,retval]*/ VARIANT * pvRet ) = 0;
+      virtual HRESULT __stdcall raw_UploadFiles (
+        /*[in]*/ BSTR bstrHprose,
+        /*[in]*/ BSTR bstrJson,
+        /*[in]*/ BSTR bstrBoolMove,
+        /*[out,retval]*/ VARIANT * pvRet ) = 0;
+      virtual HRESULT __stdcall raw_DownloadFiles (
+        /*[in]*/ BSTR bstrHproseBaseUrl,
+        /*[in]*/ BSTR bstrJson,
+        /*[out,retval]*/ VARIANT * pvRet ) = 0;
+      virtual HRESULT __stdcall raw_Upload3 (
+        /*[in]*/ BSTR bstrHprose,
+        /*[in]*/ BSTR bstrFilePath,
+        /*[in]*/ BSTR bstrFileMd5,
+        /*[in]*/ BSTR bstrBoolMove,
+        /*[out,retval]*/ VARIANT * pvRet ) = 0;
+};
+
+//
+// Wrapper method implementations
+//
+
+#include "perafileupdown.tli"
+
+} // namespace PeraFileUpDown
+
+#pragma pack(pop)

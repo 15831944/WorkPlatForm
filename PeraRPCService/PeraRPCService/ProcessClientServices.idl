@@ -1,0 +1,51 @@
+// ProcessClientServices.idl : ProcessClientServices 的 IDL 源
+//
+
+// 此文件将由 MIDL 工具处理以
+// 产生类型库(ProcessClientServices.tlb)和封送处理代码。
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(E504CE37-30C1-47C8-9F25-684B03597924),
+	dual,
+	nonextensible,
+	pointer_default(unique)
+]
+interface IRpcCallHelper : IDispatch{
+	[id(1)] HRESULT InvokeWsMethod([in] BSTR bstrMethod, [in] BSTR bstrJsonParams, [out,retval] VARIANT* pvRet);
+	[id(2)] HRESULT ERMDoLogin([in] BSTR bstrUser, [in] BSTR bstrPassword, [in] BSTR bstrIp, [in] BSTR bstrForce, [out,retval] VARIANT* pvRet);
+	[id(3)] HRESULT ERMLogout([in] BSTR bstrTicket, [out,retval] VARIANT* pvRet);
+	[id(4)] HRESULT ClientLogin([in] BSTR bstrUser, [in] BSTR bstrPassword, [out,retval] VARIANT* pvRet);
+	[id(5)] HRESULT ERMKeepTicket([in] BSTR bstrJsonIn, [out,retval] VARIANT* pvRet);
+	[id(6)] HRESULT InvokeWsMethodOrignal([in] BSTR bstrMethod, [in] BSTR bstrJsonParams, [out,retval] VARIANT* pvRet);
+	[id(7)] HRESULT InvokeLocalWsMethod([in] BSTR bstrMethod, [in] BSTR bstrJsonParams, [out,retval] VARIANT* pvRet);
+	[id(8)] HRESULT InvokeLocalWsMethodOrignal([in] BSTR bstrMethod, [in] BSTR bstrJsonParams, [out,retval] VARIANT* pvRet);
+};
+[
+	uuid(7204CE9F-A6B3-48DB-8167-7792064AB761),
+	version(1.0),
+]
+library ProcessClientServicesLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(7DF2621F-5060-4B3D-88A2-EF697A96D790)		
+	]
+	dispinterface _IRpcCallHelperEvents
+	{
+		properties:
+		methods:
+	};
+	[
+		uuid(46E1CA74-614C-4A1B-BD80-0530B9002D45)	
+	]
+	coclass RpcCallHelper
+	{
+		[default] interface IRpcCallHelper;
+		[default, source] dispinterface _IRpcCallHelperEvents;
+	};
+};
+

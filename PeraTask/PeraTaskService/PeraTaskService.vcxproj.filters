@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="ntserv">
+      <UniqueIdentifier>{e8cb4b1f-768e-4c5b-8585-388f16cbf805}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{e23872b1-7dac-49a2-a266-0700b07b8dbe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Import">
+      <UniqueIdentifier>{c371ed0f-8a4e-48f7-ab6f-ea21438476e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ICE">
+      <UniqueIdentifier>{00b7997d-058b-40f8-a60b-e787be79bf5e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="res\PeraTaskService.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\PeraTaskService.ico">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="PeraTaskService.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="PeraTaskServiceDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ntservServiceControlManager.h">
+      <Filter>ntserv</Filter>
+    </ClInclude>
+    <ClInclude Include="ntserv.h">
+      <Filter>ntserv</Filter>
+    </ClInclude>
+    <ClInclude Include="ntserv_msg.h">
+      <Filter>ntserv</Filter>
+    </ClInclude>
+    <ClInclude Include="ntservCmdLineInfo.h">
+      <Filter>ntserv</Filter>
+    </ClInclude>
+    <ClInclude Include="ntservEventLog.h">
+      <Filter>ntserv</Filter>
+    </ClInclude>
+    <ClInclude Include="ntservEventLogRecord.h">
+      <Filter>ntserv</Filter>
+    </ClInclude>
+    <ClInclude Include="ntservEventLogSource.h">
+      <Filter>ntserv</Filter>
+    </ClInclude>
+    <ClInclude Include="ntservScmService.h">
+      <Filter>ntserv</Filter>
+    </ClInclude>
+    <ClInclude Include="IceService.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="RobotRemoteServiceI.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ThreadData.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CrashHandler.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\CallFileUpDown.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\JsonData.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\CallRunTimeIce.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Tools.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\csharedmemory.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\ConfigFunc.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\ConvertData.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\DownUploadCommonFunc.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\DownUploadDataFileObject.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\DownUploadFileCacheFinder.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\GetFlexwareBin.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Import\WsICEService.h">
+      <Filter>Import</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Import\RunTimeICEService.h">
+      <Filter>Import</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Import\RobotRemoteService.h">
+      <Filter>Import</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\InvokeLocalWsFunc.h">
+      <Filter>ICE</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\InvokeWsFunc.h">
+      <Filter>ICE</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\PeraIceWsBase.h">
+      <Filter>ICE</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\PeraIceWs.h">
+      <Filter>ICE</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\PeraIceRunRobot.h">
+      <Filter>ICE</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\PeraIceBase.h">
+      <Filter>ICE</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\PeraIceLocalWs.h">
+      <Filter>ICE</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\GetGlobalDataFromReg.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\FileFunc.h">
+      <Filter>common</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="PeraTaskService.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PeraTaskServiceDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ntserv.cpp">
+      <Filter>ntserv</Filter>
+    </ClCompile>
+    <ClCompile Include="ntservCmdLineInfo.cpp">
+      <Filter>ntserv</Filter>
+    </ClCompile>
+    <ClCompile Include="ntservEventLog.cpp">
+      <Filter>ntserv</Filter>
+    </ClCompile>
+    <ClCompile Include="ntservEventLogRecord.cpp">
+      <Filter>ntserv</Filter>
+    </ClCompile>
+    <ClCompile Include="ntservEventLogSource.cpp">
+      <Filter>ntserv</Filter>
+    </ClCompile>
+    <ClCompile Include="ntservScmService.cpp">
+      <Filter>ntserv</Filter>
+    </ClCompile>
+    <ClCompile Include="ntservServiceControlManager.cpp">
+      <Filter>ntserv</Filter>
+    </ClCompile>
+    <ClCompile Include="IceService.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="RobotRemoteServiceI.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CrashHandler.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\CallFileUpDown.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\JsonData.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\CallRunTimeIce.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\Tools.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\ConfigFunc.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\DownUploadCommonFunc.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\DownUploadDataFileObject.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\DownUploadFileCacheFinder.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\ConvertData.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\GetFlexwareBin.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Import\WsICEService.cpp">
+      <Filter>Import</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Import\RunTimeICEService.cpp">
+      <Filter>Import</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Import\RobotRemoteService.cpp">
+      <Filter>Import</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\InvokeLocalWsFunc.cpp">
+      <Filter>ICE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\InvokeWsFunc.cpp">
+      <Filter>ICE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\PeraIceWsBase.cpp">
+      <Filter>ICE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\PeraIceWs.cpp">
+      <Filter>ICE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\PeraIceRunRobot.cpp">
+      <Filter>ICE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\PeraIceBase.cpp">
+      <Filter>ICE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\PeraIceLocalWs.cpp">
+      <Filter>ICE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\GetGlobalDataFromReg.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\FileFunc.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="PeraTaskService.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="ntserv_msg.mc">
+      <Filter>资源文件</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

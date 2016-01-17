@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="生成的文件">
+      <UniqueIdentifier>{ad8f48eb-9180-4370-9a21-cd12620bf992}</UniqueIdentifier>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{f48d908e-87ea-430a-86a1-49ec6217b56e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gsoap">
+      <UniqueIdentifier>{0fb61ede-177b-459a-b4fa-6ec3a8b99eb1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gsoap\base">
+      <UniqueIdentifier>{45e227f3-58b7-4ca1-a7d7-fee68243847d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gsoap\ERMClientService">
+      <UniqueIdentifier>{9449926c-4495-4ad4-9756-d869317889da}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ProcessClientServices.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="xdlldata.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ProcessClientServices_i.c">
+      <Filter>生成的文件</Filter>
+    </ClCompile>
+    <ClCompile Include="RpcCallHelper.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gsoap\src\envC.cpp">
+      <Filter>gsoap\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gsoap\src\stdsoap2.cpp">
+      <Filter>gsoap\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gsoap\ERMClientService\output\ERMClientServiceC.cpp">
+      <Filter>gsoap\ERMClientService</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gsoap\ERMClientService\output\ERMClientServiceremoting_x002fERMClientServiceSoapBindingProxy.cpp">
+      <Filter>gsoap\ERMClientService</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\IniClass.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\Tools.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\ConfigFunc.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\InvokeLocalWsFunc.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\InvokeWsFunc.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\PeraIceBase.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\PeraIceLocalWs.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\PeraIceWs.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\PeraIceWsBase.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Import\WsICEService.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="dllmain.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="xdlldata.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ProcessClientServices_i.h">
+      <Filter>生成的文件</Filter>
+    </ClInclude>
+    <ClInclude Include="_IRpcCallHelperEvents_CP.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="RpcCallHelper.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="csharedmemory.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gsoap\src\envH.h">
+      <Filter>gsoap\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gsoap\src\envStub.h">
+      <Filter>gsoap\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gsoap\src\stdsoap2.h">
+      <Filter>gsoap\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gsoap\ERMClientService\output\ERMClientServiceH.h">
+      <Filter>gsoap\ERMClientService</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gsoap\ERMClientService\output\ERMClientServiceremoting_x002fERMClientServiceSoapBindingProxy.h">
+      <Filter>gsoap\ERMClientService</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gsoap\ERMClientService\output\ERMClientServiceStub.h">
+      <Filter>gsoap\ERMClientService</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Tools.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\IniClass.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\ConfigFunc.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\InvokeLocalWsFunc.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\InvokeWsFunc.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\PeraIceBase.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\PeraIceLocalWs.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\PeraIceWs.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\PeraIceWsBase.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Import\WsICEService.h">
+      <Filter>common</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ProcessClientServices.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ProcessClientServices.rgs">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="ProcessClientServices.def">
+      <Filter>源文件</Filter>
+    </None>
+    <None Include="RpcCallHelper.rgs">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\gsoap\ERMClientService\output\ERMClientService.nsmap">
+      <Filter>gsoap\ERMClientService</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="ProcessClientServices.idl">
+      <Filter>源文件</Filter>
+    </Midl>
+  </ItemGroup>
+</Project>

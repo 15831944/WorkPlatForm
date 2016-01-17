@@ -1,0 +1,36 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 10.00.40219.01 (8645dcf5).
+//
+// e:\code\workplatform\perarunwsdemo\perarunwsdemo\debug\perafileupdownex.tli
+//
+// Wrapper implementations for Win32 type library PeraFileUpDownEx.tlb
+// compiler-generated file created 06/26/14 at 15:08:21 - DO NOT EDIT!
+
+#pragma once
+
+//
+// interface IFileUpDownEx wrapper method implementations
+//
+
+inline _variant_t IFileUpDownEx::StartUpload ( _bstr_t bstrJson ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = raw_StartUpload(bstrJson, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline _variant_t IFileUpDownEx::QueryUpload ( _bstr_t bstrJson ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = raw_QueryUpload(bstrJson, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline _variant_t IFileUpDownEx::CancelUpload ( _bstr_t bstrJson ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = raw_CancelUpload(bstrJson, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}

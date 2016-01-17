@@ -1,0 +1,44 @@
+﻿<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+
+<SCRIPT type=text/javascript>
+	
+		function test(){
+		var oe;
+		oe = new ActiveXObject("PeraPcIceClient.RunRobotClient");
+		var v = oe.RunRobotLog("WSServer","工具集成组件");
+		alert(v);
+	 	}				
+	 	function finish(){
+		var oe;
+		oe = new ActiveXObject("PeraPcIceClient.RunRobotClient");
+		var v = oe.RunRobotFinished("WSServer", "taskid", "C:\\PERA\\Component\\bin\\PeraIce\\data\\run\\测试流程\\dp\\51D637B2\\out.xml");
+		alert(v);
+	 	}		
+	 	function log(){
+		var oe;
+		oe = new ActiveXObject("PeraPcIceClient.RunRobotClient");
+		var v = oe.RunRobotLog("WSServer","工具集成组件log");
+		alert(v);
+	 	}		
+	 	function rate(){
+		var oe;
+		oe = new ActiveXObject("PeraPcIceClient.RunRobotClient");
+		var v = oe.RunRobotRate("WSServer","工具集成组件rate");
+		alert(v);
+	 	}	
+	
+		</SCRIPT>
+		
+</HEAD>
+<BODY>
+
+
+<button ID="Button7" onclick="finish();">finish</button>
+<button ID="Button7" onclick="log();">log</button>
+<button ID="Button7" onclick="rate();">rate</button>
+
+
+</BODY>
+</HTML>

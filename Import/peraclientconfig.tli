@@ -1,0 +1,28 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 10.00.40219.01 (02e4115d).
+//
+// e:\code\workplatform\peraworkspace\peraworkspace\debug\peraclientconfig.tli
+//
+// Wrapper implementations for Win32 type library PeraClientConfig.tlb
+// compiler-generated file created 07/30/14 at 11:56:47 - DO NOT EDIT!
+
+#pragma once
+
+//
+// interface IClientConfig wrapper method implementations
+//
+
+inline _variant_t IClientConfig::Set ( _bstr_t bstrSection, _bstr_t bstrKey, _bstr_t bstrValue ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = raw_Set(bstrSection, bstrKey, bstrValue, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline _variant_t IClientConfig::Get ( _bstr_t bstrSection, _bstr_t bstrKey ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = raw_Get(bstrSection, bstrKey, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}

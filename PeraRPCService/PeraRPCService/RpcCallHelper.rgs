@@ -1,0 +1,26 @@
+HKCR
+{
+	ProcessClientServices.RpcCallHelper.1 = s 'RpcCallHelper Class'
+	{
+		CLSID = s '{46E1CA74-614C-4A1B-BD80-0530B9002D45}'
+	}
+	ProcessClientServices.RpcCallHelper = s 'RpcCallHelper Class'
+	{		
+		CurVer = s 'ProcessClientServices.RpcCallHelper.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {46E1CA74-614C-4A1B-BD80-0530B9002D45} = s 'RpcCallHelper Class'
+		{
+			ProgID = s 'ProcessClientServices.RpcCallHelper.1'
+			VersionIndependentProgID = s 'ProcessClientServices.RpcCallHelper'
+			ForceRemove Programmable
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			TypeLib = s '{7204CE9F-A6B3-48DB-8167-7792064AB761}'
+			Version = s '1.0'
+		}
+	}
+}

@@ -1,0 +1,125 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 10.00.40219.01 (7b8773ea).
+//
+// e:\code\workplatform\peraworkspace\peraworkspace\debug\processclientservices.tlh
+//
+// C++ source equivalent of Win32 type library ProcessClientServices.tlb
+// compiler-generated file created 07/30/14 at 12:16:03 - DO NOT EDIT!
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+namespace ProcessClientServicesLib {
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("7204ce9f-a6b3-48db-8167-7792064ab761"))
+/* LIBID */ __ProcessClientServicesLib;
+struct __declspec(uuid("7df2621f-5060-4b3d-88a2-ef697a96d790"))
+/* dispinterface */ _IRpcCallHelperEvents;
+struct /* coclass */ RpcCallHelper;
+struct __declspec(uuid("e504ce37-30c1-47c8-9f25-684b03597924"))
+/* dual interface */ IRpcCallHelper;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(_IRpcCallHelperEvents, __uuidof(_IRpcCallHelperEvents));
+_COM_SMARTPTR_TYPEDEF(IRpcCallHelper, __uuidof(IRpcCallHelper));
+
+//
+// Type library items
+//
+
+struct __declspec(uuid("7df2621f-5060-4b3d-88a2-ef697a96d790"))
+_IRpcCallHelperEvents : IDispatch
+{};
+
+struct __declspec(uuid("46e1ca74-614c-4a1b-bd80-0530b9002d45"))
+RpcCallHelper;
+    // [ default ] interface IRpcCallHelper
+    // [ default, source ] dispinterface _IRpcCallHelperEvents
+
+struct __declspec(uuid("e504ce37-30c1-47c8-9f25-684b03597924"))
+IRpcCallHelper : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    _variant_t InvokeWsMethod (
+        _bstr_t bstrMethod,
+        _bstr_t bstrJsonParams );
+    _variant_t ERMDoLogin (
+        _bstr_t bstrUser,
+        _bstr_t bstrPassword,
+        _bstr_t bstrIp,
+        _bstr_t bstrForce );
+    _variant_t ERMLogout (
+        _bstr_t bstrTicket );
+    _variant_t ClientLogin (
+        _bstr_t bstrUser,
+        _bstr_t bstrPassword );
+    _variant_t ERMKeepTicket (
+        _bstr_t bstrJsonIn );
+    _variant_t InvokeWsMethodOrignal (
+        _bstr_t bstrMethod,
+        _bstr_t bstrJsonParams );
+    _variant_t InvokeLocalWsMethod (
+        _bstr_t bstrMethod,
+        _bstr_t bstrJsonParams );
+    _variant_t InvokeLocalWsMethodOrignal (
+        _bstr_t bstrMethod,
+        _bstr_t bstrJsonParams );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_InvokeWsMethod (
+        /*[in]*/ BSTR bstrMethod,
+        /*[in]*/ BSTR bstrJsonParams,
+        /*[out,retval]*/ VARIANT * pvRet ) = 0;
+      virtual HRESULT __stdcall raw_ERMDoLogin (
+        /*[in]*/ BSTR bstrUser,
+        /*[in]*/ BSTR bstrPassword,
+        /*[in]*/ BSTR bstrIp,
+        /*[in]*/ BSTR bstrForce,
+        /*[out,retval]*/ VARIANT * pvRet ) = 0;
+      virtual HRESULT __stdcall raw_ERMLogout (
+        /*[in]*/ BSTR bstrTicket,
+        /*[out,retval]*/ VARIANT * pvRet ) = 0;
+      virtual HRESULT __stdcall raw_ClientLogin (
+        /*[in]*/ BSTR bstrUser,
+        /*[in]*/ BSTR bstrPassword,
+        /*[out,retval]*/ VARIANT * pvRet ) = 0;
+      virtual HRESULT __stdcall raw_ERMKeepTicket (
+        /*[in]*/ BSTR bstrJsonIn,
+        /*[out,retval]*/ VARIANT * pvRet ) = 0;
+      virtual HRESULT __stdcall raw_InvokeWsMethodOrignal (
+        /*[in]*/ BSTR bstrMethod,
+        /*[in]*/ BSTR bstrJsonParams,
+        /*[out,retval]*/ VARIANT * pvRet ) = 0;
+      virtual HRESULT __stdcall raw_InvokeLocalWsMethod (
+        /*[in]*/ BSTR bstrMethod,
+        /*[in]*/ BSTR bstrJsonParams,
+        /*[out,retval]*/ VARIANT * pvRet ) = 0;
+      virtual HRESULT __stdcall raw_InvokeLocalWsMethodOrignal (
+        /*[in]*/ BSTR bstrMethod,
+        /*[in]*/ BSTR bstrJsonParams,
+        /*[out,retval]*/ VARIANT * pvRet ) = 0;
+};
+
+//
+// Wrapper method implementations
+//
+
+#include "processclientservices.tli"
+
+} // namespace ProcessClientServicesLib
+
+#pragma pack(pop)
