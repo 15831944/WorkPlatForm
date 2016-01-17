@@ -1,0 +1,381 @@
+﻿<!-- saved from url=(0022)http://internet.e-mail -->
+<HTML>
+<!-- saved from url=(0017)http://localhost/ -->
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<OBJECT id=clientNetDiskObj classid="CLSID:F581128B-AF7E-49F5-8150-011E7E44E751" height="0"></OBJECT> 
+
+<SCRIPT type=text/javascript>
+	
+		function InvokeMehtod(){
+			var methodObj = document.getElementById('methodName');
+			var jsonInObj = document.getElementById("jsonIn");
+			var jsonOutObj = document.getElementById("jsonOut");
+   		var sMethodName = methodObj.options[methodObj.selectedIndex].value;
+   		var sJsonIn = jsonInObj.value;
+   		var sJsonOut = jsonOutObj.value;
+   		//alert(sMethodName);
+   		//alert(clientNetDiskObj);
+			sJsonOut = clientNetDiskObj.InvokeMethod(sMethodName, sJsonIn);
+			jsonOutObj.value = sJsonOut;
+	 	}			
+	 	
+	 	function changeMethod(methodName){
+	 		//alert(methodName);
+			var jsonInObj = document.getElementById("jsonIn");
+			var jsonOutObj = document.getElementById("jsonOut");
+   		jsonOutObj.value = "";
+	 		if (methodName == "SelectFile") {
+	 			jsonInObj.value = "{\n\
+    \"filter\": \"Word 文档|*.doc;*.docx|图像文件 (*.BMP;*.JPG;*.GIF)|*.BMP;*.JPG;*.GIF|所有文件 (*.*)|*.*||\",\n\
+    \"multiSelect\": \"true\"\n\
+}";	 			
+	 		}
+	 		else if (methodName == "SelectDir") {
+	 			jsonInObj.value = "{\n\
+}";	 			
+	 		}
+	 		else if (methodName == "QueryFilesInfo") {
+	 			jsonInObj.value = "{\n\
+    \"files\": [\n\
+        {\n\
+            \"path\": \"c:\\\\boot.ini\"\n\
+        },\n\
+        {\n\
+            \"path\": \"\\\\aaa\\\\1.txt\",\n\
+            \"userName\": \"admin\",\n\
+            \"flowId\": \"wfd123456\"\n\
+        }\n\
+    ]\n\
+}";	 			
+	 		}
+	 		else if (methodName == "QueryLocalFileType") {
+	 			jsonInObj.value = "{\n\
+}";	 			
+	 		}
+	 		else if (methodName == "CreateFile") {
+	 			jsonInObj.value = "{\n\
+    \"type\": \".bmp\",\n\
+    \"path\": \"\",\n\
+    \"userName\": \"admin\",\n\
+    \"flowId\": \"fw123456\",\n\
+    \"fileName\": \"photo1\"\n\
+}";	 			
+	 		}
+	 		else if (methodName == "CopyFiles") {
+	 			jsonInObj.value = "{\n\
+    \"userName\": \"admin\",\n\
+    \"flowId\": \"fw123456\",\n\
+    \"files\": [\n\
+        {\n\
+            \"netDiskPath\": \"\\\\a\\\\b\\\\1.txt\",\n\
+            \"idPath\": \"\\\\123123\\\\123\\\\321\",\n\
+            \"localPath\": \"c:\\\\temp\\\\1.txt\"\n\
+        }\n\
+    ]\n\
+}";	 			
+	 		}
+	 		else if (methodName == "UploadFile") {
+	 			jsonInObj.value = "{\n\
+    \"userName\": \"admin\",\n\
+    \"flowId\": \"fw123456\",\n\
+    \"dataId\": \"123123\",\n\
+    \"netDiskPath\": \"\\\\a\\\\1.txt\",\n\
+    \"idPath\": \"\\\\123\\\\321\"\n\
+}";	 			
+	 		}
+	 		else if (methodName == "DownloadFiles") {
+	 			jsonInObj.value = "{\n\
+    \"userName\": \"admin\",\n\
+    \"flowId\": \"fw123456\",\n\
+    \"files\": [\n\
+        {\n\
+            \"netDiskPath\": \"\\\\aaa\\\\b\\\\1.txt\",\n\
+            \"idPath\": \"\\\\123123\\\\123\\\\321\",\n\
+            \"localPath\": \"c:\\\\temp\\\\b\\\\1.txt\",\n\
+            \"fileId\": \"1001\",\n\
+            \"fileSize\": \"100\",\n\
+            \"fileMd5\": \"asdfasdfasdfsdaasdfdasf\"\n\
+        },\n\
+        {\n\
+            \"netDiskPath\": \"\\\\aaa\\\\b\\\\c\\\\2.txt\",\n\
+            \"idPath\": \"\\\\123123\\\\123\\\\111\\\\322\",\n\
+            \"localPath\": \"c:\\\\temp\\\\b\\\\c\\\\2.txt\",\n\
+            \"fileId\": \"1002\",\n\
+            \"fileSize\": \"100\",\n\
+            \"fileMd5\": \"asdfasdfasdfsdaasdfdasa\"\n\
+        }\n\
+    ]\n\
+}";	 			
+	 		}
+	 		else if (methodName == "QueryFilesOperation") {
+	 			jsonInObj.value = "{\n\
+    \"userName\": \"admin\",\n\
+    \"flowId\": \"fw123456\",\n\
+    \"paths\": [\n\
+        {\n\
+            \"netDiskPath\": \"\\\\aaa\\\\b\",\n\
+            \"idPath\": \"\\\\123123\\\\123\",\n\
+            \"isFile\": \"false\"\n\
+        },\n\
+        {\n\
+            \"netDiskPath\": \"\\\\aaa\\\\1.txt\",\n\
+            \"idPath\": \"\\\\123123\\\\321\",\n\
+            \"isFile\": \"true\"\n\
+        }\n\
+    ]\n\
+}";	 			
+	 		}
+	 		else if (methodName == "DoFilesOperation") {
+	 			jsonInObj.value = "{\n\
+    \"operationFlag\": \"resume\",\n\
+    \"userName\": \"admin\",\n\
+    \"flowId\": \"fw123456\",\n\
+    \"netDiskPath\": \"\\\\aaa\\\\b\\\\1.txt\",\n\
+    \"idPath\": \"\\\\123123\\\\123\\\\321\",\n\
+    \"isFile\": \"true\"\n\
+}";	 			
+	 		}
+	 		else if (methodName == "OpenFile") {
+	 			jsonInObj.value = "{\n\
+    \"userName\": \"admin\",\n\
+    \"flowId\": \"fw123456\",\n\
+    \"netDiskPath\": \"\\\\aaa\\\\1.txt\",\n\
+    \"idPath\": \"\\\\123123\\\\321\",\n\
+    \"openMode\": \"netDisk\",\n\
+    \"fileId\": \"13123123\",\n\
+    \"fileSize\": \"1000\",\n\
+    \"fileMd5\": \"afasdfasdfasdf\",\n\
+    \"dataId\": \"12321312312\"\n\
+}";	 			
+	 		}
+	 		else if (methodName == "GetSettings") {
+	 			jsonInObj.value = "{\n\
+}";	 			
+	 		}
+	 		else if (methodName == "SetSettings") {
+	 			jsonInObj.value = "{\n\
+    \"CacheDir\": \"D:\\\\Temp\",\n\
+    \"UploadMaxTask\": \"10\",\n\
+    \"DownloadMaxTask\": \"10\",\n\
+    \"UploadSpeedLimit\": \"0\",\n\
+    \"DownloadSpeedLimit\": \"0\",\n\
+    \"DownloadConnectTimeout\": \"1000\"\n\
+}";	
+	}
+	 		else if (methodName == "SelectItem") {
+	 				jsonInObj.value = "{\n\
+    \"filter\": \"Word 文档|*.doc;*.docx|图像文件 (*.BMP;*.JPG;*.GIF)|*.BMP;*.JPG;*.GIF|所有文件 (*.*)|*.*||\",\n\
+    \"mode\": \"fileAndFolder\"\n\
+}";	 
+}
+	else if (methodName == "QueryDir") {
+	jsonInObj.value = "{\n\
+    \"isRecursion\": \"true\",\n\
+    \"dirs\": [\n\
+    \"C:\\\\文件夹1\",\n\
+    \"C:\\\\文件夹2\"\n\
+    ]\n\
+}";	 	
+}		
+	else if (methodName == "QueryDirSubCount") {
+	 		jsonInObj.value = "{\n\
+    \"isRecursion\": \"true\",\n\
+    \"dirs\": [\n\
+    \"C:\\\\文件夹1\",\n\
+    \"C:\\\\文件夹2\"\n\
+    ]\n\
+}";	
+	 		}
+
+	else if (methodName == "QueryLocalOfficeFileType") {
+	 		jsonInObj.value = "{\n}"
+	 		}
+else if (methodName == "ReNameItem") {
+	 		jsonInObj.value = "{\n\
+\"path\":\"/aaa/1.txt\",\n\
+\"userName\":\"admin\",\n\
+\"flowId\":\"wfd123456\",\n\
+\"newname\":\"工作记录.txt\"\n\
+}"
+	 		}
+else if (methodName == "DeleteItem") {
+	 		jsonInObj.value = "{\n\
+\"userName\":\"admin\",\n\
+\"flowId\":\"wfd123456\",\n\
+\"items\":[\n\
+    {\n\
+      \"path\":\"c:/boot.ini\",\n\
+      \"type\":\"file\"\n\
+    },\n\
+    {\n\
+      \"path\":\"/bbb\",\n\
+      \"type\":\"folder\"\n\
+    },\n\
+    {\n\
+      \"path\":\"/aaa/1.txt\",\n\
+      \"type\":\"file\"\n\
+    }\n\
+  ]\n\
+}"
+	 		}
+else if (methodName == "PasteFiles") {
+	 		jsonInObj.value = "{\n\
+  \"userName\":\"admin\",\n\
+  \"files\":[\n\
+    {\n\
+      \"src\":{\n\
+        \"flowId\":\"fw123456\",\n\
+        \"netDiskPath\":\"/a/b/1.txt\"\n\
+      },\n\
+      \"dst\":{\n\
+        \"flowId\":\"fw123\",\n\
+        \"netDiskPath\":\"/a/b/2.txt\",\n\
+        \"idPath\":\"/123123/123/321\"\n\
+      }\n\
+    },\n\
+    {\n\
+      \"src\":{\n\
+        \"flowId\":\"fw123456\",\n\
+        \"netDiskPath\":\"/a/b/2.cpp\"\n\
+      },\n\
+      \"dst\":{\n\
+        \"flowId\":\"fw123\",\n\
+        \"netDiskPath\":\"/a/b/2.cpp\",\n\
+        \"idPath\":\"/123123/123/32111\"\n\
+      }\n\
+    }\n\
+  ]\n\
+}"
+	 		}
+else if (methodName == "MoveFiles") {
+	 			jsonInObj.value = "{\n\
+  \"userName\":\"admin\",\n\
+  \"files\":[\n\
+    {\n\
+      \"src\":{\n\
+        \"flowId\":\"fw123456\",\n\
+        \"netDiskPath\":\"/a/b/1.txt\"\n\
+      },\n\
+      \"dst\":{\n\
+        \"flowId\":\"fw123\",\n\
+        \"netDiskPath\":\"/a/b/2.txt\"\n\
+      }\n\
+    },\n\
+    {\n\
+      \"src\":{\n\
+        \"flowId\":\"fw123456\",\n\
+        \"netDiskPath\":\"/a/b/2.cpp\"\n\
+      },\n\
+      \"dst\":{\n\
+        \"flowId\":\"fw123\",\n\
+        \"netDiskPath\":\"/a/b/2.cpp\"\n\
+      }\n\
+    }\n\
+  ]\n\
+}"
+	 		}
+	 		
+	 		else if (methodName == "SubmitToOutPut") {
+	 			jsonInObj.value = "{\n\
+    \"userName\": \"admin\",\n\
+    \"flowId\": \"fw123456\",\n\
+    \"dataId\": \"123123\",\n\
+    \"netDiskPath\": \"\\\\a\\\\1.txt\",\n\
+    \"idPath\": \"\\\\123\\\\321\"\n\
+}";	 			
+}
+	 	}	
+	 		
+	 		function zhuanyi(){
+	 			var input1Obj = document.getElementById("input1");
+	 			var input2Obj = document.getElementById("input2");
+	 			var sIn1 = input1Obj.value;
+	 			var sIn2 = sIn1.replace(/\\/g, "\\\\");
+	 			var sIn3 = sIn2.replace(/\"/g, "\\\"");
+	 			input2Obj.value = sIn3;
+	 	}		
+	 	
+	 	function fanzhuanyi(){
+	 			var input1Obj = document.getElementById("input1");
+	 			var input2Obj = document.getElementById("input2");
+	 			var sIn1 = input1Obj.value;
+	 			var sIn2 = sIn1.replace(/\\\"/g, "\"");
+	 			var sIn3 = sIn2.replace(/\\\\/g, "\\");
+	 			input2Obj.value = sIn3;
+	 	}		
+	 	
+		</SCRIPT>
+		
+</HEAD>
+<BODY>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" height="100%">
+ <tr height="6%">
+ 	<td>
+ 	<input id="input1" width="400"></input>
+<button ID="Button1" onclick="zhuanyi();">转义</button>
+<button ID="Button2" onclick="fanzhuanyi();">反转义</button> 	
+ 	<input id="input2" width="400"></input>
+  </td>
+  </tr>
+  
+  
+  
+  <tr height="6%"> 
+  	 <td>	
+  <select id="methodName" onchange="changeMethod(this.options[this.options.selectedIndex].value)">
+            <option value="SelectFile">弹出文件选择对话框</option>
+            <option value="SelectDir">弹出文件夹选择对话框接口</option>
+            <option value="QueryFilesInfo">查询文件基本信息接口</option>
+            <option value="QueryLocalFileType">查询本地可新建文件类型</option>
+            <option value="CreateFile">新建本地文件接口</option>
+            <option value="CopyFiles">复制本地文件接口</option>
+            <option value="UploadFile">上传文件接口</option>
+            <option value="DownloadFiles">下载文件接口</option>
+            <option value="QueryFilesOperation">查询文件操作进度接口</option>
+            <option value="DoFilesOperation">文件操作操作控制接口</option>
+            <option value="OpenFile">打开文件接口</option>
+             <option value="GetSettings">获取网盘设置接口</option>
+            <option value="SetSettings">设置网盘接口</option>
+            <option value="SelectItem">多模式文件选择接口</option>
+            <option value="QueryDir">文件夹内容查询择接口</option>
+            <option value="QueryDirSubCount">文件夹子项个数查询接口</option>
+            <option value="QueryLocalOfficeFileType">查询本地可新建office文件类型</option>
+            <option value="ReNameItem">重命名接口</option>
+            <option value="DeleteItem">删除接口</option>
+            <option value="PasteFiles">复制粘贴时的文件复制接口</option>
+            <option value="MoveFiles">文件移动接口</option>
+            <option value="SubmitToOutPut">网盘本地文件提交到输出接口</option>
+        </select>
+  
+<button ID="Button3" onclick="InvokeMehtod();">调用</button> 	  	
+  </td>
+  	</tr>
+  
+  
+  
+  
+  <tr  height="85%">
+  	<td height="90%" width="40%">
+  		<textarea id="jsonIn" style="margin: 2px; width: 100%; height: 100%;"></textarea>
+  		
+  		</td>
+  		
+  		
+  		
+  	<td height="90%" width="40%">
+  		<textarea id="jsonOut" style="margin: 2px; width: 100%; height: 100%;"></textarea>
+  		
+  		</td>
+  </tr>
+</table>
+
+
+<SCRIPT type=text/javascript>
+	 	changeMethod("SelectFile");
+	
+	</SCRIPT>
+
+</BODY>
+</HTML>

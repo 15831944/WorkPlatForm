@@ -1,0 +1,44 @@
+// PeraNetDiskCom.idl : PeraNetDiskCom 的 IDL 源
+//
+
+// 此文件将由 MIDL 工具处理以
+// 产生类型库(PeraNetDiskCom.tlb)和封送处理代码。
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(D6C9D706-8DE1-4DAF-B1E8-CDF2A9280BFC),
+	dual,
+	nonextensible,
+	pointer_default(unique)
+]
+interface INetDiskCom : IDispatch{
+	[id(1)] HRESULT InvokeMethod([in] BSTR bstrMethodName, [in] BSTR bstrJsonIn, [out,retval] VARIANT* pvRet);
+};
+[
+	uuid(4886FF90-0DCE-4D86-A765-5456090FC5F8),
+	version(1.0),
+]
+library PeraNetDiskComLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(0A7C3E1A-818F-45F4-852D-BF3F10073AF8)		
+	]
+	dispinterface _INetDiskComEvents
+	{
+		properties:
+		methods:
+	};
+	[
+		uuid(F581128B-AF7E-49F5-8150-011E7E44E751)		
+	]
+	coclass NetDiskCom
+	{
+		[default] interface INetDiskCom;
+		[default, source] dispinterface _INetDiskComEvents;
+	};
+};
+

@@ -1,0 +1,26 @@
+HKCR
+{
+	PeraClientConfig.ClientConfig.1 = s 'ClientConfig Class'
+	{
+		CLSID = s '{917B1283-8647-496C-9F8C-58E5B31C949B}'
+	}
+	PeraClientConfig.ClientConfig = s 'ClientConfig Class'
+	{		
+		CurVer = s 'PeraClientConfig.ClientConfig.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {917B1283-8647-496C-9F8C-58E5B31C949B} = s 'ClientConfig Class'
+		{
+			ProgID = s 'PeraClientConfig.ClientConfig.1'
+			VersionIndependentProgID = s 'PeraClientConfig.ClientConfig'
+			ForceRemove Programmable
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			TypeLib = s '{ECBCCC83-F592-4FE3-8446-E60BEBCC503B}'
+			Version = s '1.0'
+		}
+	}
+}

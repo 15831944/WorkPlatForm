@@ -1,0 +1,25 @@
+﻿<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+
+<SCRIPT type=text/javascript>
+      function Get(){
+        var obj;
+        obj = new ActiveXObject("PeraClientConfig.ClientConfig");
+        var out = obj.Get("sec", "key");
+        alert(out);
+    }	
+      function Set(){
+        var obj;
+        obj = new ActiveXObject("PeraClientConfig.ClientConfig");
+        var out = obj.Set("sec", "key", "value");
+        alert(out);
+      }		
+</SCRIPT>		
+</HEAD>
+<BODY>
+<button ID="Button1" onclick="Get();">Get</button>
+<button ID="Button2" onclick="Set();">Set</button>
+
+</BODY>
+</HTML>

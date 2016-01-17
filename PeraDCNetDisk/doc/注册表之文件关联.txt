@@ -1,0 +1,26 @@
+1.根据文件扩展名查找首选关联程序exe名称
+HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\
+2. 根据exe名字查找绝对路径
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths
+3. 根据绝对路径获得程序的描述信息
+HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\Windows\Shell\MuiCache
+4. dll类型可能的情况，路径都有可能有引号和%
+rundll32.exe C:\WINDOWS\system32\shimgvw.dll,ImageView_Fullscreen %1
+rundll32.exe "C:\Program Files (x86)\Common Files\Microsoft Shared\VSTO\vstoee.dll",InstallVstoSolution %1
+%SystemRoot%\system32\rundll32.exe cryptext.dll,CryptExtOpenCER %1
+"%SystemRoot%\System32\rundll32.exe" "%ProgramFiles%\Windows Photo Viewer\PhotoAcq.dll",AutoplayComServerW {00f2b433-44e4-4d88-b2b0-2698a0a91dba}
+rundll32.exe %SystemRoot%\system32\van.dll,RunVAN /disablediagnostics
+5.接受感知类型注册表键值位置
+HKEY_CLASSES_ROOT\SystemFileAssociations\*\shell\open\command
+
+//目前程序实现逻辑(兼容xp和win7)
+1. 先根据HKEY_CLASSES_ROOT\ext 获取默认值,该默认值程序中理解为progId，再根据progId在HKEY_CLASSES_ROOT下找到
+   shell\open\cmd命令,如果该命令存在,则有文件关联,如果没有找到cmd,则尝试从HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\ 下找对应扩展名下的Progid,如果progid
+   存在,则有文件关联，如果不存在,则尝试根据HKEY_CLASSES_ROOT\exe下的PerceivedType得到关联的progId,如果PerceivedType不存在,则无文件关联，反之根据PerceivedType在HKEY_CLASSES_ROOT\SystemFileAssociations\下
+   找对应的shell\open\cmd
+2. 从HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\*\prodId得到的也有可能是一个exe文件名字，此时，prodId格式为Application\*.exe，需要从exe中截取出exe的名字
+3. 根据prodId得到cmd命令：从HKEY_CLASSES_ROOT\$(prodId)\shell\open\cmd得到cmd命令
+4. 从cmd命令或者progId中截取出来的exe路径可能不完整(注册表cmd有时候只指定exe名字),需要从注册表或者该文件所在路径已经在系统目录或环境变量path指定的某目录下。
+  从注册表根据exe获取文件路径的方法：在HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\*.exe取默认值
+5.根据exe，从版本信息中获得FileDescription即为打开关联方式的描述文字信息
+   

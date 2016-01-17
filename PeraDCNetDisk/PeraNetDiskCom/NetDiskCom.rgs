@@ -1,0 +1,26 @@
+HKCR
+{
+	PeraNetDiskCom.NetDiskCom.1 = s 'NetDiskCom Class'
+	{
+		CLSID = s '{F581128B-AF7E-49F5-8150-011E7E44E751}'
+	}
+	PeraNetDiskCom.NetDiskCom = s 'NetDiskCom Class'
+	{		
+		CurVer = s 'PeraNetDiskCom.NetDiskCom.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {F581128B-AF7E-49F5-8150-011E7E44E751} = s 'NetDiskCom Class'
+		{
+			ProgID = s 'PeraNetDiskCom.NetDiskCom.1'
+			VersionIndependentProgID = s 'PeraNetDiskCom.NetDiskCom'
+			ForceRemove Programmable
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			TypeLib = s '{4886FF90-0DCE-4D86-A765-5456090FC5F8}'
+			Version = s '1.0'
+		}
+	}
+}

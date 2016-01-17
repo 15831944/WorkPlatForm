@@ -1,0 +1,55 @@
+﻿<?xml version="1.0"?>
+<project name="Flexware" basedir=".">
+<property name="basedir" value=".."/>
+<tstamp property="build.date" pattern="yyyyMMddHHmm" verbose="true"/>
+<property name="debug" value="true"/>
+<property name="nantcontrib.path" value="C:\CIServer\nantcontrib-0.92-alpha1"/>
+<loadtasks assembly="${nantcontrib.path}/bin/NAnt.Contrib.Tasks.dll"/>
+<mkdir dir="${basedir}\Output" />
+<target name="DelReference">
+</target>
+<target name="copybin" depends="DelReference">
+</target>
+
+<target name="Flexware.msbuild" description="编译工程" depends="copybin">
+<exec program="msbuild" commandline="${basedir}\ZTNetDisk.sln /t:Rebuild /p:Configuration=Release /m /p:RunCodeAnalysis=false"/>
+</target>
+
+<target name="CopyFlexwareLib" depends="Flexware.msbuild">
+	<copy todir="${basedir}\PeraNetDiskOutPut" overwrite="true">
+	<fileset basedir="${basedir}\Release\Depends">
+	<include name="PeraClientConfig.dll"/>
+	</fileset>
+	</copy>	
+	
+	<copy todir="${basedir}\PeraNetDiskOutPut" overwrite="true">
+	<fileset basedir="${basedir}\Release\PeraDeskClient">
+	<include name="PeraNetDiskCom.dll"/>
+	</fileset>
+	</copy>
+	<copy todir="${basedir}\PeraNetDiskOutPut" overwrite="true">
+	<fileset basedir="${basedir}\Release\PeraDeskClient">
+	<include name="PeraDCNetDiskDaemon.exe"/>
+	</fileset>
+	</copy>
+	<copy todir="${basedir}\PeraNetDiskOutPut" overwrite="true">
+	<fileset basedir="${basedir}\Release\PeraDeskClient">
+	<include name="TaskXml.xml"/>
+	</fileset>
+	</copy>
+</target>
+<target name="CopyFlexwareRunTimeLib" depends="CopyFlexwareLib">
+</target>
+<target name="DelSvnDir" depends="CopyFlexwareRunTimeLib">
+	<delete includeemptydirs="true">
+	<fileset basedir="${basedir}/PeraNetDiskOutPut">
+	<include name="**/.svn/"/>
+	</fileset>
+	</delete>
+</target>
+<target name="DelOutPut" depends="DelSvnDir">
+</target>
+<target name="Nsis" depends="DelOutPut">
+	<exec program="${basedir}\ZTBuild\NSIS\makensis.exe" commandline="${basedir}\ZTBuild\WorkSpace_Client.nsi"/>
+</target>
+</project>

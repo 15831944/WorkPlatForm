@@ -1,0 +1,45 @@
+// PeraClientConfig.idl : PeraClientConfig 的 IDL 源
+//
+
+// 此文件将由 MIDL 工具处理以
+// 产生类型库(PeraClientConfig.tlb)和封送处理代码。
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(1F779724-B579-435E-8535-50F1E1B0C6C2),
+	dual,
+	nonextensible,
+	pointer_default(unique)
+]
+interface IClientConfig : IDispatch{
+	[id(1)] HRESULT Set([in] BSTR bstrSection, [in] BSTR bstrKey, [in] BSTR bstrValue, [out,retval] VARIANT* pvRet);
+	[id(2)] HRESULT Get([in] BSTR bstrSection, [in] BSTR bstrKey, [out,retval] VARIANT* pvRet);
+};
+[
+	uuid(ECBCCC83-F592-4FE3-8446-E60BEBCC503B),
+	version(1.0),
+]
+library PeraClientConfigLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(3680D0BF-DA48-421B-B428-D8D75A05A7B8)		
+	]
+	dispinterface _IClientConfigEvents
+	{
+		properties:
+		methods:
+	};
+	[
+		uuid(917B1283-8647-496C-9F8C-58E5B31C949B)		
+	]
+	coclass ClientConfig
+	{
+		[default] interface IClientConfig;
+		[default, source] dispinterface _IClientConfigEvents;
+	};
+};
+

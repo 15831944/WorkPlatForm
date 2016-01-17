@@ -1,0 +1,11 @@
+根据注册表新建文件的规则总结：
+1. 首先寻找ShellNew,找到创建该类型文件的规则：
+首先在HKEY_CLASSES_ROOT下打开对应扩展名的键值,例如新建".docx"的类型时，打开键值HKEY_CLASSES_ROOT\.docx,然后读取其默认值,例如Word.Document.12，不同版本的office,该值可能不同；
+如果该值非空,则在HKEY_CLASSES_ROOT\.docx\Word.Document.12下找ShellNew,例如".docx"的ShellNew路径为：HKEY_CLASSES_ROOT\.rar\Word.Document.12\ShellNew
+
+2.如果默认值为空，或者在HKEY_CLASSES_ROOT\%扩展名%下找不到默认值,则直接从HKEY_CLASSES_ROOT\%扩展名%下找ShellNew,例如".rar”的ShellNew路径为：HKEY_CLASSES_ROOT\.rar\ShellNew
+
+3. 找到ShellNew后,创建规则如下：
+如果ShellNew下有FileName字段,则其值即为模版文件的名称或者全路径，如果不是全路径，则需要到系统默认的模版路径(%SystemRoot%\ShellNew))下去找指定名称的模版文件
+如果没有FileName字段,应该有NullFile字段，说明是没有模版的类型，直接创建一个空白文件即可，大小是0字节，如果有模版,且模版路径有效，则拷贝模版文件到目标地址，并重名为目标文件名即可,如果FileName字段存在,但是
+其值为空或对应的模版文件无法找到,则创建空白文件(这种情况比较特殊,但部分机子上确实遇到过,此时创建的文件可能打不开，因为模版已经无效了)。

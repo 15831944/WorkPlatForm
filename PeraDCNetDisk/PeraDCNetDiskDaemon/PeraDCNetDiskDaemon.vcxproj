@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F7946A16-1B56-426D-8F7D-140250CAA349}</ProjectGuid>
+    <RootNamespace>PeraPcIceService</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)$(Configuration)\PeraDeskClient\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)PeraNetDisk\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;CURL_STATICLIB;_CRT_SECURE_NO_WARNINGS;LINK_NETDISKDAEMON;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)Import;$(SolutionDir)Depends\curl-7.35.0\include\curl;$(SolutionDir)Depends\Ice;$(SolutionDir)Depends;$(SolutionDir)Common;$(SolutionDir)Depends\log4cplus\include;$(SolutionDir)Depends\json\include\json;..\Common;..\include;..\Global;..\hprose;$(SolutionDir)\Depends\boost_1_47;$(SolutionDir)\Depends\RapidXml_1_0\rapidxml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <DisableSpecificWarnings>4290</DisableSpecificWarnings>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <MinimalRebuild>false</MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+      <AdditionalLibraryDirectories>$(SolutionDir)libd;..\libd</AdditionalLibraryDirectories>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories);$(SolutionDir)Common</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CURL_STATICLIB;LINK_NETDISKDAEMON;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)Import;$(SolutionDir)Depends\curl-7.35.0\include\curl;$(SolutionDir)Depends\Ice;$(SolutionDir)Depends;$(SolutionDir)Common;$(SolutionDir)Depends\log4cplus\include;$(SolutionDir)Depends\json\include\json;..\Common;..\include;..\Global;..\hprose;$(SolutionDir)\Depends\boost_1_47;$(SolutionDir)\Depends\RapidXml_1_0\rapidxml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4290</DisableSpecificWarnings>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib;..\libr</AdditionalLibraryDirectories>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories);$(SolutionDir)Common</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <PostBuildEvent>
+      <Command>xcopy "$(SolutionDir)\PeraDCNetDisk\bin" "$(SolutionDir)$(Configuration)\PeraDeskClient\" /E /Y
+copy "$(OutDir)$(TargetName)$(TargetExt)" "$(SolutionDir)$(Configuration)\PeraDeskClient\$(TargetName)$(TargetExt)"</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>"$(SolutionDir)Depends\RcUpdateTool\RcUpdateTool.exe" 131 "$(ProjectDir)$(ProjectName).rc"</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="ntserv_msg.mc">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Compiling messages...命令行【mc.exe -u -U -r "%(RootDir)%(Directory)." -h "%(RootDir)%(Directory)." "%(FullPath)"】输出【%(RootDir)%(Directory)%(Filename).rc;%(RootDir)%(Directory)\%(Filename).h;%(Outputs)】</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Outputs>
+    </CustomBuild>
+    <None Include="ReadMe.txt" />
+    <None Include="res\PeraDCNetDiskDaemon.ico" />
+    <None Include="res\PeraDCNetDiskDaemon.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Common\ConfigFunc.h" />
+    <ClInclude Include="..\..\Common\ConvertData.h" />
+    <ClInclude Include="..\..\Common\DownUploadCommonFunc.h" />
+    <ClInclude Include="..\..\Common\FileFunc.h" />
+    <ClInclude Include="..\..\Common\IceHeader.h" />
+    <ClInclude Include="..\..\Common\IniClass.h" />
+    <ClInclude Include="..\..\Common\PtrVectorHeader.h" />
+    <ClInclude Include="..\..\Common\Tools.h" />
+    <ClInclude Include="..\..\Common\UtilityFunc.h" />
+    <ClInclude Include="..\..\Import\PeraNetDiskIce.h" />
+    <ClInclude Include="..\Common\CommonMethod.h" />
+    <ClInclude Include="..\Common\FileCopy.h" />
+    <ClInclude Include="..\Common\FilePro.h" />
+    <ClInclude Include="..\Common\PeraFileSelectDlg.h" />
+    <ClInclude Include="..\Global\CurlInclude.h" />
+    <ClInclude Include="..\Global\InterfaceData.h" />
+    <ClInclude Include="..\Global\UserDefine.h" />
+    <ClInclude Include="..\hprose\hprose\client\asio\httpclient.hpp" />
+    <ClInclude Include="..\hprose\hprose\client\client.hpp" />
+    <ClInclude Include="..\hprose\hprose\client\cookie.hpp" />
+    <ClInclude Include="..\hprose\hprose\common.hpp" />
+    <ClInclude Include="..\hprose\hprose\common\algorithm.hpp" />
+    <ClInclude Include="..\hprose\hprose\common\any.hpp" />
+    <ClInclude Include="..\hprose\hprose\common\bigint.hpp" />
+    <ClInclude Include="..\hprose\hprose\common\exception.hpp" />
+    <ClInclude Include="..\hprose\hprose\common\time.hpp" />
+    <ClInclude Include="..\hprose\hprose\common\utf8.hpp" />
+    <ClInclude Include="..\hprose\hprose\config.hpp" />
+    <ClInclude Include="..\hprose\hprose\httpclient.hpp" />
+    <ClInclude Include="..\hprose\hprose\io.hpp" />
+    <ClInclude Include="..\hprose\hprose\io\classes.hpp" />
+    <ClInclude Include="..\hprose\hprose\io\formatter.hpp" />
+    <ClInclude Include="..\hprose\hprose\io\reader.hpp" />
+    <ClInclude Include="..\hprose\hprose\io\tags.hpp" />
+    <ClInclude Include="..\hprose\hprose\io\types.hpp" />
+    <ClInclude Include="..\hprose\hprose\io\writer.hpp" />
+    <ClInclude Include="..\hprose\hprose\version.hpp" />
+    <ClInclude Include="CallHprose.h" />
+    <ClInclude Include="ClassExtract.h" />
+    <ClInclude Include="CopyManager.h" />
+    <ClInclude Include="CPeraDataPersist.h" />
+    <ClInclude Include="CrashHandler.h" />
+    <ClInclude Include="DataFileObject.h" />
+    <ClInclude Include="HttpDownloadMgr.h" />
+    <ClInclude Include="HttpDownloadThread.h" />
+    <ClInclude Include="HttpDownloadThreadData.h" />
+    <ClInclude Include="IceService.h" />
+    <ClInclude Include="icon.h" />
+    <ClInclude Include="ntserv.h" />
+    <ClInclude Include="ntservCmdLineInfo.h" />
+    <ClInclude Include="ntservEventLog.h" />
+    <ClInclude Include="ntservEventLogRecord.h" />
+    <ClInclude Include="ntservEventLogSource.h" />
+    <ClInclude Include="ntservScmService.h" />
+    <ClInclude Include="ntservServiceControlManager.h" />
+    <ClInclude Include="ntserv_msg.h" />
+    <ClInclude Include="PeraOpenFile.h" />
+    <ClInclude Include="PeraCopyManager.h" />
+    <ClInclude Include="PeraDownloadThread.h" />
+    <ClInclude Include="PeraHttpDownloadMgr.h" />
+    <ClInclude Include="PeraDCNetDiskDaemon.h" />
+    <ClInclude Include="PeraDCNetDiskDaemonDlg.h" />
+    <ClInclude Include="PeraNetDiskIceI.h" />
+    <ClInclude Include="PeraNetDiskSetting.h" />
+    <ClInclude Include="PeraUploadManager.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="TaskDB.h" />
+    <ClInclude Include="TaskXml.h" />
+    <ClInclude Include="UploadManager.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Common\ConfigFunc.cpp" />
+    <ClCompile Include="..\..\Common\ConvertData.cpp" />
+    <ClCompile Include="..\..\Common\DownUploadCommonFunc.cpp" />
+    <ClCompile Include="..\..\Common\FileFunc.cpp" />
+    <ClCompile Include="..\..\Common\IniClass.cpp" />
+    <ClCompile Include="..\..\Common\Tools.cpp" />
+    <ClCompile Include="..\..\Common\UtilityFunc.cpp" />
+    <ClCompile Include="..\..\Import\PeraNetDiskIce.cpp" />
+    <ClCompile Include="..\Common\CommonMethod.cpp" />
+    <ClCompile Include="..\Common\FileCopy.cpp" />
+    <ClCompile Include="..\Common\FilePro.cpp" />
+    <ClCompile Include="..\Common\FileTypePro.cpp" />
+    <ClCompile Include="..\Common\PeraFileSelectDlg.cpp" />
+    <ClCompile Include="..\Global\CurlInclude.cpp" />
+    <ClCompile Include="..\Global\InterfaceData.cpp" />
+    <ClCompile Include="..\Global\UserDefine.cpp" />
+    <ClCompile Include="..\hprose\src\client\asio\httpclient.cpp" />
+    <ClCompile Include="..\hprose\src\client\cookie.cpp" />
+    <ClCompile Include="..\hprose\src\io\classes.cpp" />
+    <ClCompile Include="CallHprose.cpp" />
+    <ClCompile Include="ClassExtract.cpp" />
+    <ClCompile Include="CopyManager.cpp" />
+    <ClCompile Include="CPeraDataPersist.cpp" />
+    <ClCompile Include="CrashHandler.cpp" />
+    <ClCompile Include="DataFileObject.cpp" />
+    <ClCompile Include="FileAssociate.cpp" />
+    <ClCompile Include="GetTypeIcon.cpp" />
+    <ClCompile Include="HttpDownloadMgr.cpp" />
+    <ClCompile Include="HttpDownloadThread.cpp" />
+    <ClCompile Include="HttpDownloadThreadData.cpp" />
+    <ClCompile Include="IceService.cpp" />
+    <ClCompile Include="LocalMethod.cpp" />
+    <ClCompile Include="ntserv.cpp" />
+    <ClCompile Include="ntservCmdLineInfo.cpp" />
+    <ClCompile Include="ntservEventLog.cpp" />
+    <ClCompile Include="ntservEventLogRecord.cpp" />
+    <ClCompile Include="ntservEventLogSource.cpp" />
+    <ClCompile Include="ntservScmService.cpp" />
+    <ClCompile Include="ntservServiceControlManager.cpp" />
+    <ClCompile Include="PeraCopyManager.cpp" />
+    <ClCompile Include="PeraDownloadThread.cpp" />
+    <ClCompile Include="PeraHttpDownloadMgr.cpp" />
+    <ClCompile Include="PeraDCNetDiskDaemon.cpp" />
+    <ClCompile Include="PeraDCNetDiskDaemonDlg.cpp" />
+    <ClCompile Include="PeraNetDiskIceI.cpp" />
+    <ClCompile Include="PeraNetDiskSetting.cpp" />
+    <ClCompile Include="PeraOpenFile.cpp" />
+    <ClCompile Include="PeraUploadManager.cpp" />
+    <ClCompile Include="SaveIconFile.cpp" />
+    <ClCompile Include="SavePngFile.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="TaskDB.cpp" />
+    <ClCompile Include="TaskXml.cpp" />
+    <ClCompile Include="UploadManager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="PeraDCNetDiskDaemon.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties ZerocIce_Enabled="False" ZerocIce_ProjectVersion="1" RESOURCE_FILE="PeraDCNetDiskDaemon.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
