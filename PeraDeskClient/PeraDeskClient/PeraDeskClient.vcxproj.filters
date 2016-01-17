@@ -1,0 +1,564 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="_WndBase">
+      <UniqueIdentifier>{989ba0c3-4f95-42d2-b03c-1db58f693aa8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Global">
+      <UniqueIdentifier>{573f29bd-156f-4891-bbd1-bf45e577c93e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Common">
+      <UniqueIdentifier>{5194047d-6cb9-4f28-a52b-5f25ed8d22a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Web">
+      <UniqueIdentifier>{e8dc67a6-56ef-4ac4-b2a6-0d4e7c48fff8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_MDI">
+      <UniqueIdentifier>{97bc41a1-14e5-4c6f-920f-d4732bd1d28f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="_Import">
+      <UniqueIdentifier>{606ee6ab-33f1-49a9-bafe-0a95d5c6da65}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="UserImages.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\PeraDeskClient.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\PeraDeskClientDoc.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\PeraDeskClient.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\PeraDeskClient.toolbar.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Toolbar.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Toolbar256.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\icons.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="MsgCoreDlg.htm" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CxDataType.h">
+      <Filter>_Global</Filter>
+    </ClInclude>
+    <ClInclude Include="CxDlgView.h">
+      <Filter>_WndBase</Filter>
+    </ClInclude>
+    <ClInclude Include="CxDlgBar.h">
+      <Filter>_WndBase</Filter>
+    </ClInclude>
+    <ClInclude Include="CxFloatBar.h">
+      <Filter>_WndBase</Filter>
+    </ClInclude>
+    <ClInclude Include="GlobalConfig.h">
+      <Filter>_Global</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgPopIE.h">
+      <Filter>_Web</Filter>
+    </ClInclude>
+    <ClInclude Include="CxBCGPSplitterWnd.h">
+      <Filter>_WndBase</Filter>
+    </ClInclude>
+    <ClInclude Include="CxSplitterFrameWnd.h">
+      <Filter>_WndBase</Filter>
+    </ClInclude>
+    <ClInclude Include="CxSplitterView.h">
+      <Filter>_WndBase</Filter>
+    </ClInclude>
+    <ClInclude Include="CxCaptionButton.h">
+      <Filter>_WndBase</Filter>
+    </ClInclude>
+    <ClInclude Include="ChildFrm.h">
+      <Filter>_MDI</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>_MDI</Filter>
+    </ClInclude>
+    <ClInclude Include="PeraDeskClient.h">
+      <Filter>_MDI</Filter>
+    </ClInclude>
+    <ClInclude Include="PeraDeskClientDoc.h">
+      <Filter>_MDI</Filter>
+    </ClInclude>
+    <ClInclude Include="PeraDeskClientView.h">
+      <Filter>_MDI</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>_MDI</Filter>
+    </ClInclude>
+    <ClInclude Include="CxViewMgr.h">
+      <Filter>_WndBase</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewSet.h">
+      <Filter>_WndBase</Filter>
+    </ClInclude>
+    <ClInclude Include="CxListCtrl.h">
+      <Filter>_WndBase</Filter>
+    </ClInclude>
+    <ClInclude Include="CxListCtrlData.h">
+      <Filter>_WndBase</Filter>
+    </ClInclude>
+    <ClInclude Include="CxBCGExtHeader.h">
+      <Filter>_Global</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>资源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="PeraDeskClientUtility.h">
+      <Filter>_Global</Filter>
+    </ClInclude>
+    <ClInclude Include="CxBCGPMenuBar.h">
+      <Filter>_MDI</Filter>
+    </ClInclude>
+    <ClInclude Include="CxBCGPToolBar.h">
+      <Filter>_MDI</Filter>
+    </ClInclude>
+    <ClInclude Include="CxBCGPToolbarButton.h">
+      <Filter>_MDI</Filter>
+    </ClInclude>
+    <ClInclude Include="CxBCGPVisualManager2007.h">
+      <Filter>_MDI</Filter>
+    </ClInclude>
+    <ClInclude Include="CxBCGPGridItem.h">
+      <Filter>_WndBase</Filter>
+    </ClInclude>
+    <ClInclude Include="CxLoginData.h">
+      <Filter>_Global</Filter>
+    </ClInclude>
+    <ClInclude Include="CxLoginBar.h">
+      <Filter>_MDI</Filter>
+    </ClInclude>
+    <ClInclude Include="CxBCGPDialog.h">
+      <Filter>_WndBase</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgLoginBk.h">
+      <Filter>_MDI</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgLoginMain.h">
+      <Filter>_MDI</Filter>
+    </ClInclude>
+    <ClInclude Include="LoginCloseBtn.h">
+      <Filter>_MDI</Filter>
+    </ClInclude>
+    <ClInclude Include="CxBCGPSpinButtonCtrl.h">
+      <Filter>_WndBase</Filter>
+    </ClInclude>
+    <ClInclude Include="CxBCGPButton.h">
+      <Filter>_WndBase</Filter>
+    </ClInclude>
+    <ClInclude Include="CxBCGPXMLSettings.h">
+      <Filter>_MDI</Filter>
+    </ClInclude>
+    <ClInclude Include="ZToolTipEvent.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\WebGroup\BaseHtmlDialog.h">
+      <Filter>_Web</Filter>
+    </ClInclude>
+    <ClInclude Include="..\WebGroup\CxWebPageEvent.h">
+      <Filter>_Web</Filter>
+    </ClInclude>
+    <ClInclude Include="..\WebGroup\DispatchImpl.h">
+      <Filter>_Web</Filter>
+    </ClInclude>
+    <ClInclude Include="..\WebGroup\HtmlWindowEventCallback.h">
+      <Filter>_Web</Filter>
+    </ClInclude>
+    <ClInclude Include="..\WebGroup\HtmlWindowEventSink.h">
+      <Filter>_Web</Filter>
+    </ClInclude>
+    <ClInclude Include="..\WebGroup\WebDataDefine.h">
+      <Filter>_Web</Filter>
+    </ClInclude>
+    <ClInclude Include="JsData_HistoryMonitor.h">
+      <Filter>_Web</Filter>
+    </ClInclude>
+    <ClInclude Include="..\WebGroup\CxWebPageMgr.h">
+      <Filter>_Web</Filter>
+    </ClInclude>
+    <ClInclude Include="..\WebGroup\PeraWebPageMgr.h">
+      <Filter>_Web</Filter>
+    </ClInclude>
+    <ClInclude Include="..\WebGroup\PeraWebPageMgrHost.h">
+      <Filter>_Web</Filter>
+    </ClInclude>
+    <ClInclude Include="..\WebGroup\PeraWebPageEventExData.h">
+      <Filter>_Web</Filter>
+    </ClInclude>
+    <ClInclude Include="CrashHandler.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CxBCGPButtonPlb.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ResLibImageSet.h">
+      <Filter>_MDI</Filter>
+    </ClInclude>
+    <ClInclude Include="CommandParser.h">
+      <Filter>_Global</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\atlrx.h">
+      <Filter>_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\ConvertData.h">
+      <Filter>_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\CStringChecker.h">
+      <Filter>_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\CStringCheckerConfig.h">
+      <Filter>_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\FileFunc.h">
+      <Filter>_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\HookFunc.h">
+      <Filter>_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\IniClass.h">
+      <Filter>_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\LicenseMgr.h">
+      <Filter>_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\PtrVectorHeader.h">
+      <Filter>_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\StlHeader.h">
+      <Filter>_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Tools.h">
+      <Filter>_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\UtilityFunc.h">
+      <Filter>_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\XmlBase.h">
+      <Filter>_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Global\UserDefine.h">
+      <Filter>_Global</Filter>
+    </ClInclude>
+    <ClInclude Include="GetFlexwareBin.h">
+      <Filter>_MDI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\AppFunc.h">
+      <Filter>_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\ConfigFunc.h">
+      <Filter>_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\GetGlobalDataFromReg.h">
+      <Filter>_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Import\PeraNetDiskIce.h">
+      <Filter>_Import</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgSystemSetting.h">
+      <Filter>_MDI</Filter>
+    </ClInclude>
+    <ClInclude Include="InvokeMethod.h">
+      <Filter>_Global</Filter>
+    </ClInclude>
+    <ClInclude Include="CxNetDiskSettingData.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="LoginBarToolTipCtrl.h">
+      <Filter>_MDI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\LoginFunc.h">
+      <Filter>_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\IceHeader.h">
+      <Filter>_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\PeraIceBase.h">
+      <Filter>_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\PeraIceNetDisk.h">
+      <Filter>_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Global\RegFunc.h">
+      <Filter>_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\BuilDefine.h">
+      <Filter>_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgCoreDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\LoadingWindow.h">
+      <Filter>_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\GDIPlusInit.h">
+      <Filter>_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\ProcessFunc.h">
+      <Filter>_Common</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CxDataType.cpp">
+      <Filter>_Global</Filter>
+    </ClCompile>
+    <ClCompile Include="CxDlgBar.cpp">
+      <Filter>_WndBase</Filter>
+    </ClCompile>
+    <ClCompile Include="CxDlgView.cpp">
+      <Filter>_WndBase</Filter>
+    </ClCompile>
+    <ClCompile Include="CxFloatBar.cpp">
+      <Filter>_WndBase</Filter>
+    </ClCompile>
+    <ClCompile Include="GlobalConfig.cpp">
+      <Filter>_Global</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgPopIE.cpp">
+      <Filter>_Web</Filter>
+    </ClCompile>
+    <ClCompile Include="CxBCGPSplitterWnd.cpp">
+      <Filter>_WndBase</Filter>
+    </ClCompile>
+    <ClCompile Include="CxSplitterFrameWnd.cpp">
+      <Filter>_WndBase</Filter>
+    </ClCompile>
+    <ClCompile Include="CxSplitterView.cpp">
+      <Filter>_WndBase</Filter>
+    </ClCompile>
+    <ClCompile Include="CxCaptionButton.cpp">
+      <Filter>_WndBase</Filter>
+    </ClCompile>
+    <ClCompile Include="ChildFrm.cpp">
+      <Filter>_MDI</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>_MDI</Filter>
+    </ClCompile>
+    <ClCompile Include="PeraDeskClient.cpp">
+      <Filter>_MDI</Filter>
+    </ClCompile>
+    <ClCompile Include="PeraDeskClientDoc.cpp">
+      <Filter>_MDI</Filter>
+    </ClCompile>
+    <ClCompile Include="PeraDeskClientView.cpp">
+      <Filter>_MDI</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>_MDI</Filter>
+    </ClCompile>
+    <ClCompile Include="CxViewMgr.cpp">
+      <Filter>_WndBase</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewSet.cpp">
+      <Filter>_WndBase</Filter>
+    </ClCompile>
+    <ClCompile Include="CxListCtrl.cpp">
+      <Filter>_WndBase</Filter>
+    </ClCompile>
+    <ClCompile Include="CxListCtrlData.cpp">
+      <Filter>_WndBase</Filter>
+    </ClCompile>
+    <ClCompile Include="PeraDeskClientUtility.cpp">
+      <Filter>_Global</Filter>
+    </ClCompile>
+    <ClCompile Include="CxBCGPMenuBar.cpp">
+      <Filter>_MDI</Filter>
+    </ClCompile>
+    <ClCompile Include="CxBCGPToolbarButton.cpp">
+      <Filter>_MDI</Filter>
+    </ClCompile>
+    <ClCompile Include="CxBCGPToolBar.cpp">
+      <Filter>_MDI</Filter>
+    </ClCompile>
+    <ClCompile Include="CxBCGPVisualManager2007.cpp">
+      <Filter>_MDI</Filter>
+    </ClCompile>
+    <ClCompile Include="CxBCGPGridItem.cpp">
+      <Filter>_WndBase</Filter>
+    </ClCompile>
+    <ClCompile Include="CxLoginData.cpp">
+      <Filter>_Global</Filter>
+    </ClCompile>
+    <ClCompile Include="CxLoginBar.cpp">
+      <Filter>_MDI</Filter>
+    </ClCompile>
+    <ClCompile Include="CxBCGPDialog.cpp">
+      <Filter>_WndBase</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgLoginBk.cpp">
+      <Filter>_MDI</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgLoginMain.cpp">
+      <Filter>_MDI</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginCloseBtn.cpp">
+      <Filter>_MDI</Filter>
+    </ClCompile>
+    <ClCompile Include="CxBCGPSpinButtonCtrl.cpp">
+      <Filter>_WndBase</Filter>
+    </ClCompile>
+    <ClCompile Include="CxBCGPButton.cpp">
+      <Filter>_WndBase</Filter>
+    </ClCompile>
+    <ClCompile Include="CxBCGPXMLSettings.cpp">
+      <Filter>_MDI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\WebGroup\BaseHtmlDialog.cpp">
+      <Filter>_Web</Filter>
+    </ClCompile>
+    <ClCompile Include="..\WebGroup\CxWebPageEvent.cpp">
+      <Filter>_Web</Filter>
+    </ClCompile>
+    <ClCompile Include="..\WebGroup\DispatchImpl.cpp">
+      <Filter>_Web</Filter>
+    </ClCompile>
+    <ClCompile Include="..\WebGroup\HtmlWindowEventSink.cpp">
+      <Filter>_Web</Filter>
+    </ClCompile>
+    <ClCompile Include="..\WebGroup\WebDataDefine.cpp">
+      <Filter>_Web</Filter>
+    </ClCompile>
+    <ClCompile Include="JsData_HistoryMonitor.cpp">
+      <Filter>_Web</Filter>
+    </ClCompile>
+    <ClCompile Include="..\WebGroup\CxWebPageMgr.cpp">
+      <Filter>_Web</Filter>
+    </ClCompile>
+    <ClCompile Include="..\WebGroup\PeraWebPageMgr.cpp">
+      <Filter>_Web</Filter>
+    </ClCompile>
+    <ClCompile Include="..\WebGroup\PeraWebPageMgrHost.cpp">
+      <Filter>_Web</Filter>
+    </ClCompile>
+    <ClCompile Include="..\WebGroup\PeraWebPageEventExData.cpp">
+      <Filter>_Web</Filter>
+    </ClCompile>
+    <ClCompile Include="CrashHandler.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CxBCGPButtonPlb.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ResLibImageSet.cpp">
+      <Filter>_MDI</Filter>
+    </ClCompile>
+    <ClCompile Include="CommandParser.cpp">
+      <Filter>_Global</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\ConvertData.cpp">
+      <Filter>_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\CStringChecker.cpp">
+      <Filter>_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\FileFunc.cpp">
+      <Filter>_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\HookFunc.cpp">
+      <Filter>_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\IniClass.cpp">
+      <Filter>_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\LicenseMgr.cpp">
+      <Filter>_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\Tools.cpp">
+      <Filter>_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\UtilityFunc.cpp">
+      <Filter>_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\XmlBase.cpp">
+      <Filter>_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Global\UserDefine.cpp">
+      <Filter>_Global</Filter>
+    </ClCompile>
+    <ClCompile Include="GetFlexwareBin.cpp">
+      <Filter>_MDI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\AppFunc.cpp">
+      <Filter>_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\ConfigFunc.cpp">
+      <Filter>_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\GetGlobalDataFromReg.cpp">
+      <Filter>_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Import\PeraNetDiskIce.cpp">
+      <Filter>_Import</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgSystemSetting.cpp">
+      <Filter>_MDI</Filter>
+    </ClCompile>
+    <ClCompile Include="InvokeMethod.cpp">
+      <Filter>_Global</Filter>
+    </ClCompile>
+    <ClCompile Include="CxNetDiskSettingData.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginBarToolTipCtrl.cpp">
+      <Filter>_MDI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\LoginFunc.cpp">
+      <Filter>_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\PeraIceBase.cpp">
+      <Filter>_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\PeraIceNetDisk.cpp">
+      <Filter>_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Global\RegFunc.cpp">
+      <Filter>_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="MsgDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MsgCoreDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\LoadingWindow.cpp">
+      <Filter>_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\GDIPlusInit.cpp">
+      <Filter>_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\ProcessFunc.cpp">
+      <Filter>_Common</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="PeraDeskClient.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Office 2010 (white)", "BCGPStyle2010White.vcproj", "{6EFF069D-36F1-4BFB-92A0-CD22B89F69D9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6EFF069D-36F1-4BFB-92A0-CD22B89F69D9}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6EFF069D-36F1-4BFB-92A0-CD22B89F69D9}.Debug|Win32.Build.0 = Debug|Win32
+		{6EFF069D-36F1-4BFB-92A0-CD22B89F69D9}.Release|Win32.ActiveCfg = Release|Win32
+		{6EFF069D-36F1-4BFB-92A0-CD22B89F69D9}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

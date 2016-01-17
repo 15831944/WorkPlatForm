@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4B6BEBB9-CF17-439A-B16E-C4212B3A68AD}</ProjectGuid>
+    <RootNamespace>PeraDCWebContainer</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <SourcePath>$(SourcePath)</SourcePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)Debug\PeraDeskClient\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+    <SourcePath>$(SourcePath)</SourcePath>
+    <OutDir>$(SolutionDir)PeraDeskClient\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)Depends\json\include\json;$(SolutionDir)Depends\log4cplus\include;$(SolutionDir)Common;$(SolutionDir)PeraDeskClient\Global;$(SolutionDir)PeraDeskClient\PeraDCWebContainer;$(SolutionDir)PeraDeskClient\WebGroup;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>PeraDCWebContainer.pdb</ProgramDataBaseFileName>
+      <MinimalRebuild>false</MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)libd;$(SolutionDir)PeraDeskClient\libd</AdditionalLibraryDirectories>
+      <AdditionalDependencies>log4cplusSD.lib;jsond.lib;zlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>LIBCMT.lib</IgnoreSpecificDefaultLibraries>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+      <OutputFile>$(SolutionDir)Debug\PeraDeskClient\$(TargetName)$(TargetExt)</OutputFile>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories);$(SolutionDir)Common</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)Depends\json\include\json;$(SolutionDir)Depends\log4cplus\include;$(SolutionDir)Common;$(SolutionDir)PeraDeskClient\Global;$(SolutionDir)PeraDeskClient\PeraDCWebContainer;$(SolutionDir)PeraDeskClient\WebGroup;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib;$(SolutionDir)PeraDeskClient\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>log4cplusS.lib;json.lib;zlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories);$(SolutionDir)Common</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <PostBuildEvent>
+      <Command>xcopy "$(OutDir)$(TargetName)$(TargetExt)" "$(SolutionDir)$(Configuration)\PeraDeskClient\" /Y</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>"$(SolutionDir)Depends\RcUpdateTool\RcUpdateTool.exe" 131 "$(ProjectDir)$(ProjectName).rc"</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="res\PeraDCWebContainer.ico" />
+    <None Include="res\PeraDCWebContainer.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Common\atlrx.h" />
+    <ClInclude Include="..\..\Common\ConvertData.h" />
+    <ClInclude Include="..\..\Common\CStringChecker.h" />
+    <ClInclude Include="..\..\Common\CStringCheckerConfig.h" />
+    <ClInclude Include="..\..\Common\FileFunc.h" />
+    <ClInclude Include="..\..\Common\HookFunc.h" />
+    <ClInclude Include="..\..\Common\IniClass.h" />
+    <ClInclude Include="..\..\Common\PtrVectorHeader.h" />
+    <ClInclude Include="..\..\Common\StlHeader.h" />
+    <ClInclude Include="..\..\Common\Tools.h" />
+    <ClInclude Include="..\..\Common\UtilityFunc.h" />
+    <ClInclude Include="..\Global\UserDefine.h" />
+    <ClInclude Include="..\WebGroup\BaseHtmlDialog.h" />
+    <ClInclude Include="..\WebGroup\CxWebPageEvent.h" />
+    <ClInclude Include="..\WebGroup\CxWebPageMgr.h" />
+    <ClInclude Include="..\WebGroup\DispatchImpl.h" />
+    <ClInclude Include="..\WebGroup\HtmlWindowEventCallback.h" />
+    <ClInclude Include="..\WebGroup\HtmlWindowEventSink.h" />
+    <ClInclude Include="..\WebGroup\PeraWebPageEventExData.h" />
+    <ClInclude Include="..\WebGroup\PeraWebPageMgr.h" />
+    <ClInclude Include="..\WebGroup\PeraWebPageMgrClient.h" />
+    <ClInclude Include="..\WebGroup\WebDataDefine.h" />
+    <ClInclude Include="CrashHandler.h" />
+    <ClInclude Include="CxWebNavigate.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="PeraDCWebContainer.h" />
+    <ClInclude Include="DlgMain.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Common\ConvertData.cpp" />
+    <ClCompile Include="..\..\Common\CStringChecker.cpp" />
+    <ClCompile Include="..\..\Common\FileFunc.cpp" />
+    <ClCompile Include="..\..\Common\HookFunc.cpp" />
+    <ClCompile Include="..\..\Common\IniClass.cpp" />
+    <ClCompile Include="..\..\Common\Tools.cpp" />
+    <ClCompile Include="..\..\Common\UtilityFunc.cpp" />
+    <ClCompile Include="..\Global\UserDefine.cpp" />
+    <ClCompile Include="..\WebGroup\BaseHtmlDialog.cpp" />
+    <ClCompile Include="..\WebGroup\CxWebPageEvent.cpp" />
+    <ClCompile Include="..\WebGroup\CxWebPageMgr.cpp" />
+    <ClCompile Include="..\WebGroup\DispatchImpl.cpp" />
+    <ClCompile Include="..\WebGroup\HtmlWindowEventSink.cpp" />
+    <ClCompile Include="..\WebGroup\PeraWebPageEventExData.cpp" />
+    <ClCompile Include="..\WebGroup\PeraWebPageMgr.cpp" />
+    <ClCompile Include="..\WebGroup\PeraWebPageMgrClient.cpp" />
+    <ClCompile Include="..\WebGroup\WebDataDefine.cpp" />
+    <ClCompile Include="CrashHandler.cpp" />
+    <ClCompile Include="CxWebNavigate.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="PeraDCWebContainer.cpp" />
+    <ClCompile Include="DlgMain.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="PeraDCWebContainer.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
