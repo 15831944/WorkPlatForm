@@ -1,0 +1,48 @@
+// StartToolCom.idl : StartToolCom 的 IDL 源
+//
+
+// 此文件将由 MIDL 工具处理以
+// 产生类型库(StartToolCom.tlb)和封送处理代码。
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(2974AC23-9791-4C55-A378-B27AFB6F4D48),
+	dual,
+	nonextensible,
+	pointer_default(unique)
+]
+interface IToolCore : IDispatch{
+	[id(1), helpstring("启功工具接口")] HRESULT InvokeApp([in] BSTR strInJson, [out,retval] VARIANT* pVOut);
+	[id(2), helpstring("启功关联工具界面")] HRESULT ManageApp([in] BSTR strInJson, [out,retval] VARIANT* pVOut);
+	[id(3), helpstring("配置单个软件接口")] HRESULT ConfigApp([in] BSTR strInJson, [out,retval] VARIANT* pVOut);
+	[id(4), helpstring("检查启动某ID的软件")] HRESULT InvokeAppById([in] BSTR strInParam, [out,retval] VARIANT* pVOut);
+	[id(5), helpstring("打开URL接口")] HRESULT OpenUrl([in] BSTR strUrl, [out,retval] VARIANT* pVout);
+};
+[
+	uuid(AF2AEA18-4BA3-4BDA-826A-01D5049C0E5C),
+	version(1.0),
+]
+library PeraStartToolComLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(32398B4F-AEE5-46DC-9DF3-E01F993516F2)		
+	]
+	dispinterface _IToolCoreEvents
+	{
+		properties:
+		methods:
+	};
+	[
+		uuid(E2F4589C-4D73-4691-9819-5AF50D9AFECD)		
+	]
+	coclass ToolCore
+	{
+		[default] interface IToolCore;
+		[default, source] dispinterface _IToolCoreEvents;
+	};
+};
+

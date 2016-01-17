@@ -1,0 +1,616 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9A91764A-048B-45B1-9347-F388DB016B07}</ProjectGuid>
+    <RootNamespace>PeraProcessDesigner</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <SourcePath>$(SourcePath)</SourcePath>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)Debug\PeraProcessDesigner\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+    <SourcePath>$(SourcePath)</SourcePath>
+    <OutDir>$(SolutionDir)PeraProcessDesigner\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;CPPCONN_PUBLIC_FUNC=;PTW32_STATIC_LIB;PROJECT_203;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)Depends\license;$(SolutionDir)Depends\json\include\json;$(SolutionDir)Depends\json\include;$(SolutionDir)Depends\CxImage;$(SolutionDir)Depends\tinyxml\include;$(SolutionDir)Depends\cryptopp561;$(SolutionDir)Depends\zlib;$(SolutionDir)Depends\log4cplus\include;$(SolutionDir)Depends\boost_1_47;$(SolutionDir)Depends\IconvLib\include;$(SolutionDir)Depends\MySQL Connector C++ 1.1.3\include;$(SolutionDir)Depends\pthreads\include;$(SolutionDir)PeraProcessDesigner\BCGCBPro;$(SolutionDir)Common;$(SolutionDir)PeraProcessDesigner\Global;$(SolutionDir)PeraProcessDesigner\PeraProcessDesigner;$(SolutionDir)PeraProcessDesigner\CacheServerIce;$(SolutionDir)PeraProcessDesigner\ResLib;$(SolutionDir)PeraProcessDesigner\WebGroup;$(SolutionDir)Import;$(SolutionDir)Depends;$(SolutionDir)Depends\Ice;$(SolutionDir)Depends\RapidXml_1_0\rapidxml;$(SolutionDir)Common\web;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4005;4251</DisableSpecificWarnings>
+      <EnablePREfast>false</EnablePREfast>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)libd;$(SolutionDir)PeraProcessDesigner\libd;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>mysqlconn-staticd.lib;libmysql.lib;tinyxmld.lib;log4cplusSD.lib;pthreadSD.lib;IconvLibd.lib;Comdlg32.lib;jsond.lib;cximage.lib;j2k.lib;jasper.lib;jbig.lib;Jpeg.lib;png.lib;Tiff.lib;zlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>LIBCMT.lib</IgnoreSpecificDefaultLibraries>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+      <OutputFile>$(SolutionDir)Debug\PeraProcessDesigner\$(TargetName)$(TargetExt)</OutputFile>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);$(SolutionDir)PeraProcessDesigner\BCGCBPro;$(SolutionDir)PeraProcessDesigner;$(SolutionDir)PeraProcessDesigner\BCGStyles;$(SolutionDir)Common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <MinimalRebuild>false</MinimalRebuild>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CPPCONN_PUBLIC_FUNC=;PTW32_STATIC_LIB;PROJECT_203;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)Depends\license;$(SolutionDir)Depends\json\include\json;$(SolutionDir)Depends\json\include;$(SolutionDir)Depends\CxImage;$(SolutionDir)Depends\tinyxml\include;$(SolutionDir)Depends\cryptopp561;$(SolutionDir)Depends\zlib;$(SolutionDir)Depends\log4cplus\include;$(SolutionDir)Depends\boost_1_47;$(SolutionDir)Depends\IconvLib\include;$(SolutionDir)Depends\MySQL Connector C++ 1.1.3\include;$(SolutionDir)Depends\pthreads\include;$(SolutionDir)PeraProcessDesigner\BCGCBPro;$(SolutionDir)Common;$(SolutionDir)PeraProcessDesigner\Global;$(SolutionDir)PeraProcessDesigner\PeraProcessDesigner;$(SolutionDir)PeraProcessDesigner\CacheServerIce;$(SolutionDir)PeraProcessDesigner\ResLib;$(SolutionDir)PeraProcessDesigner\WebGroup;$(SolutionDir)Import;$(SolutionDir)Depends;$(SolutionDir)Depends\Ice;$(SolutionDir)Depends\RapidXml_1_0\rapidxml;$(SolutionDir)Common\web;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4005;4251</DisableSpecificWarnings>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib;$(SolutionDir)PeraProcessDesigner\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>mysqlconn-static.lib;libmysql.lib;tinyxml.lib;log4cplusS.lib;pthreadS.lib;IconvLib.lib;Comdlg32.lib;json.lib;cximage.lib;j2k.lib;jasper.lib;jbig.lib;Jpeg.lib;png.lib;Tiff.lib;zlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);$(SolutionDir)PeraProcessDesigner\BCGCBPro;$(SolutionDir)PeraProcessDesigner;$(SolutionDir)PeraProcessDesigner\BCGStyles;$(SolutionDir)Common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <PostBuildEvent>
+      <Command>xcopy "$(SolutionDir)\PeraProcessDesigner\bin" "$(SolutionDir)$(Configuration)\PeraProcessDesigner\" /E /Y
+xcopy "$(OutDir)$(TargetName)$(TargetExt)" "$(SolutionDir)$(Configuration)\PeraProcessDesigner\" /Y</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>"$(SolutionDir)Depends\RcUpdateTool\RcUpdateTool.exe" 131 "$(ProjectDir)$(ProjectName).rc"</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="res\icons.bmp" />
+    <None Include="res\PeraProcessDesigner.ico" />
+    <None Include="res\PeraProcessDesigner.rc2" />
+    <None Include="res\PeraProcessDesigner.toolbar.rc2" />
+    <None Include="res\PeraProcessDesignerDoc.ico" />
+    <None Include="res\Toolbar.bmp" />
+    <None Include="res\Toolbar256.bmp" />
+    <None Include="UserImages.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Common\AppFunc.h" />
+    <ClInclude Include="..\..\Common\atlrx.h" />
+    <ClInclude Include="..\..\Common\AttachWindow.h" />
+    <ClInclude Include="..\..\Common\BuilDefine.h" />
+    <ClInclude Include="..\..\Common\ConfigFunc.h" />
+    <ClInclude Include="..\..\Common\ConvertData.h" />
+    <ClInclude Include="..\..\Common\CStringChecker.h" />
+    <ClInclude Include="..\..\Common\CStringCheckerConfig.h" />
+    <ClInclude Include="..\..\Common\CxCmdlineBase.h" />
+    <ClInclude Include="..\..\Common\DownUploadCommonFunc.h" />
+    <ClInclude Include="..\..\Common\DownUploadDataFileObject.h" />
+    <ClInclude Include="..\..\Common\DownUploadFileCacheFinder.h" />
+    <ClInclude Include="..\..\Common\FileFunc.h" />
+    <ClInclude Include="..\..\Common\GDIPlusInit.h" />
+    <ClInclude Include="..\..\Common\GetGlobalDataFromReg.h" />
+    <ClInclude Include="..\..\Common\HookFunc.h" />
+    <ClInclude Include="..\..\Common\IceHeader.h" />
+    <ClInclude Include="..\..\Common\IniClass.h" />
+    <ClInclude Include="..\..\Common\InvokeWsFunc.h" />
+    <ClInclude Include="..\..\Common\LicenseMgr.h" />
+    <ClInclude Include="..\..\Common\LoadingWindow.h" />
+    <ClInclude Include="..\..\Common\LoginFunc.h" />
+    <ClInclude Include="..\..\Common\PeraIceBase.h" />
+    <ClInclude Include="..\..\Common\PeraIceWs.h" />
+    <ClInclude Include="..\..\Common\PeraIceWsBase.h" />
+    <ClInclude Include="..\..\Common\ProcessFunc.h" />
+    <ClInclude Include="..\..\Common\PtrVectorHeader.h" />
+    <ClInclude Include="..\..\Common\StlHeader.h" />
+    <ClInclude Include="..\..\Common\SyncDownUploadFunc.h" />
+    <ClInclude Include="..\..\Common\Tools.h" />
+    <ClInclude Include="..\..\Common\UtilityFunc.h" />
+    <ClInclude Include="..\..\Common\Web\BaseHtmlDialog.h" />
+    <ClInclude Include="..\..\Common\Web\DispatchImpl.h" />
+    <ClInclude Include="..\..\Common\Web\HtmlWindowEventCallback.h" />
+    <ClInclude Include="..\..\Common\Web\HtmlWindowEventSink.h" />
+    <ClInclude Include="..\..\Common\Web\WebDataDefine.h" />
+    <ClInclude Include="..\..\Common\Xpdl\FileOperate.h" />
+    <ClInclude Include="..\..\Common\Xpdl\Xpdl.h" />
+    <ClInclude Include="..\..\Common\Xpdl\XpdlNode.h" />
+    <ClInclude Include="..\..\Common\Xpdl\XpdlNodeComponent.h" />
+    <ClInclude Include="..\..\Common\Xpdl\XpdlNodeIf.h" />
+    <ClInclude Include="..\..\Common\Xpdl\XpdlNodeParallel.h" />
+    <ClInclude Include="..\..\Common\Xpdl\XpdlNodeParam.h" />
+    <ClInclude Include="..\..\Common\Xpdl\XpdlNodePrimary.h" />
+    <ClInclude Include="..\..\Common\Xpdl\XpdlNodeSequence.h" />
+    <ClInclude Include="..\..\Common\Xpdl\XpdlNodeSubflow.h" />
+    <ClInclude Include="..\..\Common\XUnzip.h" />
+    <ClInclude Include="..\..\Common\XZip.h" />
+    <ClInclude Include="..\..\Common\ZipTool.h" />
+    <ClInclude Include="..\..\Import\PeraProcessRunnerCacheServerIce.h" />
+    <ClInclude Include="..\..\Import\WsICEService.h" />
+    <ClInclude Include="..\CacheServerIce\PeraCacheServerIceData.h" />
+    <ClInclude Include="..\CacheServerIce\PeraWsAstIceClient_I.h" />
+    <ClInclude Include="..\Global\UserDefine.h" />
+    <ClInclude Include="..\ResLib\MacroDefine.h" />
+    <ClInclude Include="..\ResLib\MutexInteger.h" />
+    <ClInclude Include="..\ResLib\ResLibData.h" />
+    <ClInclude Include="..\ResLib\DlgResLibEditor.h" />
+    <ClInclude Include="..\ResLib\EncodedTool.h" />
+    <ClInclude Include="..\ResLib\FileTool.h" />
+    <ClInclude Include="..\ResLib\FlexRobotData.h" />
+    <ClInclude Include="..\ResLib\LogMgr.h" />
+    <ClInclude Include="..\ResLib\Magicdb.h" />
+    <ClInclude Include="..\ResLib\MySqlConnectionPool.h" />
+    <ClInclude Include="..\ResLib\ParameterItem.h" />
+    <ClInclude Include="..\ResLib\ResLibProcessData.h" />
+    <ClInclude Include="..\ResLib\DlgResLibProcessEditor.h" />
+    <ClInclude Include="..\ResLib\PropertiesInfo.h" />
+    <ClInclude Include="..\ResLib\ReadRobotDB.h" />
+    <ClInclude Include="..\ResLib\ResLibRobotData.h" />
+    <ClInclude Include="..\ResLib\ShoshTreeCtrl.h" />
+    <ClInclude Include="..\ResLib\SqlCommand.h" />
+    <ClInclude Include="..\ResLib\targetver.h" />
+    <ClInclude Include="..\ResLib\thread_env.h" />
+    <ClInclude Include="..\ResLib\UpdateDownloadBotWsFile.h" />
+    <ClInclude Include="..\ResLib\UUID.h" />
+    <ClInclude Include="..\ResLib\VorxThread.h" />
+    <ClInclude Include="..\ResLib\VorxTime.h" />
+    <ClInclude Include="..\ResLib\XmlResolution.h" />
+    <ClInclude Include="..\WebGroup\WebCommunicationHost.h" />
+    <ClInclude Include="..\WebGroup\WebEventData.h" />
+    <ClInclude Include="ArrayGrid.h" />
+    <ClInclude Include="BranchCondition.h" />
+    <ClInclude Include="CFlexNetLicMgr.h" />
+    <ClInclude Include="ChildFrm.h" />
+    <ClInclude Include="Cmpare.h" />
+    <ClInclude Include="CrashHandler.h" />
+    <ClInclude Include="CreateTreeDirDlg.h" />
+    <ClInclude Include="csharedmemory.h" />
+    <ClInclude Include="CxArrayBase.h" />
+    <ClInclude Include="CxArrayND.h" />
+    <ClInclude Include="BarResLib.h" />
+    <ClInclude Include="CxBCGExtHeader.h" />
+    <ClInclude Include="CxBCGPButton.h" />
+    <ClInclude Include="CxBCGPButtonPlb.h" />
+    <ClInclude Include="CxBCGPDialog.h" />
+    <ClInclude Include="CxBCGPGrid.h" />
+    <ClInclude Include="CxBCGPGridItem.h" />
+    <ClInclude Include="CxBCGPMenuBar.h" />
+    <ClInclude Include="CxBCGPSpinButtonCtrl.h" />
+    <ClInclude Include="CxBCGPToolBar.h" />
+    <ClInclude Include="CxBCGPToolbarButton.h" />
+    <ClInclude Include="CxBCGPVisualManager2007.h" />
+    <ClInclude Include="CxBCGPXMLSettings.h" />
+    <ClInclude Include="CxLoginBar.h" />
+    <ClInclude Include="CxLoginData.h" />
+    <ClInclude Include="CxNDArrayDimGrid.h" />
+    <ClInclude Include="CxNDArrayGrid.h" />
+    <ClInclude Include="CxStructTree.h" />
+    <ClInclude Include="CxStructTreeDataLinker.h" />
+    <ClInclude Include="CxStructTreeNode.h" />
+    <ClInclude Include="CxStructTreeGridT.h" />
+    <ClInclude Include="CxStructTreeNodeArrayElement.h" />
+    <ClInclude Include="CxStructTreeNodeComponent.h" />
+    <ClInclude Include="CxStructTreeNodeFlow.h" />
+    <ClInclude Include="CxStructTreeNodeForm.h" />
+    <ClInclude Include="CxStructTreeNodeGroup.h" />
+    <ClInclude Include="CxStructTreeNodeParam.h" />
+    <ClInclude Include="CxStructTreeNodeRoot.h" />
+    <ClInclude Include="CxStructTreeNodeSubFlow.h" />
+    <ClInclude Include="CxStructTreeToolTipCtrl.h" />
+    <ClInclude Include="CxResLibImageToolTipCtrl.h" />
+    <ClInclude Include="CxListCtrl.h" />
+    <ClInclude Include="CxListCtrlData.h" />
+    <ClInclude Include="CxResLibImgList.h" />
+    <ClInclude Include="CxRobotBar.h" />
+    <ClInclude Include="DataMapExpressEditDlg.h" />
+    <ClInclude Include="DlgAddGroup.h" />
+    <ClInclude Include="DlgAddParam.h" />
+    <ClInclude Include="DlgDistribution.h" />
+    <ClInclude Include="DlgDoWhile.h" />
+    <ClInclude Include="DlgDragLayer.h" />
+    <ClInclude Include="DlgExpEditor.h" />
+    <ClInclude Include="DlgExpEditorDM.h" />
+    <ClInclude Include="DlgFor.h" />
+    <ClInclude Include="DlgForArray.h" />
+    <ClInclude Include="DlgForBase.h" />
+    <ClInclude Include="DlgForEach.h" />
+    <ClInclude Include="DlgForEachList.h" />
+    <ClInclude Include="DlgForEachListFrame.h" />
+    <ClInclude Include="DlgForLimit.h" />
+    <ClInclude Include="DlgForStep.h" />
+    <ClInclude Include="DlgJobMgr.h" />
+    <ClInclude Include="DlgInfoEdit.h" />
+    <ClInclude Include="DlgLog.h" />
+    <ClInclude Include="DlgMovePara.h" />
+    <ClInclude Include="DlgParamEdit.h" />
+    <ClInclude Include="DlgParamEditArray.h" />
+    <ClInclude Include="DlgParamEditFile.h" />
+    <ClInclude Include="DlgParamSet.h" />
+    <ClInclude Include="DlgParamSetBase.h" />
+    <ClInclude Include="DlgRunFlow.h" />
+    <ClInclude Include="DlgStart.h" />
+    <ClInclude Include="DlgLoginBk.h" />
+    <ClInclude Include="DlgLoginMain.h" />
+    <ClInclude Include="DlgNDArrayEditor.h" />
+    <ClInclude Include="DlgNDArrayResize.h" />
+    <ClInclude Include="DlgStructTreeFileParamEditor.h" />
+    <ClInclude Include="DlgStructTreePropComponent.h" />
+    <ClInclude Include="DlgStructTreePropFlow.h" />
+    <ClInclude Include="DlgStructTreePropProcess.h" />
+    <ClInclude Include="DlgIf.h" />
+    <ClInclude Include="DlgViewRunFlow.h" />
+    <ClInclude Include="DlgWebPage.h" />
+    <ClInclude Include="DlgWhile.h" />
+    <ClInclude Include="DlgWndIf.h" />
+    <ClInclude Include="EditBranch.h" />
+    <ClInclude Include="CustomXpdl.h" />
+    <ClInclude Include="FlexRobotWithForm.h" />
+    <ClInclude Include="ForEachGrid.h" />
+    <ClInclude Include="CxBCGPSplitterWnd.h" />
+    <ClInclude Include="CxCaptionButton.h" />
+    <ClInclude Include="CxDataType.h" />
+    <ClInclude Include="CxDlgBar.h" />
+    <ClInclude Include="CxDlgView.h" />
+    <ClInclude Include="CxFloatBar.h" />
+    <ClInclude Include="BarStructTree.h" />
+    <ClInclude Include="CxSplitterFrameWnd.h" />
+    <ClInclude Include="CxSplitterView.h" />
+    <ClInclude Include="CxViewMgr.h" />
+    <ClInclude Include="DlgResLib.h" />
+    <ClInclude Include="DlgResLibImage.h" />
+    <ClInclude Include="DlgResLibTree.h" />
+    <ClInclude Include="DlgSvg.h" />
+    <ClInclude Include="GetFlexwareBin.h" />
+    <ClInclude Include="GlobalConfig.h" />
+    <ClInclude Include="IfEditTree.h" />
+    <ClInclude Include="IfExpressEditorDlg.h" />
+    <ClInclude Include="JsData_Svg.h" />
+    <ClInclude Include="KeepTicketFunc.h" />
+    <ClInclude Include="ListenerManager.h" />
+    <ClInclude Include="LoginCloseBtn.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="MethodForDataMapIfExpress.h" />
+    <ClInclude Include="OperateThreadFunc.h" />
+    <ClInclude Include="ParamEventListener.h" />
+    <ClInclude Include="PeraAutoCheckEdit.h" />
+    <ClInclude Include="PeraProcessDesigner.h" />
+    <ClInclude Include="PeraProcessDesignerDoc.h" />
+    <ClInclude Include="PeraProcessDesignerUtility.h" />
+    <ClInclude Include="PeraProcessDesignerView.h" />
+    <ClInclude Include="PeraProcessDesignerCommandline.h" />
+    <ClInclude Include="ProcessMgr.h" />
+    <ClInclude Include="ResLibBaseComponentData.h" />
+    <ClInclude Include="ResLibImageSet.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="SharedMemoryOnlineEdit.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="SvgDragLayer.h" />
+    <ClInclude Include="SvgEventData.h" />
+    <ClInclude Include="TreeDropDownDlg.h" />
+    <ClInclude Include="ViewSet.h" />
+    <ClInclude Include="WebUtility.h" />
+    <ClInclude Include="WndIf.h" />
+    <ClInclude Include="XmlHistoryModel.h" />
+    <ClInclude Include="XTipComboBox.h" />
+    <ClInclude Include="XTipListBox.h" />
+    <ClInclude Include="ZButton.h" />
+    <ClInclude Include="ZButtonDraw.h" />
+    <ClInclude Include="ZComboBox.h" />
+    <ClInclude Include="ZEdit.h" />
+    <ClInclude Include="ZGridCtrl.h" />
+    <ClInclude Include="ZStatic.h" />
+    <ClInclude Include="ZToolButton.h" />
+    <ClInclude Include="ZToolTipEvent.h" />
+    <ClInclude Include="ZTreeExpEditor.h" />
+    <ClInclude Include="ZTreeParamSet.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Common\AppFunc.cpp" />
+    <ClCompile Include="..\..\Common\AttachWindow.cpp" />
+    <ClCompile Include="..\..\Common\ConfigFunc.cpp" />
+    <ClCompile Include="..\..\Common\ConvertData.cpp" />
+    <ClCompile Include="..\..\Common\CStringChecker.cpp" />
+    <ClCompile Include="..\..\Common\CxCmdlineBase.cpp" />
+    <ClCompile Include="..\..\Common\DownUploadCommonFunc.cpp" />
+    <ClCompile Include="..\..\Common\DownUploadDataFileObject.cpp" />
+    <ClCompile Include="..\..\Common\DownUploadFileCacheFinder.cpp" />
+    <ClCompile Include="..\..\Common\FileFunc.cpp" />
+    <ClCompile Include="..\..\Common\GDIPlusInit.cpp" />
+    <ClCompile Include="..\..\Common\GetGlobalDataFromReg.cpp" />
+    <ClCompile Include="..\..\Common\HookFunc.cpp" />
+    <ClCompile Include="..\..\Common\IniClass.cpp" />
+    <ClCompile Include="..\..\Common\InvokeWsFunc.cpp" />
+    <ClCompile Include="..\..\Common\LicenseMgr.cpp" />
+    <ClCompile Include="..\..\Common\LoadingWindow.cpp" />
+    <ClCompile Include="..\..\Common\LoginFunc.cpp" />
+    <ClCompile Include="..\..\Common\PeraIceBase.cpp" />
+    <ClCompile Include="..\..\Common\PeraIceWs.cpp" />
+    <ClCompile Include="..\..\Common\PeraIceWsBase.cpp" />
+    <ClCompile Include="..\..\Common\ProcessFunc.cpp" />
+    <ClCompile Include="..\..\Common\SyncDownUploadRpcFunc.cpp" />
+    <ClCompile Include="..\..\Common\Tools.cpp" />
+    <ClCompile Include="..\..\Common\UtilityFunc.cpp" />
+    <ClCompile Include="..\..\Common\Web\BaseHtmlDialog.cpp" />
+    <ClCompile Include="..\..\Common\Web\DispatchImpl.cpp" />
+    <ClCompile Include="..\..\Common\Web\HtmlWindowEventSink.cpp" />
+    <ClCompile Include="..\..\Common\Web\WebDataDefine.cpp" />
+    <ClCompile Include="..\..\Common\Xpdl\FileOperate.cpp" />
+    <ClCompile Include="..\..\Common\Xpdl\Xpdl.cpp" />
+    <ClCompile Include="..\..\Common\Xpdl\XpdlNode.cpp" />
+    <ClCompile Include="..\..\Common\Xpdl\XpdlNodeComponent.cpp" />
+    <ClCompile Include="..\..\Common\Xpdl\XpdlNodeIf.cpp" />
+    <ClCompile Include="..\..\Common\Xpdl\XpdlNodeParallel.cpp" />
+    <ClCompile Include="..\..\Common\Xpdl\XpdlNodeParam.cpp" />
+    <ClCompile Include="..\..\Common\Xpdl\XpdlNodePrimary.cpp" />
+    <ClCompile Include="..\..\Common\Xpdl\XpdlNodeSequence.cpp" />
+    <ClCompile Include="..\..\Common\Xpdl\XpdlNodeSubflow.cpp" />
+    <ClCompile Include="..\..\Common\XUnzip.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\XZip.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\ZipTool.cpp" />
+    <ClCompile Include="..\..\Import\PeraProcessRunnerCacheServerIce.cpp" />
+    <ClCompile Include="..\..\Import\WsICEService.cpp" />
+    <ClCompile Include="..\CacheServerIce\PeraCacheServerIceData.cpp" />
+    <ClCompile Include="..\CacheServerIce\PeraWsAstIceClient_I.cpp" />
+    <ClCompile Include="..\Global\UserDefine.cpp" />
+    <ClCompile Include="..\ResLib\MutexInteger.cpp" />
+    <ClCompile Include="..\ResLib\ResLibData.cpp" />
+    <ClCompile Include="..\ResLib\DlgResLibEditor.cpp" />
+    <ClCompile Include="..\ResLib\EncodedTool.cpp" />
+    <ClCompile Include="..\ResLib\FileTool.cpp" />
+    <ClCompile Include="..\ResLib\FlexRobotData.cpp" />
+    <ClCompile Include="..\ResLib\LogMgr.cpp" />
+    <ClCompile Include="..\ResLib\Magicdb.cpp" />
+    <ClCompile Include="..\ResLib\MySqlConnectionPool.cpp" />
+    <ClCompile Include="..\ResLib\ParameterItem.cpp" />
+    <ClCompile Include="..\ResLib\ResLibProcessData.cpp" />
+    <ClCompile Include="..\ResLib\DlgResLibProcessEditor.cpp" />
+    <ClCompile Include="..\ResLib\PropertiesInfo.cpp" />
+    <ClCompile Include="..\ResLib\ReadRobotDB.cpp" />
+    <ClCompile Include="..\ResLib\ResLibRobotData.cpp" />
+    <ClCompile Include="..\ResLib\ShoshTreeCtrl.cpp" />
+    <ClCompile Include="..\ResLib\SqlCommand.cpp" />
+    <ClCompile Include="..\ResLib\UpdateDownloadBotWsFile.cpp" />
+    <ClCompile Include="..\ResLib\UUID.cpp" />
+    <ClCompile Include="..\ResLib\VorxThread.cpp" />
+    <ClCompile Include="..\ResLib\VorxTime.cpp" />
+    <ClCompile Include="..\ResLib\XmlResolution.cpp" />
+    <ClCompile Include="..\WebGroup\WebCommunicationHost.cpp" />
+    <ClCompile Include="..\WebGroup\WebEventData.cpp" />
+    <ClCompile Include="ArrayGrid.cpp" />
+    <ClCompile Include="BranchCondition.cpp" />
+    <ClCompile Include="CFlexNetLicMgr.cpp" />
+    <ClCompile Include="ChildFrm.cpp" />
+    <ClCompile Include="Cmpare.cpp" />
+    <ClCompile Include="CrashHandler.cpp" />
+    <ClCompile Include="CreateTreeDirDlg.cpp" />
+    <ClCompile Include="CxArrayBase.cpp" />
+    <ClCompile Include="CxArrayND.cpp" />
+    <ClCompile Include="BarResLib.cpp" />
+    <ClCompile Include="CxBCGPButton.cpp" />
+    <ClCompile Include="CxBCGPButtonPlb.cpp" />
+    <ClCompile Include="CxBCGPDialog.cpp" />
+    <ClCompile Include="CxBCGPGrid.cpp" />
+    <ClCompile Include="CxBCGPGridItem.cpp" />
+    <ClCompile Include="CxBCGPMenuBar.cpp" />
+    <ClCompile Include="CxBCGPSpinButtonCtrl.cpp" />
+    <ClCompile Include="CxBCGPToolBar.cpp" />
+    <ClCompile Include="CxBCGPToolbarButton.cpp" />
+    <ClCompile Include="CxBCGPVisualManager2007.cpp" />
+    <ClCompile Include="CxBCGPXMLSettings.cpp" />
+    <ClCompile Include="CxLoginBar.cpp" />
+    <ClCompile Include="CxLoginData.cpp" />
+    <ClCompile Include="CxNDArrayDimGrid.cpp" />
+    <ClCompile Include="CxNDArrayGrid.cpp" />
+    <ClCompile Include="CxResLibImageToolTipCtrl.cpp" />
+    <ClCompile Include="CxStructTree.cpp" />
+    <ClCompile Include="CxStructTreeDataLinker.cpp" />
+    <ClCompile Include="CxStructTreeNode.cpp" />
+    <ClCompile Include="CxStructTreeGridT.cpp" />
+    <ClCompile Include="CxStructTreeNodeArrayElement.cpp" />
+    <ClCompile Include="CxStructTreeNodeComponent.cpp" />
+    <ClCompile Include="CxStructTreeNodeFlow.cpp" />
+    <ClCompile Include="CxStructTreeNodeForm.cpp" />
+    <ClCompile Include="CxStructTreeNodeGroup.cpp" />
+    <ClCompile Include="CxStructTreeNodeParam.cpp" />
+    <ClCompile Include="CxStructTreeNodeRoot.cpp" />
+    <ClCompile Include="CxStructTreeNodeSubFlow.cpp" />
+    <ClCompile Include="CxStructTreeToolTipCtrl.cpp" />
+    <ClCompile Include="CxListCtrl.cpp" />
+    <ClCompile Include="CxListCtrlData.cpp" />
+    <ClCompile Include="CxResLibImgList.cpp" />
+    <ClCompile Include="CxRobotBar.cpp" />
+    <ClCompile Include="DataMapExpressEditDlg.cpp" />
+    <ClCompile Include="DlgAddGroup.cpp" />
+    <ClCompile Include="DlgAddParam.cpp" />
+    <ClCompile Include="DlgDistribution.cpp" />
+    <ClCompile Include="DlgDoWhile.cpp" />
+    <ClCompile Include="DlgDragLayer.cpp" />
+    <ClCompile Include="DlgExpEditor.cpp" />
+    <ClCompile Include="DlgExpEditorDM.cpp" />
+    <ClCompile Include="DlgFor.cpp" />
+    <ClCompile Include="DlgForArray.cpp" />
+    <ClCompile Include="DlgForBase.cpp" />
+    <ClCompile Include="DlgForEach.cpp" />
+    <ClCompile Include="DlgForEachList.cpp" />
+    <ClCompile Include="DlgForEachListFrame.cpp" />
+    <ClCompile Include="DlgForLimit.cpp" />
+    <ClCompile Include="DlgForStep.cpp" />
+    <ClCompile Include="DlgJobMgr.cpp" />
+    <ClCompile Include="DlgInfoEdit.cpp" />
+    <ClCompile Include="DlgLog.cpp" />
+    <ClCompile Include="DlgMovePara.cpp" />
+    <ClCompile Include="DlgParamEdit.cpp" />
+    <ClCompile Include="DlgParamEditArray.cpp" />
+    <ClCompile Include="DlgParamEditFile.cpp" />
+    <ClCompile Include="DlgParamSet.cpp" />
+    <ClCompile Include="DlgParamSetBase.cpp" />
+    <ClCompile Include="DlgRunFlow.cpp" />
+    <ClCompile Include="DlgStart.cpp" />
+    <ClCompile Include="DlgLoginBk.cpp" />
+    <ClCompile Include="DlgLoginMain.cpp" />
+    <ClCompile Include="DlgNDArrayEditor.cpp" />
+    <ClCompile Include="DlgNDArrayResize.cpp" />
+    <ClCompile Include="DlgStructTreeFileParamEditor.cpp" />
+    <ClCompile Include="DlgStructTreePropComponent.cpp" />
+    <ClCompile Include="DlgStructTreePropFlow.cpp" />
+    <ClCompile Include="DlgStructTreePropProcess.cpp" />
+    <ClCompile Include="DlgIf.cpp" />
+    <ClCompile Include="DlgViewRunFlow.cpp" />
+    <ClCompile Include="DlgWebPage.cpp" />
+    <ClCompile Include="DlgWhile.cpp" />
+    <ClCompile Include="DlgWndIf.cpp" />
+    <ClCompile Include="EditBranch.cpp" />
+    <ClCompile Include="CustomXpdl.cpp" />
+    <ClCompile Include="FlexRobotWithForm.cpp" />
+    <ClCompile Include="ForEachGrid.cpp" />
+    <ClCompile Include="CxBCGPSplitterWnd.cpp" />
+    <ClCompile Include="CxCaptionButton.cpp" />
+    <ClCompile Include="CxDataType.cpp" />
+    <ClCompile Include="CxDlgBar.cpp" />
+    <ClCompile Include="CxDlgView.cpp" />
+    <ClCompile Include="CxFloatBar.cpp" />
+    <ClCompile Include="BarStructTree.cpp" />
+    <ClCompile Include="CxSplitterFrameWnd.cpp" />
+    <ClCompile Include="CxSplitterView.cpp" />
+    <ClCompile Include="DlgResLib.cpp" />
+    <ClCompile Include="DlgResLibImage.cpp" />
+    <ClCompile Include="DlgResLibTree.cpp" />
+    <ClCompile Include="DlgSvg.cpp" />
+    <ClCompile Include="GetFlexwareBin.cpp" />
+    <ClCompile Include="GlobalConfig.cpp" />
+    <ClCompile Include="IfEditTree.cpp" />
+    <ClCompile Include="IfExpressEditorDlg.cpp" />
+    <ClCompile Include="JsData_Svg.cpp" />
+    <ClCompile Include="KeepTicketFunc.cpp" />
+    <ClCompile Include="LoginCloseBtn.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="MethodForDataMapIfExpress.cpp" />
+    <ClCompile Include="OperateThreadFunc.cpp" />
+    <ClCompile Include="PeraAutoCheckEdit.cpp" />
+    <ClCompile Include="PeraProcessDesigner.cpp" />
+    <ClCompile Include="PeraProcessDesignerDoc.cpp" />
+    <ClCompile Include="PeraProcessDesignerUtility.cpp" />
+    <ClCompile Include="PeraProcessDesignerView.cpp" />
+    <ClCompile Include="PeraProcessDesignerCommandline.cpp" />
+    <ClCompile Include="ProcessMgr.cpp" />
+    <ClCompile Include="ResLibBaseComponentData.cpp" />
+    <ClCompile Include="ResLibImageSet.cpp" />
+    <ClCompile Include="SharedMemoryOnlineEdit.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="SvgDragLayer.cpp" />
+    <ClCompile Include="SvgEventData.cpp" />
+    <ClCompile Include="TreeDropDownDlg.cpp" />
+    <ClCompile Include="ViewSet.cpp" />
+    <ClCompile Include="CxViewMgr.cpp" />
+    <ClCompile Include="WebUtility.cpp" />
+    <ClCompile Include="WndIf.cpp" />
+    <ClCompile Include="XmlHistoryModel.cpp" />
+    <ClCompile Include="XTipComboBox.cpp" />
+    <ClCompile Include="XTipListBox.cpp" />
+    <ClCompile Include="ZButton.cpp" />
+    <ClCompile Include="ZButtonDraw.cpp" />
+    <ClCompile Include="ZComboBox.cpp" />
+    <ClCompile Include="ZEdit.cpp" />
+    <ClCompile Include="ZGridCtrl.cpp" />
+    <ClCompile Include="ZStatic.cpp" />
+    <ClCompile Include="ZToolButton.cpp" />
+    <ClCompile Include="ZTreeExpEditor.cpp" />
+    <ClCompile Include="ZTreeParamSet.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="PeraProcessDesigner.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="PeraProcessDesigner.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

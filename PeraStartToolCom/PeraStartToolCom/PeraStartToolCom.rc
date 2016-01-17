@@ -1,0 +1,274 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+#include "verrsrc.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "#include ""verrsrc.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "1 TYPELIB ""PeraStartToolCom.tlb""\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\PeraStartToolCom.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 131 ,2014 , 0801 , 1723
+ PRODUCTVERSION 131 ,2014 , 0801 , 1723
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "PeraGlobal"
+            VALUE "FileDescription", "启功工具配置中间件"
+            VALUE "FileVersion", "131.2014.0801.1723"
+            VALUE "LegalCopyright", "Copyright(C) 2014 PeraGlobal Inc. All rights reserved."
+            VALUE "InternalName", "PeraStartToolCom.dll"
+            VALUE "OriginalFilename", "PeraStartToolCom.dll"
+            VALUE "ProductName", "PeraStartToolCom"
+            VALUE "ProductVersion", "131.2014.0801.1723"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// REGISTRY
+//
+
+IDR_STARTTOOLCOM        REGISTRY                "PeraStartToolCom.rgs"
+IDR_TOOLCORE            REGISTRY                "ToolCore.rgs"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_TOOLSET DIALOGEX 0, 0, 577, 151
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关联工具设置"
+FONT 9, "宋体", 400, 0, 0x86
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,465,130,50,14
+    PUSHBUTTON      "取消",IDCANCEL,519,130,50,14
+    EDITTEXT        IDC_EDIT_LOCAL_PATH,49,92,477,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "浏览",IDC_BUTTON_SELECT,528,92,41,14
+    LTEXT           "软件名称",IDC_STATIC,9,19,35,8
+    EDITTEXT        IDC_EDIT_SOFTNAME,46,16,144,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "默认主键",IDC_STATIC,197,19,35,8
+    EDITTEXT        IDC_EDIT_DEFAULT_KEY,232,16,144,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "备用主键",IDC_STATIC,383,19,35,8
+    EDITTEXT        IDC_EDIT_RESERVE_KEY,420,16,144,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "注册表项",IDC_STATIC,9,36,35,8
+    EDITTEXT        IDC_EDIT_KEY_NAME,46,33,144,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "注册表值",IDC_STATIC,197,36,35,8
+    EDITTEXT        IDC_EDIT_KEY_VALUE,232,33,144,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "启动路径",IDC_STATIC,383,36,35,8
+    EDITTEXT        IDC_EDIT_RUN_PATH,420,33,144,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "绝对路径",IDC_STATIC,9,54,35,8
+    EDITTEXT        IDC_EDIT_ABS_PATH,46,51,144,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "启动参数",IDC_STATIC,197,54,35,8
+    EDITTEXT        IDC_EDIT_RUN_PARAM,232,51,144,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "启动名称",IDC_STATIC,383,54,35,8
+    EDITTEXT        IDC_EDIT_RUN_NAME,420,51,144,14,ES_AUTOHSCROLL | ES_READONLY
+    GROUPBOX        "软件配置信息",IDC_STATIC,6,7,566,63
+    GROUPBOX        "本地配置信息",IDC_STATIC,6,76,566,50
+    PUSHBUTTON      "测试",IDC_BUTTON_TEST,8,130,50,14
+    LTEXT           "本地路径",IDC_STATIC,12,95,35,8
+    LTEXT           "启动参数",IDC_STATIC,11,112,35,8
+    EDITTEXT        IDC_EDIT_LOCAL_RUN_PARAM,49,108,477,14,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_TOOL_MANAGER DIALOGEX 0, 0, 608, 242
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "工具管理"
+FONT 9, "宋体", 400, 0, 0x86
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,485,223,50,14
+    PUSHBUTTON      "取消",IDCANCEL,544,223,50,14
+    CONTROL         "",IDC_LIST,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | LVS_OWNERDRAWFIXED | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,18,593,202,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "编辑",ID_CONFIG_CUR,8,2,50,14
+    PUSHBUTTON      "删除",ID_DEL_ALL_SEL,63,2,50,14
+END
+
+IDD_DIALOG_MANAGER_BCG DIALOGEX 0, 0, 570, 215
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "工具管理"
+FONT 9, "宋体", 400, 0, 0x86
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,448,195,50,14
+    PUSHBUTTON      "取消",IDCANCEL,506,195,50,14
+    CONTROL         "",IDC_STATIC_GRID,"Static",SS_BLACKFRAME,7,21,556,170
+    PUSHBUTTON      "编辑",IDC_BUTTON_EDIT_SEL,7,3,50,14
+    PUSHBUTTON      "删除选中行",IDC_BUTTON_DEL_SEL,65,3,50,14
+    PUSHBUTTON      "全部删除",IDC_BUTTON_DEL_ALL,124,3,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DIALOG_TOOLSET, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 573
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 144
+    END
+
+    IDD_DIALOG_TOOL_MANAGER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 601
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 238
+    END
+
+    IDD_DIALOG_MANAGER_BCG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 563
+        BOTTOMMARGIN, 213
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU
+BEGIN
+    POPUP "右键菜单"
+    BEGIN
+        MENUITEM "启动",                          ID_RUN_CUR
+        MENUITEM "编辑",                          ID_CONFIG_CUR
+        MENUITEM SEPARATOR
+        MENUITEM "删除选中项",                       ID_DEL_ALL_SEL
+        MENUITEM "删除所有项",                       ID_DEL_ALL
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON                    "res\\PeraStartToolCom.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_PROJNAME            "StartToolCom"
+END
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+1 TYPELIB "PeraStartToolCom.tlb"
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 9, 1
+#pragma code_page(936)
+#include "res\PeraStartToolCom.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

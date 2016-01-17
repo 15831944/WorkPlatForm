@@ -1,0 +1,215 @@
+﻿<!-- saved from url=(0022)http://internet.e-mail -->
+<HTML>
+<!-- saved from url=(0017)http://localhost/ -->
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<OBJECT id=StartToolComObj classid="CLSID:E2F4589C-4D73-4691-9819-5AF50D9AFECD" height="0"></OBJECT> 
+<script src="js/json2.js" type="text/javascript"></script>
+<SCRIPT type=text/javascript>
+		function InvokeWordApp(){
+            var vJsData = {
+            softwareId: "10001",
+            softwareName: "Microsoft Word Application",
+            softwareDesc: "微软Word文档编辑器",
+            regRootKey: "HKEY_CLASSES_ROOT",
+            regRootKey1: "HKEY_CURRENT_USER",
+            regKeyName: "Applications\\Winword.exe\\shell\\edit\\command",
+            regValueName: "",
+            appRelativeDir: "",
+            appName: "",
+            appAbsolutePath: "",
+            appParams: "/dde"
+          };
+    var sJsonIn = JSON.stringify(vJsData);
+   	var sJsonOut = StartToolComObj.InvokeApp(sJsonIn);
+	 	}
+	 	function InvokeConfigWordApp(){
+            var vJsData = {
+            softwareId: "10001",
+            softwareName: "Microsoft Word Application",
+            softwareDesc: "微软Word文档编辑器",
+            regRootKey: "HKEY_CLASSES_ROOT",
+            regRootKey1: "HKEY_CURRENT_USER",
+            regKeyName: "Applications\\Winword.exe\\shell\\edit\\command",
+            regValueName: "",
+            appRelativeDir: "",
+            appName: "",
+            appAbsolutePath: "",
+            appParams: "/dde"
+          };
+    var sJsonIn = JSON.stringify(vJsData);
+   	var sJsonOut = StartToolComObj.ConfigApp(sJsonIn);
+	 	}
+	 	
+	 	function InvokeExcelApp(){
+            var vJsData = {
+            softwareId: "10002",
+            softwareName: "Microsoft Excel Application",
+            softwareDesc: "微软Excel文档编辑程序",
+            regRootKey: "HKEY_CURRENT_USER",
+            regRootKey1: "HKEY_LOCAL_MACHINE",
+            regKeyName: "testkey",
+            regValueName: "111",
+            appRelativeDir: "34",
+            appName: "excel.exe",
+            appAbsolutePath: "%ProgramFiles%\\Microsoft Office\\Office14\\EXCEL.EXE",
+            appParams: "/dde"
+          };
+    var sJsonIn = JSON.stringify(vJsData);
+   	var sJsonOut = StartToolComObj.InvokeApp(sJsonIn);
+	 	}
+	 	
+	 		function InvokeConfigExcelApp(){
+            var vJsData = {
+            softwareId: "10002",
+            softwareName: "Microsoft Excel Application",
+            softwareDesc: "微软Excel文档编辑程序",
+            regRootKey: "HKEY_CURRENT_USER",
+            regRootKey1: "HKEY_LOCAL_MACHINE",
+            regKeyName: "testkey",
+            regValueName: "111",
+            appRelativeDir: "34",
+            appName: "excel.exe",
+            appAbsolutePath: "%ProgramFiles%\\Microsoft Office\\Office14\\EXCEL.EXE",
+            appParams: "/dde"
+          };
+    var sJsonIn = JSON.stringify(vJsData);
+   	var sJsonOut = StartToolComObj.ConfigApp(sJsonIn);
+	 	}
+	 	
+	 	function InvokePaintPictureApp(){
+            var vJsData = {
+            softwareId: "10003",
+            softwareName: "画图板",
+            softwareDesc: "windows画图板程序",
+            regRootKey: "",
+            regRootKey1: "",
+            regKeyName: "",
+            regValueName: "",
+            appRelativeDir: "",
+            appName: "",
+            appAbsolutePath: "%SystemRoot%\\system32\\mspaint.exe",
+            appParams: "\"C:\\Users\\Public\\Pictures\\Sample Pictures\\Tulips.jpg\""
+          };
+    var sJsonIn = JSON.stringify(vJsData);
+   	var sJsonOut = StartToolComObj.InvokeApp(sJsonIn);
+	 	}
+	 	
+	 	function InvokeConfigPaintPictureApp(){
+             var vJsData = {
+            softwareId: "10003",
+            softwareName: "画图板",
+            softwareDesc: "windows画图板程序",
+            regRootKey: "",
+            regRootKey1: "",
+            regKeyName: "",
+            regValueName: "",
+            appRelativeDir: "",
+            appName: "",
+            appAbsolutePath: "%SystemRoot%\\system32\\mspaint.exe",
+            appParams: "\"C:\\Users\\Public\\Pictures\\Sample Pictures\\Tulips.jpg\""
+          };
+    var sJsonIn = JSON.stringify(vJsData);
+   	var sJsonOut = StartToolComObj.ConfigApp(sJsonIn);
+	 	}
+	 	
+	 	function InvokeConfigSkype(){
+             var vJsData = {
+            softwareId: "10004",
+            softwareName: "Skype",
+            softwareDesc: "Skype聊天软件",
+            regRootKey: "HKEY_LOCAL_MACHINE",
+            regRootKey1: "",
+            regKeyName: "SOFTWARE\\Skype\\Phone",//"SOFTWARE\\Wow6432Node\\Skype\\Phone"
+            regValueName: "SkypePath",
+            appRelativeDir: "",
+            appName: "",
+            appAbsolutePath: "",
+            appParams: ""
+          };
+    var sJsonIn = JSON.stringify(vJsData);
+   	var sJsonOut = StartToolComObj.ConfigApp(sJsonIn);
+	 	}
+	 	function InvokeConfigTortoiseMerge(){
+             var vJsData = {
+            softwareId: "10005",
+            softwareName: "TortoiseMerge",
+            softwareDesc: "TortoiseMerge",
+            regRootKey: "HKEY_LOCAL_MACHINE",
+            regRootKey1: "",
+            regKeyName: "SOFTWARE\\TortoiseSVN",
+            regValueName: "TMergePath",
+            appRelativeDir: "",
+            appName: "",
+            appAbsolutePath: "",
+            appParams: ""
+          };
+    var sJsonIn = JSON.stringify(vJsData);
+   	var sJsonOut = StartToolComObj.ConfigApp(sJsonIn);
+	 	}
+	 	function OpenWithOnlyParam(strParam){
+             var vJsData = {
+            softwareId: "10008",
+            softwareName: "未知",
+            softwareDesc: "打开连接"
+          };
+          vJsData.appParams = strParam;
+    var sJsonIn = JSON.stringify(vJsData);
+   	var sJsonOut = StartToolComObj.InvokeApp(sJsonIn);
+	 	}
+	 		function OpenURL(strUrl){
+	 		StartToolComObj.OpenUrl(strUrl);
+	 		}
+	 		function InvokeAppURL(strUrl){
+	  var vJsData = {
+    appAbsolutePath: null,
+    pathConfig: "2",
+    softwareId: "5438c4333462f3659bc9d08b",
+    regRootKey: null,
+    softwareName: "44444",
+    appName: null,
+    appRelativeDir: null,
+    regRootKey1: null,
+    regKeyName: null,
+    softwareDesc: "4",
+    regValueName: null,
+    appParams: null
+     };
+     vJsData.urlAddress = strUrl;
+    var sJsonIn = JSON.stringify(vJsData);
+   	var sJsonOut = StartToolComObj.InvokeApp(sJsonIn);
+	 		}
+</SCRIPT>
+		
+<SCRIPT type=text/javascript>
+		function ManageApp(){
+   		var sJsonIn = "ToolName:Word,ToolId:1001;ToolName:Excle,ToolId:1002";
+   		var sJsonOut = StartToolComObj.ManageApp(sJsonIn);
+	 	}
+	 	function CheckApp(strID){
+   		var sJsonOut = StartToolComObj.InvokeAppById(strID);
+   		alert(sJsonOut);
+	 	}
+</SCRIPT>
+</HEAD>
+<BODY>
+<button ID="Button1" onclick="InvokeWordApp();">打开Word工具</button>
+<button ID="Button2" onclick="InvokeConfigWordApp();">配置Word工具</button></br>
+<button ID="Button3" onclick="InvokeExcelApp();">打开Excel工具</button>
+<button ID="Button4" onclick="InvokeConfigExcelApp();">配置Excel工具</button></br>
+<button ID="Button5" onclick="InvokePaintPictureApp();">打开画图板工具</button>
+<button ID="Button6" onclick="InvokeConfigPaintPictureApp();">配置画图板工具</button></br>
+<button ID="Button7" onclick="ManageApp();">管理关联工具</button>	</br>
+<button ID="Button8" onclick="CheckApp('10001');">检查启动Word</button>	
+<button ID="Button9" onclick="CheckApp('10002');">检查启动Excel</button>
+<button ID="Button10" onclick="CheckApp('10003');">检查启动画图板</button>
+<button ID="Button11" onclick="CheckApp('10004');">检查启动ArcGIS</button>
+<button ID="Button11" onclick="CheckApp('');">InvokeAppById检查打开URL</button></br></br>
+<button ID="Button11" onclick="InvokeAppURL('www.baidu.com');">InvokeApp打开URL</button></br></br>
+<button ID="Button12" onclick="InvokeConfigSkype();">配置Skype工具</button>
+<button ID="Button13" onclick="InvokeConfigTortoiseMerge();">配置TortoiseMerge工具</button>
+<button ID="Button14" onclick="OpenWithOnlyParam('www.hao123.com');">打开hao123链接</button>	
+<button ID="Button15" onclick="OpenWithOnlyParam('H:\\流程架构.docx');">打开文档</button>
+<button ID="Button16" onclick="OpenURL('www.sina.cn');">打开新浪URL</button>				
+</BODY>
+</HTML>

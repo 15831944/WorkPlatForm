@@ -1,0 +1,26 @@
+HKCR
+{
+	PeraStartToolCom.ToolCore.1 = s 'ToolCore Class'
+	{
+		CLSID = s '{E2F4589C-4D73-4691-9819-5AF50D9AFECD}'
+	}
+	PeraStartToolCom.ToolCore = s 'ToolCore Class'
+	{		
+		CurVer = s 'PeraStartToolCom.ToolCore.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {E2F4589C-4D73-4691-9819-5AF50D9AFECD} = s 'ToolCore Class'
+		{
+			ProgID = s 'PeraStartToolCom.ToolCore.1'
+			VersionIndependentProgID = s 'PeraStartToolCom.ToolCore'
+			ForceRemove Programmable
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			TypeLib = s '{AF2AEA18-4BA3-4BDA-826A-01D5049C0E5C}'
+			Version = s '1.0'
+		}
+	}
+}

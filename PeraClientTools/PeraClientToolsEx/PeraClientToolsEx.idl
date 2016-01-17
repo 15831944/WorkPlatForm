@@ -1,0 +1,37 @@
+// PeraClientToolsEx.idl : PeraClientToolsEx 的 IDL 源
+//
+
+// 此文件将由 MIDL 工具处理以
+// 产生类型库(PeraClientToolsEx.tlb)和封送处理代码。
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(42885A45-EDB8-447A-8A83-A83D81734F17),
+	dual,
+	nonextensible,
+	pointer_default(unique)
+]
+interface IClientToolsEx : IDispatch{
+	[id(1)] HRESULT CheckCustomProtocol([in] BSTR bstrProtocolName, [out,retval] VARIANT* pvRet);
+	[id(2)] HRESULT InvokeWorkspace(void);
+	[id(3)] HRESULT InvokePeraComponent(void);
+};
+[
+	uuid(7E3DB182-3461-467F-BA6B-2B6F044BECDD),
+	version(1.0),
+]
+library PeraClientToolsExLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(4BB34FC0-1441-406A-BF3F-AD30A87AF2D8)		
+	]
+	coclass ClientToolsEx
+	{
+		[default] interface IClientToolsEx;
+	};
+};
+

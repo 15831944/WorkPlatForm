@@ -1,0 +1,1262 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="9,00"
+	Name="Office 2010 (blue)"
+	ProjectGUID="{57679FE6-046B-423E-8D1D-069EBD5418FC}"
+	RootNamespace="Office 2010 (blue)"
+	TargetFrameworkVersion="0"
+	>
+	<Platforms>
+		<Platform
+			Name="Win32"
+		/>
+		<Platform
+			Name="x64"
+		/>
+	</Platforms>
+	<ToolFiles>
+	</ToolFiles>
+	<Configurations>
+		<Configuration
+			Name="Release|Win32"
+			OutputDirectory=".\..\..\bin"
+			IntermediateDirectory=".\intermediate"
+			ConfigurationType="2"
+			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC60.vsprops"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="false"
+			CharacterSet="2"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="NDEBUG"
+				SuppressStartupBanner="true"
+				TargetEnvironment="1"
+				TypeLibraryName=".\..\..\bin/BCGPStyle2010Blue.tlb"
+				HeaderFileName=""
+			/>
+			<Tool
+				Name="VCCLCompilerTool"
+				Optimization="4"
+				PreprocessorDefinitions="NDEBUG;WIN32;_WINDOWS;_USRDLL"
+				StringPooling="true"
+				RuntimeLibrary="0"
+				PrecompiledHeaderFile=".\intermediate/BCGPStyle2010Blue.pch"
+				AssemblerListingLocation=".\intermediate/"
+				ObjectFile=".\intermediate/"
+				ProgramDataBaseFileName=".\intermediate/"
+				WarningLevel="3"
+				SuppressStartupBanner="true"
+			/>
+			<Tool
+				Name="VCManagedResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="NDEBUG,_BCGP_STYLE_DLL_"
+				Culture="1033"
+			/>
+			<Tool
+				Name="VCPreLinkEventTool"
+			/>
+			<Tool
+				Name="VCLinkerTool"
+				IgnoreImportLibrary="true"
+				AdditionalDependencies="odbc32.lib odbccp32.lib"
+				OutputFile="..\..\bin/BCGPStyle2010Blue2210.dll"
+				LinkIncremental="1"
+				SuppressStartupBanner="true"
+				IgnoreAllDefaultLibraries="true"
+				ResourceOnlyDLL="true"
+				RandomizedBaseAddress="1"
+				DataExecutionPrevention="0"
+				ImportLibrary=".\..\..\bin/BCGPStyle2010Blue2210.lib"
+				TargetMachine="1"
+			/>
+			<Tool
+				Name="VCALinkTool"
+			/>
+			<Tool
+				Name="VCManifestTool"
+			/>
+			<Tool
+				Name="VCXDCMakeTool"
+			/>
+			<Tool
+				Name="VCBscMakeTool"
+				SuppressStartupBanner="true"
+				OutputFile=".\..\..\bin/BCGPStyle2010Blue.bsc"
+			/>
+			<Tool
+				Name="VCFxCopTool"
+			/>
+			<Tool
+				Name="VCAppVerifierTool"
+			/>
+			<Tool
+				Name="VCPostBuildEventTool"
+			/>
+		</Configuration>
+		<Configuration
+			Name="Debug|Win32"
+			OutputDirectory=".\..\..\bin"
+			IntermediateDirectory=".\intermediate"
+			ConfigurationType="2"
+			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC60.vsprops"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="false"
+			CharacterSet="2"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="NDEBUG"
+				SuppressStartupBanner="true"
+				TargetEnvironment="1"
+				TypeLibraryName=".\..\..\bin/BCGPStyle2010Blue.tlb"
+				HeaderFileName=""
+			/>
+			<Tool
+				Name="VCCLCompilerTool"
+				Optimization="4"
+				PreprocessorDefinitions="NDEBUG;WIN32;_WINDOWS;_USRDLL"
+				StringPooling="true"
+				RuntimeLibrary="0"
+				PrecompiledHeaderFile=".\intermediate/BCGPStyle2010Blue.pch"
+				AssemblerListingLocation=".\intermediate/"
+				ObjectFile=".\intermediate/"
+				ProgramDataBaseFileName=".\intermediate/"
+				WarningLevel="3"
+				SuppressStartupBanner="true"
+			/>
+			<Tool
+				Name="VCManagedResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="NDEBUG,_BCGP_STYLE_DLL_"
+				Culture="1033"
+			/>
+			<Tool
+				Name="VCPreLinkEventTool"
+			/>
+			<Tool
+				Name="VCLinkerTool"
+				IgnoreImportLibrary="true"
+				AdditionalDependencies="odbc32.lib odbccp32.lib"
+				OutputFile="..\..\bin/BCGPStyle2010Blue2210.dll"
+				LinkIncremental="1"
+				SuppressStartupBanner="true"
+				IgnoreAllDefaultLibraries="true"
+				ResourceOnlyDLL="true"
+				RandomizedBaseAddress="1"
+				DataExecutionPrevention="0"
+				ImportLibrary=".\..\..\bin/BCGPStyle2010Blue2210.lib"
+				TargetMachine="1"
+			/>
+			<Tool
+				Name="VCALinkTool"
+			/>
+			<Tool
+				Name="VCManifestTool"
+			/>
+			<Tool
+				Name="VCXDCMakeTool"
+			/>
+			<Tool
+				Name="VCBscMakeTool"
+				SuppressStartupBanner="true"
+				OutputFile=".\..\..\bin/BCGPStyle2010Blue.bsc"
+			/>
+			<Tool
+				Name="VCFxCopTool"
+			/>
+			<Tool
+				Name="VCAppVerifierTool"
+			/>
+			<Tool
+				Name="VCPostBuildEventTool"
+			/>
+		</Configuration>
+		<Configuration
+			Name="Release|x64"
+			OutputDirectory=".\..\..\bin64"
+			IntermediateDirectory=".\intermediate64"
+			ConfigurationType="2"
+			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC60.vsprops"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="false"
+			CharacterSet="2"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="NDEBUG"
+				SuppressStartupBanner="true"
+				TargetEnvironment="3"
+				TypeLibraryName=".\..\..\bin/BCGPStyle2010Blue.tlb"
+				HeaderFileName=""
+			/>
+			<Tool
+				Name="VCCLCompilerTool"
+				Optimization="4"
+				PreprocessorDefinitions="NDEBUG;WIN32;_WINDOWS;_USRDLL"
+				StringPooling="true"
+				RuntimeLibrary="0"
+				PrecompiledHeaderFile=".\intermediate/BCGPStyle2010Blue.pch"
+				AssemblerListingLocation=".\intermediate/"
+				ObjectFile=".\intermediate/"
+				ProgramDataBaseFileName=".\intermediate/"
+				WarningLevel="3"
+				SuppressStartupBanner="true"
+			/>
+			<Tool
+				Name="VCManagedResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="NDEBUG,_BCGP_STYLE_DLL_"
+				Culture="1033"
+			/>
+			<Tool
+				Name="VCPreLinkEventTool"
+			/>
+			<Tool
+				Name="VCLinkerTool"
+				IgnoreImportLibrary="true"
+				AdditionalDependencies="odbc32.lib odbccp32.lib"
+				OutputFile="..\..\bin64/BCGPStyle2010Blue2210.dll"
+				LinkIncremental="1"
+				SuppressStartupBanner="true"
+				IgnoreAllDefaultLibraries="true"
+				ResourceOnlyDLL="true"
+				RandomizedBaseAddress="1"
+				DataExecutionPrevention="0"
+				ImportLibrary=".\..\..\bin/BCGPStyle2010Blue2210.lib"
+				TargetMachine="17"
+			/>
+			<Tool
+				Name="VCALinkTool"
+			/>
+			<Tool
+				Name="VCManifestTool"
+			/>
+			<Tool
+				Name="VCXDCMakeTool"
+			/>
+			<Tool
+				Name="VCBscMakeTool"
+				SuppressStartupBanner="true"
+				OutputFile=".\..\..\bin/BCGPStyle2010Blue.bsc"
+			/>
+			<Tool
+				Name="VCFxCopTool"
+			/>
+			<Tool
+				Name="VCAppVerifierTool"
+			/>
+			<Tool
+				Name="VCPostBuildEventTool"
+			/>
+		</Configuration>
+		<Configuration
+			Name="Debug|x64"
+			OutputDirectory=".\..\..\bin64"
+			IntermediateDirectory=".\intermediate64"
+			ConfigurationType="2"
+			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC60.vsprops"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="false"
+			CharacterSet="2"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="NDEBUG"
+				SuppressStartupBanner="true"
+				TargetEnvironment="3"
+				TypeLibraryName=".\..\..\bin/BCGPStyle2010Blue.tlb"
+				HeaderFileName=""
+			/>
+			<Tool
+				Name="VCCLCompilerTool"
+				Optimization="4"
+				PreprocessorDefinitions="NDEBUG;WIN32;_WINDOWS;_USRDLL"
+				StringPooling="true"
+				RuntimeLibrary="0"
+				PrecompiledHeaderFile=".\intermediate/BCGPStyle2010Blue.pch"
+				AssemblerListingLocation=".\intermediate/"
+				ObjectFile=".\intermediate/"
+				ProgramDataBaseFileName=".\intermediate/"
+				WarningLevel="3"
+				SuppressStartupBanner="true"
+			/>
+			<Tool
+				Name="VCManagedResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="NDEBUG,_BCGP_STYLE_DLL_"
+				Culture="1033"
+			/>
+			<Tool
+				Name="VCPreLinkEventTool"
+			/>
+			<Tool
+				Name="VCLinkerTool"
+				IgnoreImportLibrary="true"
+				AdditionalDependencies="odbc32.lib odbccp32.lib"
+				OutputFile="..\..\bin/BCGPStyle2010Blue2210.dll"
+				LinkIncremental="1"
+				SuppressStartupBanner="true"
+				IgnoreAllDefaultLibraries="true"
+				ResourceOnlyDLL="true"
+				RandomizedBaseAddress="1"
+				DataExecutionPrevention="0"
+				ImportLibrary=".\..\..\bin/BCGPStyle2010Blue2210.lib"
+				TargetMachine="17"
+			/>
+			<Tool
+				Name="VCALinkTool"
+			/>
+			<Tool
+				Name="VCManifestTool"
+			/>
+			<Tool
+				Name="VCXDCMakeTool"
+			/>
+			<Tool
+				Name="VCBscMakeTool"
+				SuppressStartupBanner="true"
+				OutputFile=".\..\..\bin/BCGPStyle2010Blue.bsc"
+			/>
+			<Tool
+				Name="VCFxCopTool"
+			/>
+			<Tool
+				Name="VCAppVerifierTool"
+			/>
+			<Tool
+				Name="VCPostBuildEventTool"
+			/>
+		</Configuration>
+	</Configurations>
+	<References>
+	</References>
+	<Files>
+		<Filter
+			Name="Source Files"
+			Filter="cpp;c;cxx;rc;def;r;odl;idl;hpj;bat"
+			>
+			<File
+				RelativePath="BCGPStyle2010Blue.rc"
+				>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCResourceCompilerTool"
+						PreprocessorDefinitions=""
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCResourceCompilerTool"
+						PreprocessorDefinitions=""
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|x64"
+					>
+					<Tool
+						Name="VCResourceCompilerTool"
+						PreprocessorDefinitions=""
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|x64"
+					>
+					<Tool
+						Name="VCResourceCompilerTool"
+						PreprocessorDefinitions=""
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="BCGPStyle2010Blue.rc2"
+				>
+			</File>
+		</Filter>
+		<Filter
+			Name="Resource Files"
+			Filter="ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe"
+			>
+			<File
+				RelativePath="Office 2010 (blue)\Style.xml"
+				>
+			</File>
+			<Filter
+				Name="AppCaption"
+				>
+				<File
+					RelativePath="Office 2010 (blue)\AppCaption\SysBtn_Back.png"
+					>
+				</File>
+				<File
+					RelativePath="Office 2010 (blue)\AppCaption\SysBtn_Back_C.png"
+					>
+				</File>
+				<File
+					RelativePath="Office 2010 (blue)\AppCaption\SysBtn_Close.png"
+					>
+				</File>
+				<File
+					RelativePath="Office 2010 (blue)\AppCaption\SysBtn_Close_S.png"
+					>
+				</File>
+				<File
+					RelativePath="Office 2010 (blue)\AppCaption\SysBtn_Help.png"
+					>
+				</File>
+				<File
+					RelativePath="Office 2010 (blue)\AppCaption\SysBtn_Help_S.png"
+					>
+				</File>
+				<File
+					RelativePath="Office 2010 (blue)\AppCaption\SysBtn_Maximize.png"
+					>
+				</File>
+				<File
+					RelativePath="Office 2010 (blue)\AppCaption\SysBtn_Maximize_S.png"
+					>
+				</File>
+				<File
+					RelativePath="Office 2010 (blue)\AppCaption\SysBtn_Minimize.png"
+					>
+				</File>
+				<File
+					RelativePath="Office 2010 (blue)\AppCaption\SysBtn_Minimize_S.png"
+					>
+				</File>
+				<File
+					RelativePath="Office 2010 (blue)\AppCaption\SysBtn_Restore.png"
+					>
+				</File>
+				<File
+					RelativePath="Office 2010 (blue)\AppCaption\SysBtn_Restore_S.png"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="ComboBox"
+				>
+				<File
+					RelativePath="Office 2010 (blue)\ComboBox\Btn.png"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="MainWnd"
+				>
+				<File
+					RelativePath="Office 2010 (blue)\MainWnd\Border.png"
+					>
+				</File>
+				<File
+					RelativePath="Office 2010 (blue)\MainWnd\BorderCaption.png"
+					>
+				</File>
+				<File
+					RelativePath="Office 2010 (blue)\MainWnd\BorderMDIChild.png"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="MenuBar"
+				>
+				<File
+					RelativePath="Office 2010 (blue)\MenuBar\Btn.png"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="PopupBar"
+				>
+				<File
+					RelativePath="Office 2010 (blue)\PopupBar\Border.png"
+					>
+				</File>
+				<File
+					RelativePath="Office 2010 (blue)\PopupBar\Gripper.png"
+					>
+				</File>
+				<File
+					RelativePath="Office 2010 (blue)\PopupBar\Item_Back.png"
+					>
+				</File>
+				<File
+					RelativePath="Office 2010 (blue)\PopupBar\Item_Marker_C.png"
+					>
+				</File>
+				<File
+					RelativePath="Office 2010 (blue)\PopupBar\Item_Marker_R.png"
+					>
+				</File>
+				<File
+					RelativePath="Office 2010 (blue)\PopupBar\MenuButton.png"
+					>
+				</File>
+				<File
+					RelativePath="Office 2010 (blue)\PopupBar\MenuHighlight.png"
+					>
+				</File>
+				<File
+					RelativePath="Office 2010 (blue)\PopupBar\MenuHighlightDisabled.png"
+					>
+				</File>
+				<File
+					RelativePath="Office 2010 (blue)\PopupBar\MenuScrollBtn.png"
+					>
+				</File>
+				<File
+					RelativePath="Office 2010 (blue)\PopupBar\ResizeBar.png"
+					>
+				</File>
+				<File
+					RelativePath="Office 2010 (blue)\PopupBar\ResizeBar_HV.png"
+					>
+				</File>
+				<File
+					RelativePath="Office 2010 (blue)\PopupBar\ResizeBar_HVT.png"
+					>
+				</File>
+				<File
+					RelativePath="Office 2010 (blue)\PopupBar\ResizeBar_V.png"
+					>
+				</File>
+				<File
+					RelativePath="Office 2010 (blue)\PopupBar\Tear.png"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="StatusBar"
+				>
+				<File
+					RelativePath="Office 2010 (blue)\StatusBar\Back.png"
+					>
+				</File>
+				<File
+					RelativePath="Office 2010 (blue)\StatusBar\Back_Ext.png"
+					>
+				</File>
+				<File
+					RelativePath="Office 2010 (blue)\StatusBar\PaneBorder.png"
+					>
+				</File>
+				<File
+					RelativePath="Office 2010 (blue)\StatusBar\SizeGrip.png"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="Tab"
+				>
+				<File
+					RelativePath="Office 2010 (blue)\Tab\3D.png"
+					>
+				</File>
+				<File
+					RelativePath="Office 2010 (blue)\Tab\Flat.png"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="TaskPane"
+				>
+				<File
+					RelativePath="Office 2010 (blue)\TaskPane\ScrollBtn.png"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="ToolBar"
+				>
+				<File
+					RelativePath="Office 2010 (blue)\ToolBar\Btn.png"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="Ribbon"
+				>
+				<File
+					RelativePath="Office 2010 (blue)\Ribbon\Border_Floaty.png"
+					>
+				</File>
+				<File
+					RelativePath="Office 2010 (blue)\Ribbon\Border_Panel.png"
+					>
+				</File>
+				<File
+					RelativePath="Office 2010 (blue)\Ribbon\Border_QAT.png"
+					>
+				</File>
+				<File
+					RelativePath="Office 2010 (blue)\Ribbon\Caption_QA.png"
+					>
+				</File>
+				<File
+					RelativePath="Office 2010 (blue)\Ribbon\Caption_QA_Glass.png"
+					>
+				</File>
+				<File
+					RelativePath="Office 2010 (blue)\Ribbon\Category_Back.png"
+					>
+				</File>
+				<File
+					RelativePath="Office 2010 (blue)\Ribbon\Category_Tab.png"
+					>
+				</File>
+				<File
+					RelativePath="Office 2010 (blue)\Ribbon\Category_Tab_Frame.png"
+					>
+				</File>
+				<File
+					RelativePath="Office 2010 (blue)\Ribbon\Category_Tab_Sep.png"
+					>
+				</File>
+				<File
+					RelativePath="Office 2010 (blue)\Ribbon\KeyTip.png"
+					>
+				</File>
+				<File
+					RelativePath="Office 2010 (blue)\Ribbon\Panel_Back.png"
+					>
+				</File>
+				<File
+					RelativePath="Office 2010 (blue)\Ribbon\Panel_BS.png"
+					>
+				</File>
+				<File
+					RelativePath="Office 2010 (blue)\Ribbon\Panel_Main.png"
+					>
+				</File>
+				<File
+					RelativePath="Office 2010 (blue)\Ribbon\Panel_Main_Border.png"
+					>
+				</File>
+				<File
+					RelativePath="Office 2010 (blue)\Ribbon\Panel_QAT.png"
+					>
+				</File>
+				<File
+					RelativePath="Office 2010 (blue)\Ribbon\Separator.png"
+					>
+				</File>
+				<Filter
+					Name="Buttons"
+					>
+					<File
+						RelativePath="Office 2010 (blue)\Ribbon\Buttons\BS_List_Icon.png"
+						>
+					</File>
+					<File
+						RelativePath="Office 2010 (blue)\Ribbon\Buttons\BS_Normal.png"
+						>
+					</File>
+					<File
+						RelativePath="Office 2010 (blue)\Ribbon\Buttons\BS_Push.png"
+						>
+					</File>
+					<File
+						RelativePath="Office 2010 (blue)\Ribbon\Buttons\BS_Separator_H.png"
+						>
+					</File>
+					<File
+						RelativePath="Office 2010 (blue)\Ribbon\Buttons\BS_Separator_V.png"
+						>
+					</File>
+					<File
+						RelativePath="Office 2010 (blue)\Ribbon\Buttons\BS_View.png"
+						>
+					</File>
+					<File
+						RelativePath="Office 2010 (blue)\Ribbon\Buttons\BS_View_Icon.png"
+						>
+					</File>
+					<File
+						RelativePath="Office 2010 (blue)\Ribbon\Buttons\Check.png"
+						>
+					</File>
+					<File
+						RelativePath="Office 2010 (blue)\Ribbon\Buttons\Default.png"
+						>
+					</File>
+					<File
+						RelativePath="Office 2010 (blue)\Ribbon\Buttons\Default_Icon.png"
+						>
+					</File>
+					<File
+						RelativePath="Office 2010 (blue)\Ribbon\Buttons\Default_Image.png"
+						>
+					</File>
+					<File
+						RelativePath="Office 2010 (blue)\Ribbon\Buttons\Default_QAT.png"
+						>
+					</File>
+					<File
+						RelativePath="Office 2010 (blue)\Ribbon\Buttons\Group.png"
+						>
+					</File>
+					<File
+						RelativePath="Office 2010 (blue)\Ribbon\Buttons\Group_S.png"
+						>
+					</File>
+					<File
+						RelativePath="Office 2010 (blue)\Ribbon\Buttons\GroupMenu_F_C.png"
+						>
+					</File>
+					<File
+						RelativePath="Office 2010 (blue)\Ribbon\Buttons\GroupMenu_L_M.png"
+						>
+					</File>
+					<File
+						RelativePath="Office 2010 (blue)\Ribbon\Buttons\GroupSeparator.png"
+						>
+					</File>
+					<File
+						RelativePath="Office 2010 (blue)\Ribbon\Buttons\Launch.png"
+						>
+					</File>
+					<File
+						RelativePath="Office 2010 (blue)\Ribbon\Buttons\Launch_Icon.png"
+						>
+					</File>
+					<File
+						RelativePath="Office 2010 (blue)\Ribbon\Buttons\Main.png"
+						>
+					</File>
+					<File
+						RelativePath="Office 2010 (blue)\Ribbon\Buttons\Main_Panel.png"
+						>
+					</File>
+					<File
+						RelativePath="Office 2010 (blue)\Ribbon\Buttons\Menu_H_C.png"
+						>
+					</File>
+					<File
+						RelativePath="Office 2010 (blue)\Ribbon\Buttons\Menu_H_M.png"
+						>
+					</File>
+					<File
+						RelativePath="Office 2010 (blue)\Ribbon\Buttons\Menu_V_C.png"
+						>
+					</File>
+					<File
+						RelativePath="Office 2010 (blue)\Ribbon\Buttons\Menu_V_M.png"
+						>
+					</File>
+					<File
+						RelativePath="Office 2010 (blue)\Ribbon\Buttons\Minimize_Icon.PNG"
+						>
+					</File>
+					<File
+						RelativePath="Office 2010 (blue)\Ribbon\Buttons\Normal_B.png"
+						>
+					</File>
+					<File
+						RelativePath="Office 2010 (blue)\Ribbon\Buttons\Normal_S.png"
+						>
+					</File>
+					<File
+						RelativePath="Office 2010 (blue)\Ribbon\Buttons\Page_L.png"
+						>
+					</File>
+					<File
+						RelativePath="Office 2010 (blue)\Ribbon\Buttons\Page_R.png"
+						>
+					</File>
+					<File
+						RelativePath="Office 2010 (blue)\Ribbon\Buttons\Palette_B.png"
+						>
+					</File>
+					<File
+						RelativePath="Office 2010 (blue)\Ribbon\Buttons\Palette_M.png"
+						>
+					</File>
+					<File
+						RelativePath="Office 2010 (blue)\Ribbon\Buttons\Palette_T.png"
+						>
+					</File>
+					<File
+						RelativePath="Office 2010 (blue)\Ribbon\Buttons\Push.png"
+						>
+					</File>
+					<File
+						RelativePath="Office 2010 (blue)\Ribbon\Buttons\Radio.PNG"
+						>
+					</File>
+					<File
+						RelativePath="Office 2010 (blue)\Ribbon\Buttons\StatusPane.png"
+						>
+					</File>
+				</Filter>
+				<Filter
+					Name="Category_Context"
+					>
+					<Filter
+						Name="Red"
+						>
+						<File
+							RelativePath="Office 2010 (blue)\Ribbon\Category_Context\Red\Back.png"
+							>
+						</File>
+						<File
+							RelativePath="Office 2010 (blue)\Ribbon\Category_Context\Red\Caption.png"
+							>
+						</File>
+						<File
+							RelativePath="Office 2010 (blue)\Ribbon\Category_Context\Red\Default.png"
+							>
+						</File>
+						<File
+							RelativePath="Office 2010 (blue)\Ribbon\Category_Context\Red\Panel.png"
+							>
+						</File>
+						<File
+							RelativePath="Office 2010 (blue)\Ribbon\Category_Context\Red\Separator.png"
+							>
+						</File>
+						<File
+							RelativePath="Office 2010 (blue)\Ribbon\Category_Context\Red\Tab.png"
+							>
+						</File>
+						<File
+							RelativePath="Office 2010 (blue)\Ribbon\Category_Context\Red\Tab_Glow.png"
+							>
+						</File>
+					</Filter>
+					<Filter
+						Name="Orange"
+						>
+						<File
+							RelativePath="Office 2010 (blue)\Ribbon\Category_Context\Orange\Back.png"
+							>
+						</File>
+						<File
+							RelativePath="Office 2010 (blue)\Ribbon\Category_Context\Orange\Caption.png"
+							>
+						</File>
+						<File
+							RelativePath="Office 2010 (blue)\Ribbon\Category_Context\Orange\Default.png"
+							>
+						</File>
+						<File
+							RelativePath="Office 2010 (blue)\Ribbon\Category_Context\Orange\Panel.PNG"
+							>
+						</File>
+						<File
+							RelativePath="Office 2010 (blue)\Ribbon\Category_Context\Orange\Separator.png"
+							>
+						</File>
+						<File
+							RelativePath="Office 2010 (blue)\Ribbon\Category_Context\Orange\Tab.png"
+							>
+						</File>
+						<File
+							RelativePath="Office 2010 (blue)\Ribbon\Category_Context\Orange\Tab_Glow.png"
+							>
+						</File>
+					</Filter>
+					<Filter
+						Name="Yellow"
+						>
+						<File
+							RelativePath="Office 2010 (blue)\Ribbon\Category_Context\Yellow\Back.png"
+							>
+						</File>
+						<File
+							RelativePath="Office 2010 (blue)\Ribbon\Category_Context\Yellow\Caption.png"
+							>
+						</File>
+						<File
+							RelativePath="Office 2010 (blue)\Ribbon\Category_Context\Yellow\Default.png"
+							>
+						</File>
+						<File
+							RelativePath="Office 2010 (blue)\Ribbon\Category_Context\Yellow\Panel.png"
+							>
+						</File>
+						<File
+							RelativePath="Office 2010 (blue)\Ribbon\Category_Context\Yellow\Separator.png"
+							>
+						</File>
+						<File
+							RelativePath="Office 2010 (blue)\Ribbon\Category_Context\Yellow\Tab.png"
+							>
+						</File>
+						<File
+							RelativePath="Office 2010 (blue)\Ribbon\Category_Context\Yellow\Tab_Glow.png"
+							>
+						</File>
+					</Filter>
+					<Filter
+						Name="Green"
+						>
+						<File
+							RelativePath="Office 2010 (blue)\Ribbon\Category_Context\Green\Back.png"
+							>
+						</File>
+						<File
+							RelativePath="Office 2010 (blue)\Ribbon\Category_Context\Green\Caption.png"
+							>
+						</File>
+						<File
+							RelativePath="Office 2010 (blue)\Ribbon\Category_Context\Green\Default.png"
+							>
+						</File>
+						<File
+							RelativePath="Office 2010 (blue)\Ribbon\Category_Context\Green\Panel.PNG"
+							>
+						</File>
+						<File
+							RelativePath="Office 2010 (blue)\Ribbon\Category_Context\Green\Separator.png"
+							>
+						</File>
+						<File
+							RelativePath="Office 2010 (blue)\Ribbon\Category_Context\Green\Tab.png"
+							>
+						</File>
+						<File
+							RelativePath="Office 2010 (blue)\Ribbon\Category_Context\Green\Tab_Glow.png"
+							>
+						</File>
+					</Filter>
+					<Filter
+						Name="Blue"
+						>
+						<File
+							RelativePath="Office 2010 (blue)\Ribbon\Category_Context\Blue\Back.png"
+							>
+						</File>
+						<File
+							RelativePath="Office 2010 (blue)\Ribbon\Category_Context\Blue\Caption.png"
+							>
+						</File>
+						<File
+							RelativePath="Office 2010 (blue)\Ribbon\Category_Context\Blue\Default.png"
+							>
+						</File>
+						<File
+							RelativePath="Office 2010 (blue)\Ribbon\Category_Context\Blue\Panel.png"
+							>
+						</File>
+						<File
+							RelativePath="Office 2010 (blue)\Ribbon\Category_Context\Blue\Separator.png"
+							>
+						</File>
+						<File
+							RelativePath="Office 2010 (blue)\Ribbon\Category_Context\Blue\Tab.png"
+							>
+						</File>
+						<File
+							RelativePath="Office 2010 (blue)\Ribbon\Category_Context\Blue\Tab_Glow.png"
+							>
+						</File>
+					</Filter>
+					<Filter
+						Name="Indigo"
+						>
+						<File
+							RelativePath="Office 2010 (blue)\Ribbon\Category_Context\Indigo\Back.png"
+							>
+						</File>
+						<File
+							RelativePath="Office 2010 (blue)\Ribbon\Category_Context\Indigo\Caption.png"
+							>
+						</File>
+						<File
+							RelativePath="Office 2010 (blue)\Ribbon\Category_Context\Indigo\Default.png"
+							>
+						</File>
+						<File
+							RelativePath="Office 2010 (blue)\Ribbon\Category_Context\Indigo\Panel.png"
+							>
+						</File>
+						<File
+							RelativePath="Office 2010 (blue)\Ribbon\Category_Context\Indigo\Separator.png"
+							>
+						</File>
+						<File
+							RelativePath="Office 2010 (blue)\Ribbon\Category_Context\Indigo\Tab.png"
+							>
+						</File>
+						<File
+							RelativePath="Office 2010 (blue)\Ribbon\Category_Context\Indigo\Tab_Glow.png"
+							>
+						</File>
+					</Filter>
+					<Filter
+						Name="Violet"
+						>
+						<File
+							RelativePath="Office 2010 (blue)\Ribbon\Category_Context\Violet\Back.png"
+							>
+						</File>
+						<File
+							RelativePath="Office 2010 (blue)\Ribbon\Category_Context\Violet\Caption.png"
+							>
+						</File>
+						<File
+							RelativePath="Office 2010 (blue)\Ribbon\Category_Context\Violet\Default.png"
+							>
+						</File>
+						<File
+							RelativePath="Office 2010 (blue)\Ribbon\Category_Context\Violet\Panel.png"
+							>
+						</File>
+						<File
+							RelativePath="Office 2010 (blue)\Ribbon\Category_Context\Violet\Separator.png"
+							>
+						</File>
+						<File
+							RelativePath="Office 2010 (blue)\Ribbon\Category_Context\Violet\Tab.png"
+							>
+						</File>
+						<File
+							RelativePath="Office 2010 (blue)\Ribbon\Category_Context\Violet\Tab_Glow.png"
+							>
+						</File>
+					</Filter>
+				</Filter>
+				<Filter
+					Name="Slider"
+					>
+					<File
+						RelativePath="Office 2010 (blue)\Ribbon\Slider\Minus.png"
+						>
+					</File>
+					<File
+						RelativePath="Office 2010 (blue)\Ribbon\Slider\Plus.png"
+						>
+					</File>
+					<File
+						RelativePath="Office 2010 (blue)\Ribbon\Slider\Thumb.png"
+						>
+					</File>
+					<File
+						RelativePath="Office 2010 (blue)\Ribbon\Slider\Thumb_H.png"
+						>
+					</File>
+					<File
+						RelativePath="Office 2010 (blue)\Ribbon\Slider\Thumb_L.png"
+						>
+					</File>
+					<File
+						RelativePath="Office 2010 (blue)\Ribbon\Slider\Thumb_R.png"
+						>
+					</File>
+					<File
+						RelativePath="Office 2010 (blue)\Ribbon\Slider\Thumb_T.png"
+						>
+					</File>
+					<File
+						RelativePath="Office 2010 (blue)\Ribbon\Slider\Thumb_V.png"
+						>
+					</File>
+				</Filter>
+				<Filter
+					Name="Progress"
+					>
+					<File
+						RelativePath="Office 2010 (blue)\Ribbon\Progress\Back.png"
+						>
+					</File>
+					<File
+						RelativePath="Office 2010 (blue)\Ribbon\Progress\Infinity.png"
+						>
+					</File>
+					<File
+						RelativePath="Office 2010 (blue)\Ribbon\Progress\Normal.png"
+						>
+					</File>
+					<File
+						RelativePath="Office 2010 (blue)\Ribbon\Progress\Normal_Ext.png"
+						>
+					</File>
+				</Filter>
+			</Filter>
+			<Filter
+				Name="Outlook"
+				>
+				<File
+					RelativePath="Office 2010 (blue)\OutlookWnd\BarBack.png"
+					>
+				</File>
+				<File
+					RelativePath="Office 2010 (blue)\OutlookWnd\BtnPage.png"
+					>
+				</File>
+				<File
+					RelativePath="Office 2010 (blue)\OutlookWnd\Splitter.png"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="Scroll"
+				>
+				<Filter
+					Name="Horz"
+					>
+					<File
+						RelativePath="Office 2010 (blue)\Scroll\Horz\Back_1.png"
+						>
+					</File>
+					<File
+						RelativePath="Office 2010 (blue)\Scroll\Horz\Back_2.png"
+						>
+					</File>
+					<File
+						RelativePath="Office 2010 (blue)\Scroll\Horz\Item_1.png"
+						>
+					</File>
+					<File
+						RelativePath="Office 2010 (blue)\Scroll\Horz\Item_2.png"
+						>
+					</File>
+					<File
+						RelativePath="Office 2010 (blue)\Scroll\Horz\Thumb_1.png"
+						>
+					</File>
+					<File
+						RelativePath="Office 2010 (blue)\Scroll\Horz\Thumb_2.png"
+						>
+					</File>
+					<File
+						RelativePath="Office 2010 (blue)\Scroll\Horz\ThumbIcon.png"
+						>
+					</File>
+				</Filter>
+				<Filter
+					Name="Vert"
+					>
+					<File
+						RelativePath="Office 2010 (blue)\Scroll\Vert\Back_1.png"
+						>
+					</File>
+					<File
+						RelativePath="Office 2010 (blue)\Scroll\Vert\Back_2.png"
+						>
+					</File>
+					<File
+						RelativePath="Office 2010 (blue)\Scroll\Vert\Item_1.png"
+						>
+					</File>
+					<File
+						RelativePath="Office 2010 (blue)\Scroll\Vert\Item_2.png"
+						>
+					</File>
+					<File
+						RelativePath="Office 2010 (blue)\Scroll\Vert\Thumb_1.png"
+						>
+					</File>
+					<File
+						RelativePath="Office 2010 (blue)\Scroll\Vert\Thumb_2.png"
+						>
+					</File>
+					<File
+						RelativePath="Office 2010 (blue)\Scroll\Vert\ThumbIcon.png"
+						>
+					</File>
+				</Filter>
+			</Filter>
+			<Filter
+				Name="Slider"
+				>
+				<File
+					RelativePath="Office 2010 (blue)\Slider\Thumb_B.png"
+					>
+				</File>
+				<File
+					RelativePath="Office 2010 (blue)\Slider\Thumb_H.png"
+					>
+				</File>
+				<File
+					RelativePath="Office 2010 (blue)\Slider\Thumb_L.png"
+					>
+				</File>
+				<File
+					RelativePath="Office 2010 (blue)\Slider\Thumb_R.png"
+					>
+				</File>
+				<File
+					RelativePath="Office 2010 (blue)\Slider\Thumb_T.png"
+					>
+				</File>
+				<File
+					RelativePath="Office 2010 (blue)\Slider\Thumb_V.png"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="Calculator"
+				>
+				<File
+					RelativePath="Office 2010 (blue)\Calculator\Btn.png"
+					>
+				</File>
+			</Filter>
+		</Filter>
+	</Files>
+	<Globals>
+	</Globals>
+</VisualStudioProject>

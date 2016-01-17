@@ -1,0 +1,19 @@
+function testex(){
+		var obj;
+		obj = new ActiveXObject("PeraClientToolsEx.ClientToolsEx");
+		
+		var v = obj.CheckCustomProtocol("peradc");
+		alert(v);
+	 	}
+
+如果正确安装并且可用，返回值为
+{
+   "flag" : "true",
+   "msg" : ""
+}
+如果安装信息被破坏，则返回值为
+{
+   "flag" : "false",
+   "msg" : "......可能的出错信息......"
+}
+如果没有安装客户端，则上述脚本会出异常，使用try.catch可以捕获

@@ -1,0 +1,20 @@
+//
+// PeraProcessDesigner.RC2 - resources Microsoft Visual C++ does not edit directly
+//
+
+#ifdef APSTUDIO_INVOKED
+#error this file is not editable by Microsoft Visual C++
+#endif //APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Add manually edited resources here...
+
+#include <BCGStyles/BCGPStyle2007Aqua.rc>
+#include <BCGStyles/BCGPStyle2007Luna.rc>
+#include <BCGStyles/BCGPStyle2007Obsidian.rc>
+#include <BCGStyles/BCGPStyle2007Silver.rc>
+
+#include <../L.chs/BCGControlBar.rc>
+
+/////////////////////////////////////////////////////////////////////////////

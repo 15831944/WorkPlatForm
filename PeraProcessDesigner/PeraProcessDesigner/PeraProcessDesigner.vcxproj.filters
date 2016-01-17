@@ -1,0 +1,1412 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="_WndBase">
+      <UniqueIdentifier>{989ba0c3-4f95-42d2-b03c-1db58f693aa8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Global">
+      <UniqueIdentifier>{573f29bd-156f-4891-bbd1-bf45e577c93e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Common">
+      <UniqueIdentifier>{5194047d-6cb9-4f28-a52b-5f25ed8d22a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Web">
+      <UniqueIdentifier>{e8dc67a6-56ef-4ac4-b2a6-0d4e7c48fff8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_CxArray">
+      <UniqueIdentifier>{6817b295-b1f6-4476-b135-39553f1c003d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_MDI">
+      <UniqueIdentifier>{97bc41a1-14e5-4c6f-920f-d4732bd1d28f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ResLib">
+      <UniqueIdentifier>{27632011-2a29-49ee-a553-94f2d7a0417e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_建模">
+      <UniqueIdentifier>{daab80e2-b963-417f-9e3c-e0624e000024}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ComponentEdit">
+      <UniqueIdentifier>{fd28b3ac-42cf-46b4-9d08-f1148b9eb6e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_ProcessMgr">
+      <UniqueIdentifier>{9dc769a2-1406-4e10-9cf6-1f3f3f290cad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="_结构树">
+      <UniqueIdentifier>{f54809b7-0923-425c-a1e2-80b30dd87d18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_本地资源库">
+      <UniqueIdentifier>{12b0410b-7a9b-478e-bfeb-55f6ae70b716}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="_ICE">
+      <UniqueIdentifier>{be59eb32-43c0-4d96-a304-656762b6b6ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Common\xpdl">
+      <UniqueIdentifier>{b266979f-c6e3-411f-819d-e0d827d85997}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Common\web">
+      <UniqueIdentifier>{6b92a13a-6886-4591-94b2-bd539dbcc0a8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="UserImages.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\PeraProcessDesigner.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\PeraProcessDesignerDoc.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\PeraProcessDesigner.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\PeraProcessDesigner.toolbar.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Toolbar.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Toolbar256.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\icons.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CxArrayBase.h">
+      <Filter>_CxArray</Filter>
+    </ClInclude>
+    <ClInclude Include="CxDataType.h">
+      <Filter>_Global</Filter>
+    </ClInclude>
+    <ClInclude Include="CxDlgView.h">
+      <Filter>_WndBase</Filter>
+    </ClInclude>
+    <ClInclude Include="CxDlgBar.h">
+      <Filter>_WndBase</Filter>
+    </ClInclude>
+    <ClInclude Include="CxFloatBar.h">
+      <Filter>_WndBase</Filter>
+    </ClInclude>
+    <ClInclude Include="GlobalConfig.h">
+      <Filter>_Global</Filter>
+    </ClInclude>
+    <ClInclude Include="CxBCGPSplitterWnd.h">
+      <Filter>_WndBase</Filter>
+    </ClInclude>
+    <ClInclude Include="CxSplitterFrameWnd.h">
+      <Filter>_WndBase</Filter>
+    </ClInclude>
+    <ClInclude Include="CxSplitterView.h">
+      <Filter>_WndBase</Filter>
+    </ClInclude>
+    <ClInclude Include="CxCaptionButton.h">
+      <Filter>_WndBase</Filter>
+    </ClInclude>
+    <ClInclude Include="ChildFrm.h">
+      <Filter>_MDI</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>_MDI</Filter>
+    </ClInclude>
+    <ClInclude Include="PeraProcessDesigner.h">
+      <Filter>_MDI</Filter>
+    </ClInclude>
+    <ClInclude Include="PeraProcessDesignerDoc.h">
+      <Filter>_MDI</Filter>
+    </ClInclude>
+    <ClInclude Include="PeraProcessDesignerView.h">
+      <Filter>_MDI</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>_MDI</Filter>
+    </ClInclude>
+    <ClInclude Include="CxViewMgr.h">
+      <Filter>_WndBase</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgSvg.h">
+      <Filter>_建模</Filter>
+    </ClInclude>
+    <ClInclude Include="SvgDragLayer.h">
+      <Filter>_WndBase</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewSet.h">
+      <Filter>_WndBase</Filter>
+    </ClInclude>
+    <ClInclude Include="CxListCtrl.h">
+      <Filter>_WndBase</Filter>
+    </ClInclude>
+    <ClInclude Include="CxListCtrlData.h">
+      <Filter>_WndBase</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgDragLayer.h">
+      <Filter>_建模</Filter>
+    </ClInclude>
+    <ClInclude Include="CxBCGExtHeader.h">
+      <Filter>_Global</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ResLib\EncodedTool.h">
+      <Filter>ResLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ResLib\FlexRobotData.h">
+      <Filter>ResLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ResLib\LogMgr.h">
+      <Filter>ResLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ResLib\Magicdb.h">
+      <Filter>ResLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ResLib\MySqlConnectionPool.h">
+      <Filter>ResLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ResLib\ParameterItem.h">
+      <Filter>ResLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ResLib\PropertiesInfo.h">
+      <Filter>ResLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ResLib\ReadRobotDB.h">
+      <Filter>ResLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ResLib\ShoshTreeCtrl.h">
+      <Filter>ResLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ResLib\targetver.h">
+      <Filter>ResLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ResLib\thread_env.h">
+      <Filter>ResLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ResLib\UUID.h">
+      <Filter>ResLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ResLib\XmlResolution.h">
+      <Filter>ResLib</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>资源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ResLibImageSet.h">
+      <Filter>_Global</Filter>
+    </ClInclude>
+    <ClInclude Include="CxArrayND.h">
+      <Filter>_CxArray</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ResLib\FileTool.h">
+      <Filter>ResLib</Filter>
+    </ClInclude>
+    <ClInclude Include="CreateTreeDirDlg.h">
+      <Filter>ResLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ResLib\DlgResLibEditor.h">
+      <Filter>ResLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ResLib\ResLibProcessData.h">
+      <Filter>ResLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ResLib\DlgResLibProcessEditor.h">
+      <Filter>ResLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ResLib\ResLibRobotData.h">
+      <Filter>ResLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ResLib\ResLibData.h">
+      <Filter>ResLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ResLib\SqlCommand.h">
+      <Filter>ResLib</Filter>
+    </ClInclude>
+    <ClInclude Include="ResLibBaseComponentData.h">
+      <Filter>ResLib</Filter>
+    </ClInclude>
+    <ClInclude Include="csharedmemory.h">
+      <Filter>ComponentEdit</Filter>
+    </ClInclude>
+    <ClInclude Include="GetFlexwareBin.h">
+      <Filter>ComponentEdit</Filter>
+    </ClInclude>
+    <ClInclude Include="SharedMemoryOnlineEdit.h">
+      <Filter>ComponentEdit</Filter>
+    </ClInclude>
+    <ClInclude Include="PeraProcessDesignerUtility.h">
+      <Filter>_Global</Filter>
+    </ClInclude>
+    <ClInclude Include="ProcessMgr.h">
+      <Filter>_ProcessMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="CxBCGPMenuBar.h">
+      <Filter>_MDI</Filter>
+    </ClInclude>
+    <ClInclude Include="CxBCGPToolBar.h">
+      <Filter>_MDI</Filter>
+    </ClInclude>
+    <ClInclude Include="CxBCGPToolbarButton.h">
+      <Filter>_MDI</Filter>
+    </ClInclude>
+    <ClInclude Include="CxBCGPVisualManager2007.h">
+      <Filter>_MDI</Filter>
+    </ClInclude>
+    <ClInclude Include="CxRobotBar.h">
+      <Filter>_MDI</Filter>
+    </ClInclude>
+    <ClInclude Include="XmlHistoryModel.h">
+      <Filter>_MDI</Filter>
+    </ClInclude>
+    <ClInclude Include="CxBCGPGrid.h">
+      <Filter>_WndBase</Filter>
+    </ClInclude>
+    <ClInclude Include="CxBCGPGridItem.h">
+      <Filter>_WndBase</Filter>
+    </ClInclude>
+    <ClInclude Include="ZEdit.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ZGridCtrl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CxLoginData.h">
+      <Filter>_Global</Filter>
+    </ClInclude>
+    <ClInclude Include="CxLoginBar.h">
+      <Filter>_MDI</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgIf.h">
+      <Filter>_建模</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgWebPage.h">
+      <Filter>_建模</Filter>
+    </ClInclude>
+    <ClInclude Include="BranchCondition.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="WndIf.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ZComboBox.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgExpEditor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ZButton.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ZTreeExpEditor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgWndIf.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ZStatic.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ZButtonDraw.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ResLib\VorxThread.h">
+      <Filter>ResLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ResLib\VorxTime.h">
+      <Filter>ResLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ResLib\MutexInteger.h">
+      <Filter>ResLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ResLib\MacroDefine.h">
+      <Filter>ResLib</Filter>
+    </ClInclude>
+    <ClInclude Include="CxBCGPDialog.h">
+      <Filter>_WndBase</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgStart.h">
+      <Filter>_MDI</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgLoginBk.h">
+      <Filter>_MDI</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgLoginMain.h">
+      <Filter>_MDI</Filter>
+    </ClInclude>
+    <ClInclude Include="LoginCloseBtn.h">
+      <Filter>_MDI</Filter>
+    </ClInclude>
+    <ClInclude Include="CxBCGPSpinButtonCtrl.h">
+      <Filter>_WndBase</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgExpEditorDM.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Cmpare.h">
+      <Filter>ResLib</Filter>
+    </ClInclude>
+    <ClInclude Include="CxBCGPButton.h">
+      <Filter>_WndBase</Filter>
+    </ClInclude>
+    <ClInclude Include="CxBCGPXMLSettings.h">
+      <Filter>_MDI</Filter>
+    </ClInclude>
+    <ClInclude Include="ZToolTipEvent.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgParamEdit.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgParamSet.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ZTreeParamSet.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgDistribution.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="WebUtility.h">
+      <Filter>_Global</Filter>
+    </ClInclude>
+    <ClInclude Include="BarResLib.h">
+      <Filter>_本地资源库</Filter>
+    </ClInclude>
+    <ClInclude Include="CxResLibImageToolTipCtrl.h">
+      <Filter>_本地资源库</Filter>
+    </ClInclude>
+    <ClInclude Include="CxResLibImgList.h">
+      <Filter>_本地资源库</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgStructTreePropProcess.h">
+      <Filter>_结构树</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgStructTreePropFlow.h">
+      <Filter>_结构树</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgStructTreePropComponent.h">
+      <Filter>_结构树</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgStructTreeFileParamEditor.h">
+      <Filter>_结构树</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgRunFlow.h">
+      <Filter>_结构树</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgResLibTree.h">
+      <Filter>_本地资源库</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgResLibImage.h">
+      <Filter>_本地资源库</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgResLib.h">
+      <Filter>_本地资源库</Filter>
+    </ClInclude>
+    <ClInclude Include="BarStructTree.h">
+      <Filter>_结构树</Filter>
+    </ClInclude>
+    <ClInclude Include="CxNDArrayDimGrid.h">
+      <Filter>_结构树</Filter>
+    </ClInclude>
+    <ClInclude Include="CxNDArrayGrid.h">
+      <Filter>_结构树</Filter>
+    </ClInclude>
+    <ClInclude Include="CxStructTree.h">
+      <Filter>_结构树</Filter>
+    </ClInclude>
+    <ClInclude Include="CxStructTreeGridT.h">
+      <Filter>_结构树</Filter>
+    </ClInclude>
+    <ClInclude Include="CxStructTreeNode.h">
+      <Filter>_结构树</Filter>
+    </ClInclude>
+    <ClInclude Include="CxStructTreeToolTipCtrl.h">
+      <Filter>_结构树</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgNDArrayEditor.h">
+      <Filter>_结构树</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgNDArrayResize.h">
+      <Filter>_结构树</Filter>
+    </ClInclude>
+    <ClInclude Include="EditBranch.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgInfoEdit.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgViewRunFlow.h">
+      <Filter>_结构树</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgParamEditArray.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ArrayGrid.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CrashHandler.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgParamEditFile.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CFlexNetLicMgr.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SvgEventData.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CxStructTreeDataLinker.h">
+      <Filter>_结构树</Filter>
+    </ClInclude>
+    <ClInclude Include="CxStructTreeNodeRoot.h">
+      <Filter>_结构树</Filter>
+    </ClInclude>
+    <ClInclude Include="CxStructTreeNodeArrayElement.h">
+      <Filter>_结构树</Filter>
+    </ClInclude>
+    <ClInclude Include="CxStructTreeNodeComponent.h">
+      <Filter>_结构树</Filter>
+    </ClInclude>
+    <ClInclude Include="CxStructTreeNodeFlow.h">
+      <Filter>_结构树</Filter>
+    </ClInclude>
+    <ClInclude Include="CxStructTreeNodeForm.h">
+      <Filter>_结构树</Filter>
+    </ClInclude>
+    <ClInclude Include="CxStructTreeNodeParam.h">
+      <Filter>_结构树</Filter>
+    </ClInclude>
+    <ClInclude Include="JsData_Svg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="KeepTicketFunc.h">
+      <Filter>_Global</Filter>
+    </ClInclude>
+    <ClInclude Include="ZToolButton.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CxBCGPButtonPlb.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgParamSetBase.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgFor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgForBase.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgForStep.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgForArray.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgForEach.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgWhile.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgDoWhile.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgForLimit.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ListenerManager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ParamEventListener.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ForEachGrid.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgForEachListFrame.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgForEachList.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CxStructTreeNodeGroup.h">
+      <Filter>_结构树</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgLog.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\atlrx.h">
+      <Filter>_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\ConvertData.h">
+      <Filter>_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\CStringChecker.h">
+      <Filter>_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\CStringCheckerConfig.h">
+      <Filter>_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\FileFunc.h">
+      <Filter>_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\HookFunc.h">
+      <Filter>_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\IniClass.h">
+      <Filter>_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\LicenseMgr.h">
+      <Filter>_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\PtrVectorHeader.h">
+      <Filter>_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\StlHeader.h">
+      <Filter>_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Tools.h">
+      <Filter>_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\UtilityFunc.h">
+      <Filter>_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Global\UserDefine.h">
+      <Filter>_Global</Filter>
+    </ClInclude>
+    <ClInclude Include="CxStructTreeNodeSubFlow.h">
+      <Filter>_结构树</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgAddGroup.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgAddParam.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgMovePara.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\ConfigFunc.h">
+      <Filter>_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="XTipComboBox.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="XTipListBox.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\LoginFunc.h">
+      <Filter>_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\SyncDownUploadFunc.h">
+      <Filter>_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\DownUploadFileCacheFinder.h">
+      <Filter>_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\DownUploadCommonFunc.h">
+      <Filter>_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\DownUploadDataFileObject.h">
+      <Filter>_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\XUnzip.h">
+      <Filter>_ProcessMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\ZipTool.h">
+      <Filter>_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="DataMapExpressEditDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="PeraAutoCheckEdit.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="IfExpressEditorDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MethodForDataMapIfExpress.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\InvokeWsFunc.h">
+      <Filter>_ICE</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\PeraIceBase.h">
+      <Filter>_ICE</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\PeraIceWs.h">
+      <Filter>_ICE</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\PeraIceWsBase.h">
+      <Filter>_ICE</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Import\WsICEService.h">
+      <Filter>_ICE</Filter>
+    </ClInclude>
+    <ClInclude Include="IfEditTree.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TreeDropDownDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="FlexRobotWithForm.h">
+      <Filter>ResLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\GetGlobalDataFromReg.h">
+      <Filter>_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\BuilDefine.h">
+      <Filter>_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\AppFunc.h">
+      <Filter>_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\LoadingWindow.h">
+      <Filter>_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\GDIPlusInit.h">
+      <Filter>_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\IceHeader.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Import\PeraProcessRunnerCacheServerIce.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CacheServerIce\PeraCacheServerIceData.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CacheServerIce\PeraWsAstIceClient_I.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="OperateThreadFunc.h">
+      <Filter>_Global</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\CxCmdlineBase.h">
+      <Filter>_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="CustomXpdl.h">
+      <Filter>_ProcessMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="PeraProcessDesignerCommandline.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\XZip.h">
+      <Filter>_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ResLib\UpdateDownloadBotWsFile.h">
+      <Filter>ResLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\ProcessFunc.h">
+      <Filter>_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Web\BaseHtmlDialog.h">
+      <Filter>_Common\web</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Web\DispatchImpl.h">
+      <Filter>_Common\web</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Web\HtmlWindowEventCallback.h">
+      <Filter>_Common\web</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Web\HtmlWindowEventSink.h">
+      <Filter>_Common\web</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Web\WebDataDefine.h">
+      <Filter>_Common\web</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Xpdl\FileOperate.h">
+      <Filter>_Common\xpdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Xpdl\Xpdl.h">
+      <Filter>_Common\xpdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Xpdl\XpdlNode.h">
+      <Filter>_Common\xpdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Xpdl\XpdlNodeComponent.h">
+      <Filter>_Common\xpdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Xpdl\XpdlNodeIf.h">
+      <Filter>_Common\xpdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Xpdl\XpdlNodeParallel.h">
+      <Filter>_Common\xpdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Xpdl\XpdlNodeParam.h">
+      <Filter>_Common\xpdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Xpdl\XpdlNodePrimary.h">
+      <Filter>_Common\xpdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Xpdl\XpdlNodeSequence.h">
+      <Filter>_Common\xpdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Xpdl\XpdlNodeSubflow.h">
+      <Filter>_Common\xpdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\AttachWindow.h">
+      <Filter>_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgJobMgr.h">
+      <Filter>_建模</Filter>
+    </ClInclude>
+    <ClInclude Include="..\WebGroup\WebEventData.h">
+      <Filter>_Web</Filter>
+    </ClInclude>
+    <ClInclude Include="..\WebGroup\WebCommunicationHost.h">
+      <Filter>_Web</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CxArrayBase.cpp">
+      <Filter>_CxArray</Filter>
+    </ClCompile>
+    <ClCompile Include="CxDataType.cpp">
+      <Filter>_Global</Filter>
+    </ClCompile>
+    <ClCompile Include="CxDlgBar.cpp">
+      <Filter>_WndBase</Filter>
+    </ClCompile>
+    <ClCompile Include="CxDlgView.cpp">
+      <Filter>_WndBase</Filter>
+    </ClCompile>
+    <ClCompile Include="CxFloatBar.cpp">
+      <Filter>_WndBase</Filter>
+    </ClCompile>
+    <ClCompile Include="GlobalConfig.cpp">
+      <Filter>_Global</Filter>
+    </ClCompile>
+    <ClCompile Include="CxBCGPSplitterWnd.cpp">
+      <Filter>_WndBase</Filter>
+    </ClCompile>
+    <ClCompile Include="CxSplitterFrameWnd.cpp">
+      <Filter>_WndBase</Filter>
+    </ClCompile>
+    <ClCompile Include="CxSplitterView.cpp">
+      <Filter>_WndBase</Filter>
+    </ClCompile>
+    <ClCompile Include="CxCaptionButton.cpp">
+      <Filter>_WndBase</Filter>
+    </ClCompile>
+    <ClCompile Include="ChildFrm.cpp">
+      <Filter>_MDI</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>_MDI</Filter>
+    </ClCompile>
+    <ClCompile Include="PeraProcessDesigner.cpp">
+      <Filter>_MDI</Filter>
+    </ClCompile>
+    <ClCompile Include="PeraProcessDesignerDoc.cpp">
+      <Filter>_MDI</Filter>
+    </ClCompile>
+    <ClCompile Include="PeraProcessDesignerView.cpp">
+      <Filter>_MDI</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>_MDI</Filter>
+    </ClCompile>
+    <ClCompile Include="CxViewMgr.cpp">
+      <Filter>_WndBase</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgSvg.cpp">
+      <Filter>_建模</Filter>
+    </ClCompile>
+    <ClCompile Include="SvgDragLayer.cpp">
+      <Filter>_WndBase</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewSet.cpp">
+      <Filter>_WndBase</Filter>
+    </ClCompile>
+    <ClCompile Include="CxListCtrl.cpp">
+      <Filter>_WndBase</Filter>
+    </ClCompile>
+    <ClCompile Include="CxListCtrlData.cpp">
+      <Filter>_WndBase</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgDragLayer.cpp">
+      <Filter>_建模</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ResLib\EncodedTool.cpp">
+      <Filter>ResLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ResLib\FlexRobotData.cpp">
+      <Filter>ResLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ResLib\LogMgr.cpp">
+      <Filter>ResLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ResLib\Magicdb.cpp">
+      <Filter>ResLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ResLib\MySqlConnectionPool.cpp">
+      <Filter>ResLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ResLib\ParameterItem.cpp">
+      <Filter>ResLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ResLib\PropertiesInfo.cpp">
+      <Filter>ResLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ResLib\ReadRobotDB.cpp">
+      <Filter>ResLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ResLib\ShoshTreeCtrl.cpp">
+      <Filter>ResLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ResLib\UUID.cpp">
+      <Filter>ResLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ResLib\XmlResolution.cpp">
+      <Filter>ResLib</Filter>
+    </ClCompile>
+    <ClCompile Include="ResLibImageSet.cpp">
+      <Filter>_Global</Filter>
+    </ClCompile>
+    <ClCompile Include="CxArrayND.cpp">
+      <Filter>_CxArray</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ResLib\FileTool.cpp">
+      <Filter>ResLib</Filter>
+    </ClCompile>
+    <ClCompile Include="CreateTreeDirDlg.cpp">
+      <Filter>ResLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ResLib\DlgResLibEditor.cpp">
+      <Filter>ResLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ResLib\ResLibProcessData.cpp">
+      <Filter>ResLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ResLib\DlgResLibProcessEditor.cpp">
+      <Filter>ResLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ResLib\ResLibRobotData.cpp">
+      <Filter>ResLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ResLib\ResLibData.cpp">
+      <Filter>ResLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ResLib\SqlCommand.cpp">
+      <Filter>ResLib</Filter>
+    </ClCompile>
+    <ClCompile Include="ResLibBaseComponentData.cpp">
+      <Filter>ResLib</Filter>
+    </ClCompile>
+    <ClCompile Include="GetFlexwareBin.cpp">
+      <Filter>ComponentEdit</Filter>
+    </ClCompile>
+    <ClCompile Include="SharedMemoryOnlineEdit.cpp">
+      <Filter>ComponentEdit</Filter>
+    </ClCompile>
+    <ClCompile Include="PeraProcessDesignerUtility.cpp">
+      <Filter>_Global</Filter>
+    </ClCompile>
+    <ClCompile Include="ProcessMgr.cpp">
+      <Filter>_ProcessMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="CxBCGPMenuBar.cpp">
+      <Filter>_MDI</Filter>
+    </ClCompile>
+    <ClCompile Include="CxBCGPToolbarButton.cpp">
+      <Filter>_MDI</Filter>
+    </ClCompile>
+    <ClCompile Include="CxBCGPToolBar.cpp">
+      <Filter>_MDI</Filter>
+    </ClCompile>
+    <ClCompile Include="CxBCGPVisualManager2007.cpp">
+      <Filter>_MDI</Filter>
+    </ClCompile>
+    <ClCompile Include="CxRobotBar.cpp">
+      <Filter>_MDI</Filter>
+    </ClCompile>
+    <ClCompile Include="XmlHistoryModel.cpp">
+      <Filter>_MDI</Filter>
+    </ClCompile>
+    <ClCompile Include="CxBCGPGrid.cpp">
+      <Filter>_WndBase</Filter>
+    </ClCompile>
+    <ClCompile Include="CxBCGPGridItem.cpp">
+      <Filter>_WndBase</Filter>
+    </ClCompile>
+    <ClCompile Include="ZEdit.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ZGridCtrl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CxLoginData.cpp">
+      <Filter>_Global</Filter>
+    </ClCompile>
+    <ClCompile Include="CxLoginBar.cpp">
+      <Filter>_MDI</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgIf.cpp">
+      <Filter>_建模</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgWebPage.cpp">
+      <Filter>_建模</Filter>
+    </ClCompile>
+    <ClCompile Include="BranchCondition.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="WndIf.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ZComboBox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgExpEditor.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ZButton.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ZTreeExpEditor.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgWndIf.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ZStatic.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ZButtonDraw.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ResLib\VorxThread.cpp">
+      <Filter>ResLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ResLib\VorxTime.cpp">
+      <Filter>ResLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ResLib\MutexInteger.cpp">
+      <Filter>ResLib</Filter>
+    </ClCompile>
+    <ClCompile Include="CxBCGPDialog.cpp">
+      <Filter>_WndBase</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgStart.cpp">
+      <Filter>_MDI</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgLoginBk.cpp">
+      <Filter>_MDI</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgLoginMain.cpp">
+      <Filter>_MDI</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginCloseBtn.cpp">
+      <Filter>_MDI</Filter>
+    </ClCompile>
+    <ClCompile Include="CxBCGPSpinButtonCtrl.cpp">
+      <Filter>_WndBase</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgExpEditorDM.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Cmpare.cpp">
+      <Filter>ResLib</Filter>
+    </ClCompile>
+    <ClCompile Include="CxBCGPButton.cpp">
+      <Filter>_WndBase</Filter>
+    </ClCompile>
+    <ClCompile Include="CxBCGPXMLSettings.cpp">
+      <Filter>_MDI</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgParamEdit.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgParamSet.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ZTreeParamSet.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgDistribution.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="WebUtility.cpp">
+      <Filter>_Global</Filter>
+    </ClCompile>
+    <ClCompile Include="BarResLib.cpp">
+      <Filter>_本地资源库</Filter>
+    </ClCompile>
+    <ClCompile Include="CxResLibImageToolTipCtrl.cpp">
+      <Filter>_本地资源库</Filter>
+    </ClCompile>
+    <ClCompile Include="CxResLibImgList.cpp">
+      <Filter>_本地资源库</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgStructTreePropProcess.cpp">
+      <Filter>_结构树</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgStructTreePropFlow.cpp">
+      <Filter>_结构树</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgStructTreePropComponent.cpp">
+      <Filter>_结构树</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgStructTreeFileParamEditor.cpp">
+      <Filter>_结构树</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgRunFlow.cpp">
+      <Filter>_结构树</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgResLibTree.cpp">
+      <Filter>_本地资源库</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgResLibImage.cpp">
+      <Filter>_本地资源库</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgResLib.cpp">
+      <Filter>_本地资源库</Filter>
+    </ClCompile>
+    <ClCompile Include="BarStructTree.cpp">
+      <Filter>_结构树</Filter>
+    </ClCompile>
+    <ClCompile Include="CxNDArrayDimGrid.cpp">
+      <Filter>_结构树</Filter>
+    </ClCompile>
+    <ClCompile Include="CxNDArrayGrid.cpp">
+      <Filter>_结构树</Filter>
+    </ClCompile>
+    <ClCompile Include="CxStructTree.cpp">
+      <Filter>_结构树</Filter>
+    </ClCompile>
+    <ClCompile Include="CxStructTreeGridT.cpp">
+      <Filter>_结构树</Filter>
+    </ClCompile>
+    <ClCompile Include="CxStructTreeNode.cpp">
+      <Filter>_结构树</Filter>
+    </ClCompile>
+    <ClCompile Include="CxStructTreeToolTipCtrl.cpp">
+      <Filter>_结构树</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgNDArrayEditor.cpp">
+      <Filter>_结构树</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgNDArrayResize.cpp">
+      <Filter>_结构树</Filter>
+    </ClCompile>
+    <ClCompile Include="EditBranch.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgInfoEdit.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgViewRunFlow.cpp">
+      <Filter>_结构树</Filter>
+    </ClCompile>
+    <ClCompile Include="ArrayGrid.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgParamEditFile.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgParamEditArray.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CrashHandler.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CFlexNetLicMgr.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SvgEventData.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CxStructTreeDataLinker.cpp">
+      <Filter>_结构树</Filter>
+    </ClCompile>
+    <ClCompile Include="CxStructTreeNodeArrayElement.cpp">
+      <Filter>_结构树</Filter>
+    </ClCompile>
+    <ClCompile Include="CxStructTreeNodeComponent.cpp">
+      <Filter>_结构树</Filter>
+    </ClCompile>
+    <ClCompile Include="CxStructTreeNodeFlow.cpp">
+      <Filter>_结构树</Filter>
+    </ClCompile>
+    <ClCompile Include="CxStructTreeNodeForm.cpp">
+      <Filter>_结构树</Filter>
+    </ClCompile>
+    <ClCompile Include="CxStructTreeNodeParam.cpp">
+      <Filter>_结构树</Filter>
+    </ClCompile>
+    <ClCompile Include="CxStructTreeNodeRoot.cpp">
+      <Filter>_结构树</Filter>
+    </ClCompile>
+    <ClCompile Include="JsData_Svg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="KeepTicketFunc.cpp">
+      <Filter>_Global</Filter>
+    </ClCompile>
+    <ClCompile Include="ZToolButton.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CxBCGPButtonPlb.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgParamSetBase.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgFor.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgForBase.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgForStep.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgForArray.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgForEach.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgWhile.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgDoWhile.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgForLimit.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ForEachGrid.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgForEachListFrame.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgForEachList.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CxStructTreeNodeGroup.cpp">
+      <Filter>_结构树</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgLog.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\ConvertData.cpp">
+      <Filter>_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\CStringChecker.cpp">
+      <Filter>_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\FileFunc.cpp">
+      <Filter>_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\HookFunc.cpp">
+      <Filter>_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\IniClass.cpp">
+      <Filter>_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\LicenseMgr.cpp">
+      <Filter>_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\Tools.cpp">
+      <Filter>_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\UtilityFunc.cpp">
+      <Filter>_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Global\UserDefine.cpp">
+      <Filter>_Global</Filter>
+    </ClCompile>
+    <ClCompile Include="CxStructTreeNodeSubFlow.cpp">
+      <Filter>_结构树</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgAddGroup.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgAddParam.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgMovePara.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\ConfigFunc.cpp">
+      <Filter>_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="XTipComboBox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="XTipListBox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\SyncDownUploadRpcFunc.cpp">
+      <Filter>_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\LoginFunc.cpp">
+      <Filter>_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\DownUploadCommonFunc.cpp">
+      <Filter>_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\DownUploadDataFileObject.cpp">
+      <Filter>_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\DownUploadFileCacheFinder.cpp">
+      <Filter>_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\XUnzip.cpp">
+      <Filter>_ProcessMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\ZipTool.cpp">
+      <Filter>_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="DataMapExpressEditDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PeraAutoCheckEdit.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="IfExpressEditorDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MethodForDataMapIfExpress.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\InvokeWsFunc.cpp">
+      <Filter>_ICE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\PeraIceBase.cpp">
+      <Filter>_ICE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\PeraIceWs.cpp">
+      <Filter>_ICE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\PeraIceWsBase.cpp">
+      <Filter>_ICE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Import\WsICEService.cpp">
+      <Filter>_ICE</Filter>
+    </ClCompile>
+    <ClCompile Include="IfEditTree.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TreeDropDownDlg.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="FlexRobotWithForm.cpp">
+      <Filter>ResLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\GetGlobalDataFromReg.cpp">
+      <Filter>_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\AppFunc.cpp">
+      <Filter>_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\LoadingWindow.cpp">
+      <Filter>_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\GDIPlusInit.cpp">
+      <Filter>_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Import\PeraProcessRunnerCacheServerIce.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CacheServerIce\PeraCacheServerIceData.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CacheServerIce\PeraWsAstIceClient_I.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="OperateThreadFunc.cpp">
+      <Filter>_Global</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\CxCmdlineBase.cpp">
+      <Filter>_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomXpdl.cpp">
+      <Filter>_ProcessMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="PeraProcessDesignerCommandline.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\XZip.cpp">
+      <Filter>_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ResLib\UpdateDownloadBotWsFile.cpp">
+      <Filter>ResLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\ProcessFunc.cpp">
+      <Filter>_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\Web\BaseHtmlDialog.cpp">
+      <Filter>_Common\web</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\Web\DispatchImpl.cpp">
+      <Filter>_Common\web</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\Web\HtmlWindowEventSink.cpp">
+      <Filter>_Common\web</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\Web\WebDataDefine.cpp">
+      <Filter>_Common\web</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\Xpdl\FileOperate.cpp">
+      <Filter>_Common\xpdl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\Xpdl\Xpdl.cpp">
+      <Filter>_Common\xpdl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\Xpdl\XpdlNode.cpp">
+      <Filter>_Common\xpdl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\Xpdl\XpdlNodeComponent.cpp">
+      <Filter>_Common\xpdl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\Xpdl\XpdlNodeIf.cpp">
+      <Filter>_Common\xpdl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\Xpdl\XpdlNodeParallel.cpp">
+      <Filter>_Common\xpdl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\Xpdl\XpdlNodeParam.cpp">
+      <Filter>_Common\xpdl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\Xpdl\XpdlNodePrimary.cpp">
+      <Filter>_Common\xpdl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\Xpdl\XpdlNodeSequence.cpp">
+      <Filter>_Common\xpdl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\Xpdl\XpdlNodeSubflow.cpp">
+      <Filter>_Common\xpdl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\AttachWindow.cpp">
+      <Filter>_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgJobMgr.cpp">
+      <Filter>_建模</Filter>
+    </ClCompile>
+    <ClCompile Include="..\WebGroup\WebEventData.cpp">
+      <Filter>_Web</Filter>
+    </ClCompile>
+    <ClCompile Include="..\WebGroup\WebCommunicationHost.cpp">
+      <Filter>_Web</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="PeraProcessDesigner.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,39 @@
+#pragma once
+
+//数据类型
+enum {
+	DT_NULL = 0
+	, DT_BOOLEAN
+	, DT_INT
+	, DT_DOUBLE
+	, DT_STRING
+	, DT_FILE
+	, DT_ARRAY1D_BOOLEAN
+	, DT_ARRAY2D_BOOLEAN
+	, DT_ARRAY3D_BOOLEAN
+	, DT_ARRAY4D_BOOLEAN
+	, DT_ARRAY1D_INT
+	, DT_ARRAY2D_INT
+	, DT_ARRAY3D_INT
+	, DT_ARRAY4D_INT
+	, DT_ARRAY1D_DOUBLE
+	, DT_ARRAY2D_DOUBLE
+	, DT_ARRAY3D_DOUBLE
+	, DT_ARRAY4D_DOUBLE
+	, DT_ARRAY1D_STRING
+	, DT_ARRAY2D_STRING
+	, DT_ARRAY3D_STRING
+	, DT_ARRAY4D_STRING
+	, DT_DIM // 自定义的类型，对应 CxArrayDim 数据指针
+};
+
+//参数方向
+enum {
+	PARAM_DIR_NULL = 0
+	, PARAM_DIR_IN //输入
+	, PARAM_DIR_OUT //输出
+	, PARAM_DIR_INOUT //输入输出
+};
+
+extern CString ConvertDataTypeName(int nDataType);
+extern CString ConvertParamDirName(int nDir);

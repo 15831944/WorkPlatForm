@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="_WebGroup">
+      <UniqueIdentifier>{417a27e3-b7e4-481d-a6d3-7ab6b66e60d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Common">
+      <UniqueIdentifier>{f745f382-bd01-4919-a2be-57fb63470e97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Global">
+      <UniqueIdentifier>{9a2dc4bd-e67a-456b-890b-154809a00432}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Common\web">
+      <UniqueIdentifier>{4945f01b-bcef-435e-8ace-a40afa869a8d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="res\PeraPDWebContainer.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\PeraPDWebContainer.ico">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="PeraPDWebContainer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgMain.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CrashHandler.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Global\UserDefine.h">
+      <Filter>_Global</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\atlrx.h">
+      <Filter>_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\ConvertData.h">
+      <Filter>_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\CStringChecker.h">
+      <Filter>_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\CStringCheckerConfig.h">
+      <Filter>_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\FileFunc.h">
+      <Filter>_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\HookFunc.h">
+      <Filter>_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\IniClass.h">
+      <Filter>_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\PtrVectorHeader.h">
+      <Filter>_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\StlHeader.h">
+      <Filter>_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Tools.h">
+      <Filter>_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\UtilityFunc.h">
+      <Filter>_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Web\BaseHtmlDialog.h">
+      <Filter>_Common\web</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Web\DispatchImpl.h">
+      <Filter>_Common\web</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Web\HtmlWindowEventCallback.h">
+      <Filter>_Common\web</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Web\HtmlWindowEventSink.h">
+      <Filter>_Common\web</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Web\WebDataDefine.h">
+      <Filter>_Common\web</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\AttachWindow.h">
+      <Filter>_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\AttachWindowClient.h">
+      <Filter>_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\CxCmdlineBase.h">
+      <Filter>_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\ProcessFunc.h">
+      <Filter>_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\WebContainerCmdLine.h">
+      <Filter>_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\GetGlobalDataFromReg.h">
+      <Filter>_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\WebGroup\WebEventData.h">
+      <Filter>_WebGroup</Filter>
+    </ClInclude>
+    <ClInclude Include="..\WebGroup\WebCommnunicationClient.h">
+      <Filter>_WebGroup</Filter>
+    </ClInclude>
+    <ClInclude Include="PeraPDWeb.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="PeraPDWebContainer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgMain.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CrashHandler.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Global\UserDefine.cpp">
+      <Filter>_Global</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\ConvertData.cpp">
+      <Filter>_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\CStringChecker.cpp">
+      <Filter>_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\FileFunc.cpp">
+      <Filter>_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\HookFunc.cpp">
+      <Filter>_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\IniClass.cpp">
+      <Filter>_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\Tools.cpp">
+      <Filter>_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\UtilityFunc.cpp">
+      <Filter>_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\Web\BaseHtmlDialog.cpp">
+      <Filter>_Common\web</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\Web\DispatchImpl.cpp">
+      <Filter>_Common\web</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\Web\HtmlWindowEventSink.cpp">
+      <Filter>_Common\web</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\Web\WebDataDefine.cpp">
+      <Filter>_Common\web</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\AttachWindow.cpp">
+      <Filter>_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\AttachWindowClient.cpp">
+      <Filter>_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\CxCmdlineBase.cpp">
+      <Filter>_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\ProcessFunc.cpp">
+      <Filter>_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\WebContainerCmdLine.cpp">
+      <Filter>_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\GetGlobalDataFromReg.cpp">
+      <Filter>_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\WebGroup\WebEventData.cpp">
+      <Filter>_WebGroup</Filter>
+    </ClCompile>
+    <ClCompile Include="..\WebGroup\WebCommnunicationClient.cpp">
+      <Filter>_WebGroup</Filter>
+    </ClCompile>
+    <ClCompile Include="PeraPDWeb.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="PeraPDWebContainer.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

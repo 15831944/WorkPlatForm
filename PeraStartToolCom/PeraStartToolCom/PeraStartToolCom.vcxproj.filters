@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="_common">
+      <UniqueIdentifier>{b53da8ad-c472-4736-8288-d9b90106026d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面美化">
+      <UniqueIdentifier>{8bfb67d0-efef-482c-beb3-6f85df571148}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="生成的文件">
+      <UniqueIdentifier>{8b69fba7-b203-4db0-9946-518c866d54c4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ToolCore.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ToolSetDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ToolsProUnity.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ToolManagerDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\Tools.cpp">
+      <Filter>_common</Filter>
+    </ClCompile>
+    <ClCompile Include="DataInterface.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CxBCGPDialog.cpp">
+      <Filter>界面美化</Filter>
+    </ClCompile>
+    <ClCompile Include="XListCtrl.cpp">
+      <Filter>界面美化</Filter>
+    </ClCompile>
+    <ClCompile Include="CommonMethod.cpp">
+      <Filter>_common</Filter>
+    </ClCompile>
+    <ClCompile Include="TinyXmlPro.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="RapidXmlPro.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PeraStartToolCom.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PeraStartToolCom_i.c">
+      <Filter>生成的文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ToolGridListDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CxBCGPGrid.cpp">
+      <Filter>界面美化</Filter>
+    </ClCompile>
+    <ClCompile Include="CxBCGPVisualManager2007.cpp">
+      <Filter>界面美化</Filter>
+    </ClCompile>
+    <ClCompile Include="UserDefine.cpp">
+      <Filter>界面美化</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="dllmain.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="_IToolCoreEvents_CP.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ToolCore.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ToolSetDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ToolsProUnity.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ToolManagerDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="XListCtrl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Tools.h">
+      <Filter>_common</Filter>
+    </ClInclude>
+    <ClInclude Include="DataInterface.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ToolObjectDefine.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CxBCGPDialog.h">
+      <Filter>界面美化</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonMethod.h">
+      <Filter>_common</Filter>
+    </ClInclude>
+    <ClInclude Include="PeraStartToolCom_i.h">
+      <Filter>生成的文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ToolGridListDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CxBCGPGrid.h">
+      <Filter>界面美化</Filter>
+    </ClInclude>
+    <ClInclude Include="CxBCGPVisualManager2007.h">
+      <Filter>界面美化</Filter>
+    </ClInclude>
+    <ClInclude Include="UserDefine.h">
+      <Filter>界面美化</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="PeraStartToolCom.def">
+      <Filter>源文件</Filter>
+    </None>
+    <None Include="PeraStartToolCom.rgs">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="ToolCore.rgs">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\PeraStartToolCom.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\PeraStartToolCom.ico">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="PeraStartToolCom.idl">
+      <Filter>源文件</Filter>
+    </Midl>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="PeraStartToolCom.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

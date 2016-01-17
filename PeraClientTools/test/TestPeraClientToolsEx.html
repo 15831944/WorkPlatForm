@@ -1,0 +1,44 @@
+﻿<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+
+<SCRIPT type=text/javascript>
+	
+	var index;
+	
+			function testex(){
+		var obj;
+		obj = new ActiveXObject("PeraClientToolsEx.ClientToolsEx");
+		
+		var v = obj.CheckCustomProtocol("peradc");
+		alert(v);
+	 	}		
+	 	
+		function testex2(){
+		var obj;
+		obj = new ActiveXObject("PeraClientToolsEx.ClientToolsEx");
+		
+		obj.InvokeWorkspace();
+		alert("testex2");
+	 	}	
+
+		function testex3(){
+		var obj;
+		obj = new ActiveXObject("PeraClientToolsEx.ClientToolsEx");
+		
+		obj.InvokePeraComponent();
+		alert("testex3");
+	 	}	
+
+		</SCRIPT>
+		
+</HEAD>
+<BODY>
+
+
+<button ID="Button7" onclick="testex();">testex</button>
+<button ID="Button8" onclick="testex2();">testex2</button>
+<button ID="Button9" onclick="testex3();">testex3</button>
+
+</BODY>
+</HTML>

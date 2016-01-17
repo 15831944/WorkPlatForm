@@ -1,0 +1,26 @@
+HKCR
+{
+	PeraClientToolsEx.ClientToolsEx.1 = s 'ClientToolsEx Class'
+	{
+		CLSID = s '{4BB34FC0-1441-406A-BF3F-AD30A87AF2D8}'
+	}
+	PeraClientToolsEx.ClientToolsEx = s 'ClientToolsEx Class'
+	{		
+		CurVer = s 'PeraClientToolsEx.ClientToolsEx.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {4BB34FC0-1441-406A-BF3F-AD30A87AF2D8} = s 'ClientToolsEx Class'
+		{
+			ProgID = s 'PeraClientToolsEx.ClientToolsEx.1'
+			VersionIndependentProgID = s 'PeraClientToolsEx.ClientToolsEx'
+			ForceRemove Programmable
+			LocalServer32 = s '%MODULE%'
+			{
+				val ServerExecutable = s '%MODULE_RAW%'
+			}
+			TypeLib = s '{7E3DB182-3461-467F-BA6B-2B6F044BECDD}'
+			Version = s '1.0'
+		}
+	}
+}
