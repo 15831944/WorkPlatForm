@@ -1,0 +1,26 @@
+HKCR
+{
+	PeraFileUpDown.FileUpDown.1 = s 'FileUpDown Class'
+	{
+		CLSID = s '{FC111F9A-574D-44D9-9B74-86226E6C28AF}'
+	}
+	PeraFileUpDown.FileUpDown = s 'FileUpDown Class'
+	{		
+		CurVer = s 'PeraFileUpDown.FileUpDown.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {FC111F9A-574D-44D9-9B74-86226E6C28AF} = s 'FileUpDown Class'
+		{
+			ProgID = s 'PeraFileUpDown.FileUpDown.1'
+			VersionIndependentProgID = s 'PeraFileUpDown.FileUpDown'
+			ForceRemove Programmable
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Both'
+			}
+			TypeLib = s '{35DEB736-562D-4770-A846-10A1FB55D8C0}'
+			Version = s '1.0'
+		}
+	}
+}

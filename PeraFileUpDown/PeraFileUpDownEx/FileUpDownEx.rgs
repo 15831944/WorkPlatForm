@@ -1,0 +1,26 @@
+HKCR
+{
+	PeraFileUpDownEx.FileUpDownEx.1 = s 'FileUpDownEx Class'
+	{
+		CLSID = s '{B6067CCC-7BAB-496C-A9A8-3A37AFF0CACC}'
+	}
+	PeraFileUpDownEx.FileUpDownEx = s 'FileUpDownEx Class'
+	{		
+		CurVer = s 'PeraFileUpDownEx.FileUpDownEx.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {B6067CCC-7BAB-496C-A9A8-3A37AFF0CACC} = s 'FileUpDownEx Class'
+		{
+			ProgID = s 'PeraFileUpDownEx.FileUpDownEx.1'
+			VersionIndependentProgID = s 'PeraFileUpDownEx.FileUpDownEx'
+			ForceRemove Programmable
+			LocalServer32 = s '%MODULE%'
+			{
+				val ServerExecutable = s '%MODULE_RAW%'
+			}
+			TypeLib = s '{388F9DD0-E499-4967-AC7C-C9C868B51ED8}'
+			Version = s '1.0'
+		}
+	}
+}

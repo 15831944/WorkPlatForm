@@ -1,0 +1,38 @@
+// PeraFileUpDownEx.idl : PeraFileUpDownEx 的 IDL 源
+//
+
+// 此文件将由 MIDL 工具处理以
+// 产生类型库(PeraFileUpDownEx.tlb)和封送处理代码。
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(E0F5C258-AF0C-4AF9-998D-5B98DF471ECD),
+	dual,
+	nonextensible,
+	pointer_default(unique)
+]
+interface IFileUpDownEx : IDispatch{
+	[id(1)] HRESULT StartUpload([in] BSTR bstrJson, [out,retval] VARIANT* pvRet);
+	[id(2)] HRESULT QueryUpload([in] BSTR bstrJson, [out,retval] VARIANT* pvRet);
+	[id(3)] HRESULT CancelUpload([in] BSTR bstrJson, [out,retval] VARIANT* pvRet);
+	[id(4), helpstring("供JS在保存方案时调用，客户端先解析XPDL，替换fileId，然后调后台ICE接口")] HRESULT parseXpdl([in] BSTR bstrJsonInfo, [in] BSTR bstrJsonResult, [out,retval] VARIANT* pvRet);
+};
+[
+	uuid(388F9DD0-E499-4967-AC7C-C9C868B51ED8),
+	version(1.0),
+]
+library PeraFileUpDownExLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(B6067CCC-7BAB-496C-A9A8-3A37AFF0CACC)		
+	]
+	coclass FileUpDownEx
+	{
+		[default] interface IFileUpDownEx;
+	};
+};
+

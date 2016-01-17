@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="生成的文件">
+      <UniqueIdentifier>{e653c433-df76-4790-a2e9-1b54c1c13a97}</UniqueIdentifier>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{e8c07295-f185-467c-9cca-280bca087280}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PeraComponentEdit.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="xdlldata.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PeraComponentEdit_i.c">
+      <Filter>生成的文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ComponentEdit.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgOpentools.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\SharedMemoryOnlineEdit.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\ProcessFunc.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgRunbot.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ParameterJson.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\GetFlexwareBin.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\Tools.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\ConfigFunc.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="dllmain.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="xdlldata.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="PeraComponentEdit_i.h">
+      <Filter>生成的文件</Filter>
+    </ClInclude>
+    <ClInclude Include="_IComponentEditEvents_CP.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ComponentEdit.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgOpentools.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\SharedMemoryOnlineEdit.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\ProcessFunc.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgRunbot.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ParameterJson.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Tools.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\csharedmemory.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\GetFlexwareBin.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\ConfigFunc.h">
+      <Filter>common</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="PeraComponentEdit.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="PeraComponentEdit.rgs">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="PeraComponentEdit.def">
+      <Filter>源文件</Filter>
+    </None>
+    <None Include="ComponentEdit.rgs">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\opentools.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\animate.png">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="PeraComponentEdit.idl">
+      <Filter>源文件</Filter>
+    </Midl>
+  </ItemGroup>
+</Project>

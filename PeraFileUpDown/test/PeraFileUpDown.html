@@ -1,0 +1,133 @@
+﻿<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+
+<SCRIPT type=text/javascript>
+	
+	var index;
+	
+			function testex(){
+		var obj;
+		obj = new ActiveXObject("PeraFileUpDownEx.FileUpDownEx");
+		//alert(obj);
+		var s=document.getElementById('ss').value;
+		var ss=s.replace(/\\/g, "\\\\");
+		//alert(s);
+		//alert(ss);
+		var v = obj.StartUpload("{\"filePath\":\""+ss+"\"}");
+		alert(v);
+		index = eval("("+v+")").index;
+		//alert(index);
+	 	}		
+	 	
+	 				function testex1(){
+		var obj;
+		obj = new ActiveXObject("PeraFileUpDownEx.FileUpDownEx");
+		//alert(obj);
+		var v = obj.QueryUpload("{\"index\":\""+index+"\"}");
+		alert(v);
+	 	}		
+	 	
+	 		 				function testex2(){
+		var obj;
+		obj = new ActiveXObject("PeraFileUpDownEx.FileUpDownEx");
+		//alert(obj);
+		var v = obj.CancelUpload("{\"index\":\""+index+"\"}");
+		alert(v);
+	 	}		
+	
+		function Upload(){
+		var obj;
+		obj = new ActiveXObject("PeraFileUpDown.FileUpDown");
+		var v = obj.Upload("http://192.168.50.191:8080/dms/HproseRPC", "H:\\PERA集团通讯录140218.XLSX");
+		alert(v);
+	 	}				
+	 	
+		function Download(){
+		var obj;
+		obj = new ActiveXObject("PeraFileUpDown.FileUpDown");
+		var v = obj.Download("http://192.168.50.191:8080/dms/file/down?id=5295da70860bb8da255401d0", "d:\\test123汉字","");
+		alert(v);
+	 	}		
+	 	
+		function Upload2(){
+		var obj;
+		obj = new ActiveXObject("PeraFileUpDown.FileUpDown");
+		var v = obj.Upload2("http://192.168.50.191:8080/dms/HproseRPC", "e:\\汉字.doc", "false");
+		alert(v);
+	 	}				
+	 	
+		function Download2(){
+		var obj;
+		obj = new ActiveXObject("PeraFileUpDown.FileUpDown");
+		var v = obj.Download2("http://192.168.50.191:8080/dms/file/down?id=", "525509d0860b0037e9518715", "公式组件.bot");
+		alert(v);
+	 	}
+	
+	                function UploadFiles(){
+		var obj;
+		obj = new ActiveXObject("PeraFileUpDown.FileUpDown");
+		var v = obj.UploadFiles("http://192.168.50.191:8080/dms/HproseRPC", "\
+[\
+    {\
+        \"filePath\": \"H:\\\\PERA集团通讯录140218.XLSX\"\
+    },\
+    {\
+        \"filePath\": \"H:\\\\新建文本文档.txt\"\
+    },\
+    {\
+        \"filePath\": \"H:\\\\新建 WinRAR ZIP 压缩文件.zip\"\
+    }\
+]\
+", "false");
+		alert(v);
+	 	}
+	
+                                function DownloadFiles(){
+		var obj;
+		obj = new ActiveXObject("PeraFileUpDown.FileUpDown");
+		var v = obj.DownloadFiles("http://192.168.50.191:8080/dms/file/down?id=", "\
+[\
+    {\
+        \"fileID\": \"523febfd860bc67af4ebc736\",\
+        \"fileDir\": \"\",\
+        \"fileName\": \"\"\
+    },\
+    {\
+        \"fileID\": \"523febfe860bc67af4ebc73a\",\
+        \"fileDir\": \"\",\
+        \"fileName\": \"\"\
+    },\
+    {\
+        \"fileID\": \"523febfe860bc67af4ebc747\",\
+        \"fileDir\": \"\",\
+        \"fileName\": \"\"\
+    }\
+]\
+");
+		alert(v);
+	 	}
+
+		</SCRIPT>
+		
+</HEAD>
+<BODY>
+
+
+<button ID="Button7" onclick="Upload();">Upload</button>
+<button ID="Button7" onclick="Download();">Download</button>
+
+<button ID="Button7" onclick="Upload2();">Upload2</button>
+<button ID="Button7" onclick="Download2();">Download2</button>
+
+<button ID="Button7" onclick="UploadFiles();">UploadFiles</button>
+<button ID="Button7" onclick="DownloadFiles();">DownloadFiles</button>
+<br>
+<input type="file" id="ss">
+<br>
+<button ID="Button7" onclick="testex();">testex</button>
+<button ID="Button7" onclick="testex1();">testex1</button>
+<button ID="Button7" onclick="testex2();">testex2</button>
+
+</BODY>
+</HTML>

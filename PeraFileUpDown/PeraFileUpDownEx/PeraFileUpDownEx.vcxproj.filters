@@ -1,0 +1,347 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="生成的文件">
+      <UniqueIdentifier>{628b5721-66e2-4036-8e22-4667f4b751f3}</UniqueIdentifier>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="hprose">
+      <UniqueIdentifier>{17ae1404-ac94-49af-ae56-d7db5fe8db1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hprose\include">
+      <UniqueIdentifier>{321a1bf7-f12e-42a9-ae15-6a3c1810fcce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hprose\src">
+      <UniqueIdentifier>{0b138971-7661-4686-92c6-95e0195cd24f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{a6e4c7f0-457b-4fee-a2f4-34a9dc014d9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xpdl">
+      <UniqueIdentifier>{c8716c82-0315-4d21-9134-19dbd53cd997}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ice">
+      <UniqueIdentifier>{9fe70d9a-2083-45cf-b2c4-e8230d9e7029}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PeraFileUpDownEx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="xdlldata.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PeraFileUpDownEx_i.c">
+      <Filter>生成的文件</Filter>
+    </ClCompile>
+    <ClCompile Include="FileUpDownEx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hprose\src\client\asio\httpclient.cpp">
+      <Filter>hprose\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hprose\src\client\cookie.cpp">
+      <Filter>hprose\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hprose\src\io\classes.cpp">
+      <Filter>hprose\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\CallHprose.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="DataDefine.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\GetFlexwareBin.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\IniClass.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\Tools.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\XUnzip.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\XZip.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\ZipTool.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\ConfigFunc.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\DownUploadCommonFunc.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\DownUploadDataFileObject.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\DownUploadFileCacheFinder.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\ConvertData.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\FileFunc.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\Xpdl\Xpdl.cpp">
+      <Filter>xpdl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\Xpdl\XpdlNode.cpp">
+      <Filter>xpdl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\Xpdl\XpdlNodeComponent.cpp">
+      <Filter>xpdl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\Xpdl\XpdlNodeIf.cpp">
+      <Filter>xpdl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\Xpdl\XpdlNodeParallel.cpp">
+      <Filter>xpdl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\Xpdl\XpdlNodeParam.cpp">
+      <Filter>xpdl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\Xpdl\XpdlNodePrimary.cpp">
+      <Filter>xpdl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\Xpdl\XpdlNodeSequence.cpp">
+      <Filter>xpdl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\Xpdl\XpdlNodeSubflow.cpp">
+      <Filter>xpdl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\Xpdl\FileOperate.cpp">
+      <Filter>xpdl</Filter>
+    </ClCompile>
+    <ClCompile Include="FileIdXpdl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\InvokeWsFunc.cpp">
+      <Filter>Ice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\PeraIceBase.cpp">
+      <Filter>Ice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\PeraIceWs.cpp">
+      <Filter>Ice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\PeraIceWsBase.cpp">
+      <Filter>Ice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Import\WsICEService.cpp">
+      <Filter>Ice</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="xdlldata.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="PeraFileUpDownEx_i.h">
+      <Filter>生成的文件</Filter>
+    </ClInclude>
+    <ClInclude Include="FileUpDownEx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hprose\hprose\client\asio\httpclient.hpp">
+      <Filter>hprose\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hprose\hprose\client\client.hpp">
+      <Filter>hprose\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hprose\hprose\client\cookie.hpp">
+      <Filter>hprose\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hprose\hprose\common.hpp">
+      <Filter>hprose\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hprose\hprose\common\algorithm.hpp">
+      <Filter>hprose\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hprose\hprose\common\any.hpp">
+      <Filter>hprose\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hprose\hprose\common\bigint.hpp">
+      <Filter>hprose\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hprose\hprose\common\exception.hpp">
+      <Filter>hprose\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hprose\hprose\common\time.hpp">
+      <Filter>hprose\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hprose\hprose\common\utf8.hpp">
+      <Filter>hprose\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hprose\hprose\config.hpp">
+      <Filter>hprose\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hprose\hprose\httpclient.hpp">
+      <Filter>hprose\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hprose\hprose\io.hpp">
+      <Filter>hprose\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hprose\hprose\io\classes.hpp">
+      <Filter>hprose\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hprose\hprose\io\formatter.hpp">
+      <Filter>hprose\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hprose\hprose\io\reader.hpp">
+      <Filter>hprose\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hprose\hprose\io\tags.hpp">
+      <Filter>hprose\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hprose\hprose\io\types.hpp">
+      <Filter>hprose\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hprose\hprose\io\writer.hpp">
+      <Filter>hprose\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hprose\hprose\version.hpp">
+      <Filter>hprose\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\CallHprose.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="DataDefine.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\GetFlexwareBin.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\IniClass.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Tools.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\XUnzip.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\XZip.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\ZipTool.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\ConfigFunc.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\ConvertData.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\DownUploadCommonFunc.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\DownUploadDataFileObject.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\DownUploadFileCacheFinder.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\FileFunc.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Xpdl\Xpdl.h">
+      <Filter>xpdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Xpdl\XpdlNode.h">
+      <Filter>xpdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Xpdl\XpdlNodeComponent.h">
+      <Filter>xpdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Xpdl\XpdlNodeIf.h">
+      <Filter>xpdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Xpdl\XpdlNodeParallel.h">
+      <Filter>xpdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Xpdl\XpdlNodeParam.h">
+      <Filter>xpdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Xpdl\XpdlNodePrimary.h">
+      <Filter>xpdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Xpdl\XpdlNodeSequence.h">
+      <Filter>xpdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Xpdl\XpdlNodeSubflow.h">
+      <Filter>xpdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Xpdl\FileOperate.h">
+      <Filter>xpdl</Filter>
+    </ClInclude>
+    <ClInclude Include="FileIdXpdl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\InvokeWsFunc.h">
+      <Filter>Ice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\PeraIceBase.h">
+      <Filter>Ice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\PeraIceWs.h">
+      <Filter>Ice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\PeraIceWsBase.h">
+      <Filter>Ice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Import\WsICEService.h">
+      <Filter>Ice</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="PeraFileUpDownEx.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="PeraFileUpDownEx.rgs">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="FileUpDownEx.rgs">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="Res\PeraFileUpDownEx.ico">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="PeraFileUpDownEx.idl">
+      <Filter>源文件</Filter>
+    </Midl>
+  </ItemGroup>
+</Project>

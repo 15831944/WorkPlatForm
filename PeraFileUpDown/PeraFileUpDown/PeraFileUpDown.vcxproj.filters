@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="生成的文件">
+      <UniqueIdentifier>{f35a2b78-7805-47ee-9589-6a49609dbf7a}</UniqueIdentifier>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="hprose">
+      <UniqueIdentifier>{3a68a76c-65b0-44fb-9958-cf2de972c827}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hprose\include">
+      <UniqueIdentifier>{c13fb1ce-d33b-4e6d-9ec0-0f85c41bc922}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hprose\src">
+      <UniqueIdentifier>{36a7af51-77a5-422b-9c08-e02bc3d93558}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{382c2617-2200-45a7-9cbd-f9b2951b73a3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PeraFileUpDown.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="xdlldata.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PeraFileUpDown_i.c">
+      <Filter>生成的文件</Filter>
+    </ClCompile>
+    <ClCompile Include="FileUpDown.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hprose\src\client\asio\httpclient.cpp">
+      <Filter>hprose\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hprose\src\client\cookie.cpp">
+      <Filter>hprose\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hprose\src\io\classes.cpp">
+      <Filter>hprose\src</Filter>
+    </ClCompile>
+    <ClCompile Include="CrashHandler.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\CallHprose.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\Tools.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\ConfigFunc.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\DownUploadCommonFunc.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\DownUploadDataFileObject.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\DownUploadFileCacheFinder.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\ConvertData.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\FileFunc.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="dllmain.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="xdlldata.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="PeraFileUpDown_i.h">
+      <Filter>生成的文件</Filter>
+    </ClInclude>
+    <ClInclude Include="_IFileUpDownEvents_CP.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="FileUpDown.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hprose\hprose\client\asio\httpclient.hpp">
+      <Filter>hprose\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hprose\hprose\client\client.hpp">
+      <Filter>hprose\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hprose\hprose\client\cookie.hpp">
+      <Filter>hprose\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hprose\hprose\common\algorithm.hpp">
+      <Filter>hprose\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hprose\hprose\common\any.hpp">
+      <Filter>hprose\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hprose\hprose\common\bigint.hpp">
+      <Filter>hprose\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hprose\hprose\common\exception.hpp">
+      <Filter>hprose\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hprose\hprose\common\time.hpp">
+      <Filter>hprose\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hprose\hprose\common\utf8.hpp">
+      <Filter>hprose\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hprose\hprose\io\classes.hpp">
+      <Filter>hprose\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hprose\hprose\io\formatter.hpp">
+      <Filter>hprose\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hprose\hprose\io\reader.hpp">
+      <Filter>hprose\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hprose\hprose\io\tags.hpp">
+      <Filter>hprose\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hprose\hprose\io\types.hpp">
+      <Filter>hprose\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hprose\hprose\io\writer.hpp">
+      <Filter>hprose\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hprose\hprose\common.hpp">
+      <Filter>hprose\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hprose\hprose\config.hpp">
+      <Filter>hprose\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hprose\hprose\httpclient.hpp">
+      <Filter>hprose\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hprose\hprose\io.hpp">
+      <Filter>hprose\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hprose\hprose\version.hpp">
+      <Filter>hprose\include</Filter>
+    </ClInclude>
+    <ClInclude Include="CrashHandler.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\CallHprose.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Tools.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\ConfigFunc.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\DownUploadFileCacheFinder.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\DownUploadCommonFunc.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\DownUploadDataFileObject.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\ConvertData.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\FileFunc.h">
+      <Filter>common</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="PeraFileUpDown.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="PeraFileUpDown.rgs">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="PeraFileUpDown.def">
+      <Filter>源文件</Filter>
+    </None>
+    <None Include="FileUpDown.rgs">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="PeraFileUpDown.idl">
+      <Filter>源文件</Filter>
+    </Midl>
+  </ItemGroup>
+</Project>

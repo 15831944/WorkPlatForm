@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8FAE07E3-CF34-4ADC-9349-DF8B07C45958}</ProjectGuid>
+    <RootNamespace>PeraPRCacheService</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)Debug\PeraProcessRunner\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)PeraPRCacheService\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)common\xpdl;$(SolutionDir)common;$(SolutionDir)Depends\RapidXml_1_0\rapidxml;$(SolutionDir)Depends\Ice;$(SolutionDir)Depends\json\include\json;$(SolutionDir)Depends\json\include;$(SolutionDir)Depends\log4cplus\include;$(SolutionDir)Import;$(SolutionDir)PeraPRCacheService;$(SolutionDir)PeraPRCacheService\PeraPRCacheService;$(SolutionDir)PeraPRCacheService\Global;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(TargetName).pdb</ProgramDataBaseFileName>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)libd;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>log4cplusSD.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <ProgramDatabaseFile>$(SolutionDir)Debug\PeraProcessRunner\$(TargetName).pdb</ProgramDatabaseFile>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)common\xpdl;$(SolutionDir)Import;$(SolutionDir)common;$(SolutionDir)Depends\RapidXml_1_0\rapidxml;$(SolutionDir)Depends\Ice;$(SolutionDir)Depends\json\include\json;$(SolutionDir)Depends\json\include;$(SolutionDir)Depends\log4cplus\include;$(SolutionDir)PeraPRCacheService;$(SolutionDir)PeraPRCacheService\Global;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <PreBuildEvent>
+      <Command>"$(SolutionDir)Depends\RcUpdateTool\RcUpdateTool.exe" 131 "$(ProjectDir)$(ProjectName).rc"</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>xcopy "$(OutDir)$(TargetName)$(TargetExt)" "$(SolutionDir)$(Configuration)\PeraProcessRunner\" /Y</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="res\PeraPRCacheService.ico" />
+    <None Include="res\PeraPRCacheService.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Common\FileFunc.h" />
+    <ClInclude Include="..\..\Common\GetGlobalDataFromReg.h" />
+    <ClInclude Include="..\..\Common\StlHeader.h" />
+    <ClInclude Include="..\..\Common\Tools.h" />
+    <ClInclude Include="..\..\Common\Xpdl\FileOperate.h" />
+    <ClInclude Include="..\..\Common\Xpdl\Xpdl.h" />
+    <ClInclude Include="..\..\Common\Xpdl\XpdlNode.h" />
+    <ClInclude Include="..\..\Common\Xpdl\XpdlNodeComponent.h" />
+    <ClInclude Include="..\..\Common\Xpdl\XpdlNodeIf.h" />
+    <ClInclude Include="..\..\Common\Xpdl\XpdlNodeParallel.h" />
+    <ClInclude Include="..\..\Common\Xpdl\XpdlNodeParam.h" />
+    <ClInclude Include="..\..\Common\Xpdl\XpdlNodePrimary.h" />
+    <ClInclude Include="..\..\Common\Xpdl\XpdlNodeSequence.h" />
+    <ClInclude Include="..\..\Common\Xpdl\XpdlNodeSubflow.h" />
+    <ClInclude Include="..\..\Common\XUnzip.h" />
+    <ClInclude Include="..\..\Common\XZip.h" />
+    <ClInclude Include="..\..\Common\ZipTool.h" />
+    <ClInclude Include="..\..\Import\PeraProcessRunnerCacheServerIce.h" />
+    <ClInclude Include="..\Global\IceService.h" />
+    <ClInclude Include="..\Global\InterfaceData.h" />
+    <ClInclude Include="..\Global\PeraWsAstServer.h" />
+    <ClInclude Include="PeraPRCacheService.h" />
+    <ClInclude Include="PeraPRCacheServiceDlg.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Common\FileFunc.cpp" />
+    <ClCompile Include="..\..\Common\GetGlobalDataFromReg.cpp" />
+    <ClCompile Include="..\..\Common\Tools.cpp" />
+    <ClCompile Include="..\..\Common\Xpdl\FileOperate.cpp" />
+    <ClCompile Include="..\..\Common\Xpdl\Xpdl.cpp" />
+    <ClCompile Include="..\..\Common\Xpdl\XpdlNode.cpp" />
+    <ClCompile Include="..\..\Common\Xpdl\XpdlNodeComponent.cpp" />
+    <ClCompile Include="..\..\Common\Xpdl\XpdlNodeIf.cpp" />
+    <ClCompile Include="..\..\Common\Xpdl\XpdlNodeParallel.cpp" />
+    <ClCompile Include="..\..\Common\Xpdl\XpdlNodeParam.cpp" />
+    <ClCompile Include="..\..\Common\Xpdl\XpdlNodePrimary.cpp" />
+    <ClCompile Include="..\..\Common\Xpdl\XpdlNodeSequence.cpp" />
+    <ClCompile Include="..\..\Common\Xpdl\XpdlNodeSubflow.cpp" />
+    <ClCompile Include="..\..\Common\XUnzip.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\XZip.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\ZipTool.cpp" />
+    <ClCompile Include="..\..\Import\PeraProcessRunnerCacheServerIce.cpp" />
+    <ClCompile Include="..\Global\IceService.cpp" />
+    <ClCompile Include="..\Global\InterfaceData.cpp" />
+    <ClCompile Include="..\Global\PeraWsAstServer.cpp" />
+    <ClCompile Include="PeraPRCacheService.cpp" />
+    <ClCompile Include="PeraPRCacheServiceDlg.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="PeraPRCacheService.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

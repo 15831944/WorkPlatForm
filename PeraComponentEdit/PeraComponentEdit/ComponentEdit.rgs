@@ -1,0 +1,26 @@
+HKCR
+{
+	PeraComponentEdit.ComponentEdit.1 = s 'ComponentEdit Class'
+	{
+		CLSID = s '{8480093C-8552-4B1F-81B5-84831C395C60}'
+	}
+	PeraComponentEdit.ComponentEdit = s 'ComponentEdit Class'
+	{		
+		CurVer = s 'PeraComponentEdit.ComponentEdit.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {8480093C-8552-4B1F-81B5-84831C395C60} = s 'ComponentEdit Class'
+		{
+			ProgID = s 'PeraComponentEdit.ComponentEdit.1'
+			VersionIndependentProgID = s 'PeraComponentEdit.ComponentEdit'
+			ForceRemove Programmable
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			TypeLib = s '{76445758-5B27-4698-A708-C847F66F5F89}'
+			Version = s '1.0'
+		}
+	}
+}

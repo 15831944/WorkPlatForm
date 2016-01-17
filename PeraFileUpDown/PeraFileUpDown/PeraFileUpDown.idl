@@ -1,0 +1,50 @@
+// PeraFileUpDown.idl : PeraFileUpDown 的 IDL 源
+//
+
+// 此文件将由 MIDL 工具处理以
+// 产生类型库(PeraFileUpDown.tlb)和封送处理代码。
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(0A11304A-BB0D-41B8-ADFB-5E18134226CA),
+	dual,
+	nonextensible,
+	pointer_default(unique)
+]
+interface IFileUpDown : IDispatch{
+	[id(1)] HRESULT Upload([in] BSTR bstrHprose, [in] BSTR bstrFilePath, [out,retval] VARIANT* pvRet);
+	[id(2)] HRESULT Download([in] BSTR bstrHprose, [in] BSTR bstrDir, [in] BSTR bstrFileName, [out,retval] VARIANT* pvRet);
+	[id(3)] HRESULT Upload2([in] BSTR bstrHprose, [in] BSTR bstrFilePath, [in] BSTR bstrBoolMove, [out,retval] VARIANT* pvRet);
+	[id(4)] HRESULT Download2([in] BSTR bstrHproseBaseUrl, [in] BSTR bstrFileId, [in] BSTR bstrFileName, [out,retval] VARIANT* pvRet);
+	[id(5)] HRESULT UploadFiles([in] BSTR bstrHprose, [in] BSTR bstrJson, [in]BSTR bstrBoolMove, [out,retval] VARIANT* pvRet);
+	[id(6)] HRESULT DownloadFiles([in]BSTR bstrHproseBaseUrl, [in] BSTR bstrJson, [out,retval] VARIANT* pvRet);
+	[id(7)] HRESULT Upload3([in] BSTR bstrHprose, [in] BSTR bstrFilePath, [in] BSTR bstrFileMd5, [in] BSTR bstrBoolMove, [out,retval] VARIANT* pvRet);
+};
+[
+	uuid(35DEB736-562D-4770-A846-10A1FB55D8C0),
+	version(1.0),
+]
+library PeraFileUpDown
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(DB4B87C6-211B-4D19-A0B6-D4ED6BD16271)		
+	]
+	dispinterface _IFileUpDownEvents
+	{
+		properties:
+		methods:
+	};
+	[
+		uuid(FC111F9A-574D-44D9-9B74-86226E6C28AF)		
+	]
+	coclass FileUpDown
+	{
+		[default] interface IFileUpDown;
+		[default, source] dispinterface _IFileUpDownEvents;
+	};
+};
+

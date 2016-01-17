@@ -1,0 +1,51 @@
+// PeraComponentEdit.idl : PeraComponentEdit 的 IDL 源
+//
+
+// 此文件将由 MIDL 工具处理以
+// 产生类型库(PeraComponentEdit.tlb)和封送处理代码。
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(9CE526B6-4648-470F-AF7F-DEB5799E4CA0),
+	dual,
+	nonextensible,
+	pointer_default(unique)
+]
+interface IComponentEdit : IDispatch{
+	[id(1)] HRESULT CreateComponent([in] BSTR bstrJsonIn, [out,retval] VARIANT* pvRet);
+	[id(2)] HRESULT EditComponent([in] BSTR bstrJsonIn, [out,retval] VARIANT* pvRet);
+	[id(3)] HRESULT CreateForm([in] BSTR bstrJsonIn, [out,retval] VARIANT* pvRet);
+	[id(4)] HRESULT EditForm([in] BSTR bstrJsonIn, [out,retval] VARIANT* pvRet);
+	[id(5)] HRESULT RunComponentWithForm([in] BSTR bstrRunInfo, [out,retval] VARIANT* pvRet);
+	[id(6)] HRESULT SaveAsComponent([in] BSTR bstrComponentPath, [in] BSTR bstrComponentName, [out,retval] VARIANT* pvRet);
+	[id(7)] HRESULT CheckFormParamsChanged([in] BSTR bstrParam1, [in] BSTR bstrParam2, [out,retval] VARIANT* pvRet);
+	[id(8)] HRESULT CheckParamsChanged([in] BSTR bstrParam1, [in] BSTR bstrParam2, [out,retval] VARIANT* pvRet);
+};
+[
+	uuid(76445758-5B27-4698-A708-C847F66F5F89),
+	version(1.0),
+]
+library PeraComponentEditLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(DF0901FB-7544-4C6B-891C-E8D5E89F99FD)		
+	]
+	dispinterface _IComponentEditEvents
+	{
+		properties:
+		methods:
+	};
+	[
+		uuid(8480093C-8552-4B1F-81B5-84831C395C60)		
+	]
+	coclass ComponentEdit
+	{
+		[default] interface IComponentEdit;
+		[default, source] dispinterface _IComponentEditEvents;
+	};
+};
+

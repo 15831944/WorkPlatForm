@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="__Common">
+      <UniqueIdentifier>{83097dcb-5421-4cc6-8477-3e048a9d7b55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="__Global">
+      <UniqueIdentifier>{6cb4a889-b4da-430f-b7ca-6ac1af94b645}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="__Xpdl">
+      <UniqueIdentifier>{7b24a7e4-8c9b-4f85-af60-e651f191a2e8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="res\PeraPRCacheService.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\PeraPRCacheService.ico">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="PeraPRCacheServiceDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Global\InterfaceData.h">
+      <Filter>__Global</Filter>
+    </ClInclude>
+    <ClInclude Include="PeraPRCacheService.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Global\IceService.h">
+      <Filter>__Global</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Import\PeraProcessRunnerCacheServerIce.h">
+      <Filter>__Global</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Tools.h">
+      <Filter>__Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\XUnzip.h">
+      <Filter>__Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\XZip.h">
+      <Filter>__Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\ZipTool.h">
+      <Filter>__Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\FileFunc.h">
+      <Filter>__Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\GetGlobalDataFromReg.h">
+      <Filter>__Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\StlHeader.h">
+      <Filter>__Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Global\PeraWsAstServer.h">
+      <Filter>__Global</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Xpdl\FileOperate.h">
+      <Filter>__Xpdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Xpdl\Xpdl.h">
+      <Filter>__Xpdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Xpdl\XpdlNode.h">
+      <Filter>__Xpdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Xpdl\XpdlNodeComponent.h">
+      <Filter>__Xpdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Xpdl\XpdlNodeIf.h">
+      <Filter>__Xpdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Xpdl\XpdlNodeParallel.h">
+      <Filter>__Xpdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Xpdl\XpdlNodeParam.h">
+      <Filter>__Xpdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Xpdl\XpdlNodePrimary.h">
+      <Filter>__Xpdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Xpdl\XpdlNodeSequence.h">
+      <Filter>__Xpdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Xpdl\XpdlNodeSubflow.h">
+      <Filter>__Xpdl</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="PeraPRCacheService.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PeraPRCacheServiceDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Global\InterfaceData.cpp">
+      <Filter>__Global</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Global\IceService.cpp">
+      <Filter>__Global</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Import\PeraProcessRunnerCacheServerIce.cpp">
+      <Filter>__Global</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\Tools.cpp">
+      <Filter>__Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\XUnzip.cpp">
+      <Filter>__Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\XZip.cpp">
+      <Filter>__Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\ZipTool.cpp">
+      <Filter>__Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\FileFunc.cpp">
+      <Filter>__Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\GetGlobalDataFromReg.cpp">
+      <Filter>__Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Global\PeraWsAstServer.cpp">
+      <Filter>__Global</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\Xpdl\FileOperate.cpp">
+      <Filter>__Xpdl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\Xpdl\Xpdl.cpp">
+      <Filter>__Xpdl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\Xpdl\XpdlNode.cpp">
+      <Filter>__Xpdl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\Xpdl\XpdlNodeComponent.cpp">
+      <Filter>__Xpdl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\Xpdl\XpdlNodeIf.cpp">
+      <Filter>__Xpdl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\Xpdl\XpdlNodeParallel.cpp">
+      <Filter>__Xpdl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\Xpdl\XpdlNodeParam.cpp">
+      <Filter>__Xpdl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\Xpdl\XpdlNodePrimary.cpp">
+      <Filter>__Xpdl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\Xpdl\XpdlNodeSequence.cpp">
+      <Filter>__Xpdl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\Xpdl\XpdlNodeSubflow.cpp">
+      <Filter>__Xpdl</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="PeraPRCacheService.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

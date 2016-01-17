@@ -1,0 +1,89 @@
+﻿<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+
+<SCRIPT type=text/javascript>
+	
+		function CreateComponent(){
+		var obj;
+		obj = new ActiveXObject("PeraComponentEdit.ComponentEdit");
+		var v = obj.CreateComponent("{\"baseType\": \"数据解析组件\",\"workPath\": \"D:\\\\test123汉字\",\"botPath\": \"\\\\F150000\\\\组件1.bot\"}");
+		alert(v);
+	 	}			
+	 		
+		function EditComponent(){
+		var obj;
+		obj = new ActiveXObject("PeraComponentEdit.ComponentEdit");
+		var v = obj.EditComponent("{\"workPath\": \"D:\\\\test123汉字\",\"botPath\": \"\\\\F150000\\\\组件1.bot\"}");
+		alert(v);
+	 	}	
+	 		
+		function CreateForm(){
+		var obj;
+		obj = new ActiveXObject("PeraComponentEdit.ComponentEdit");
+		var v = obj.CreateForm("{\"baseType\":\"表单组件\",\"botPath\":\"\\\\F150000\\\\FrontForm.bot\",\"workPath\":\"D:\\\\test123汉字\\\\\",\"Parameters\":[]}");
+		alert(v);
+	 	}	
+	 	 		
+		function EditForm(){
+		var obj;
+		obj = new ActiveXObject("PeraComponentEdit.ComponentEdit");
+		var v = obj.EditForm("{\"isProcessForm\":\"1\",\"botPath\":\"\\\\F150000\\\\FrontForm.bot\",\"workPath\":\"D:\\\\test123汉字\\\\\",\"Parameters\":[{\"id\":\"63b06461-816c-4e07-b4e4-86db181a8ac5\",\"name\":\"A\",\"value\":\"1\",\"direction\":\"In\",\"type\":\"Int\",\"version\":\"\"},{\"id\":\"63b06461-816c-4e07-b4e4-86db18111111\",\"name\":\"B\",\"value\":\"2\",\"direction\":\"In\",\"type\":\"Int\",\"version\":\"\"}]}");
+		alert(v);
+	 	}	
+
+                                function RunComponentWithForm(){
+		var obj;
+		obj = new ActiveXObject("PeraComponentEdit.ComponentEdit");
+		var v = obj.RunComponentWithForm("{\
+    \"front\": {\
+        \"InstanceID\": \"26832afe-0ff6-433f-80a4-08cd745c9568\",\
+        \"Path\": \"E:\\\\runbot\\\\前表单组件.bot\",\
+        \"Title\": \"1前表单\"\
+    },\
+    \"component\": {\
+        \"InstanceID\": \"3fee8b86-1522-419f-a6fd-9b39378dd2ed\",\
+        \"Path\": \"E:\\\\runbot\\\\组件F358332.bot\"\
+    },\
+    \"back\": {\
+        \"InstanceID\": \"8926b406-6cdd-461a-a9bb-ece627cd05f0\",\
+        \"Path\": \"E:\\\\runbot\\\\后表单组件.bot\",\
+        \"Title\": \"1后表单\"\
+    },\
+    \"Parameters\": [\
+        {\
+            \"id\": \"dd020620-70d9-d745-a57e-d5944726f6e3\",\
+            \"name\": \"dse_txt\",\
+            \"value\": \"E:\\\\runbot\\\\dse.txt\",\
+            \"type\": \"File\",\
+            \"version\": \"\"\
+        }\
+    ]\
+}");
+                                alert(v);
+	 	}	
+
+	
+		function SaveAsComponent(){
+		var obj;
+		obj = new ActiveXObject("PeraComponentEdit.ComponentEdit");
+		var v = obj.SaveAsComponent("e:\\数据解析组件-1.bot","123");
+		alert(v);
+	 	}	
+	 	
+		</SCRIPT>
+		
+</HEAD>
+<BODY>
+
+
+<button ID="Button7" onclick="CreateComponent();">CreateComponent</button>
+<button ID="Button7" onclick="EditComponent();">EditComponent</button>
+<button ID="Button7" onclick="CreateForm();">CreateForm</button>
+<button ID="Button7" onclick="EditForm();">EditForm</button>
+<button ID="Button7" onclick="RunComponentWithForm();">RunComponentWithForm</button>
+<button ID="Button7" onclick="SaveAsComponent();">SaveAsComponent</button>
+
+
+</BODY>
+</HTML>
