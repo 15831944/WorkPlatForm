@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PeraProcessRunner", "PeraProcessRunner\PeraProcessRunner\PeraProcessRunner.vcxproj", "{DA37894D-2EC7-4C47-92E0-3748474C065A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug MFC Shared|Win32 = Debug MFC Shared|Win32
+		Debug MFC Shared|x64 = Debug MFC Shared|x64
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Release MFC Shared|Win32 = Release MFC Shared|Win32
+		Release MFC Shared|x64 = Release MFC Shared|x64
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+		Unicode Debug MFC Shared|Win32 = Unicode Debug MFC Shared|Win32
+		Unicode Debug MFC Shared|x64 = Unicode Debug MFC Shared|x64
+		Unicode Debug|Win32 = Unicode Debug|Win32
+		Unicode Debug|x64 = Unicode Debug|x64
+		Unicode Release MFC Shared|Win32 = Unicode Release MFC Shared|Win32
+		Unicode Release MFC Shared|x64 = Unicode Release MFC Shared|x64
+		Unicode Release|Win32 = Unicode Release|Win32
+		Unicode Release|x64 = Unicode Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DA37894D-2EC7-4C47-92E0-3748474C065A}.Debug MFC Shared|Win32.ActiveCfg = Debug|Win32
+		{DA37894D-2EC7-4C47-92E0-3748474C065A}.Debug MFC Shared|Win32.Build.0 = Debug|Win32
+		{DA37894D-2EC7-4C47-92E0-3748474C065A}.Debug MFC Shared|x64.ActiveCfg = Debug|Win32
+		{DA37894D-2EC7-4C47-92E0-3748474C065A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DA37894D-2EC7-4C47-92E0-3748474C065A}.Debug|Win32.Build.0 = Debug|Win32
+		{DA37894D-2EC7-4C47-92E0-3748474C065A}.Debug|x64.ActiveCfg = Debug|Win32
+		{DA37894D-2EC7-4C47-92E0-3748474C065A}.Release MFC Shared|Win32.ActiveCfg = Release|Win32
+		{DA37894D-2EC7-4C47-92E0-3748474C065A}.Release MFC Shared|Win32.Build.0 = Release|Win32
+		{DA37894D-2EC7-4C47-92E0-3748474C065A}.Release MFC Shared|x64.ActiveCfg = Release|Win32
+		{DA37894D-2EC7-4C47-92E0-3748474C065A}.Release|Win32.ActiveCfg = Release|Win32
+		{DA37894D-2EC7-4C47-92E0-3748474C065A}.Release|Win32.Build.0 = Release|Win32
+		{DA37894D-2EC7-4C47-92E0-3748474C065A}.Release|x64.ActiveCfg = Release|Win32
+		{DA37894D-2EC7-4C47-92E0-3748474C065A}.Unicode Debug MFC Shared|Win32.ActiveCfg = Debug|Win32
+		{DA37894D-2EC7-4C47-92E0-3748474C065A}.Unicode Debug MFC Shared|Win32.Build.0 = Debug|Win32
+		{DA37894D-2EC7-4C47-92E0-3748474C065A}.Unicode Debug MFC Shared|x64.ActiveCfg = Debug|Win32
+		{DA37894D-2EC7-4C47-92E0-3748474C065A}.Unicode Debug|Win32.ActiveCfg = Debug|Win32
+		{DA37894D-2EC7-4C47-92E0-3748474C065A}.Unicode Debug|Win32.Build.0 = Debug|Win32
+		{DA37894D-2EC7-4C47-92E0-3748474C065A}.Unicode Debug|x64.ActiveCfg = Debug|Win32
+		{DA37894D-2EC7-4C47-92E0-3748474C065A}.Unicode Release MFC Shared|Win32.ActiveCfg = Release|Win32
+		{DA37894D-2EC7-4C47-92E0-3748474C065A}.Unicode Release MFC Shared|Win32.Build.0 = Release|Win32
+		{DA37894D-2EC7-4C47-92E0-3748474C065A}.Unicode Release MFC Shared|x64.ActiveCfg = Release|Win32
+		{DA37894D-2EC7-4C47-92E0-3748474C065A}.Unicode Release|Win32.ActiveCfg = Release|Win32
+		{DA37894D-2EC7-4C47-92E0-3748474C065A}.Unicode Release|Win32.Build.0 = Release|Win32
+		{DA37894D-2EC7-4C47-92E0-3748474C065A}.Unicode Release|x64.ActiveCfg = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

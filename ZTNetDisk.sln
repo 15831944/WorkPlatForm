@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PeraNetDiskCom", "PeraDCNetDisk\PeraNetDiskCom\PeraNetDiskCom.vcxproj", "{44F6432A-65DC-48D2-9136-2F7689BC41C2}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PeraDCNetDiskDaemon", "PeraDCNetDisk\PeraDCNetDiskDaemon\PeraDCNetDiskDaemon.vcxproj", "{F7946A16-1B56-426D-8F7D-140250CAA349}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PeraClientConfig", "PeraClientConfig\PeraClientConfig\PeraClientConfig.vcxproj", "{BC3CDD6F-51D2-4419-98A2-41E6E873DE60}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{44F6432A-65DC-48D2-9136-2F7689BC41C2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{44F6432A-65DC-48D2-9136-2F7689BC41C2}.Debug|Win32.Build.0 = Debug|Win32
+		{44F6432A-65DC-48D2-9136-2F7689BC41C2}.Release|Win32.ActiveCfg = Release|Win32
+		{44F6432A-65DC-48D2-9136-2F7689BC41C2}.Release|Win32.Build.0 = Release|Win32
+		{F7946A16-1B56-426D-8F7D-140250CAA349}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F7946A16-1B56-426D-8F7D-140250CAA349}.Debug|Win32.Build.0 = Debug|Win32
+		{F7946A16-1B56-426D-8F7D-140250CAA349}.Release|Win32.ActiveCfg = Release|Win32
+		{F7946A16-1B56-426D-8F7D-140250CAA349}.Release|Win32.Build.0 = Release|Win32
+		{BC3CDD6F-51D2-4419-98A2-41E6E873DE60}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BC3CDD6F-51D2-4419-98A2-41E6E873DE60}.Debug|Win32.Build.0 = Debug|Win32
+		{BC3CDD6F-51D2-4419-98A2-41E6E873DE60}.Release|Win32.ActiveCfg = Release|Win32
+		{BC3CDD6F-51D2-4419-98A2-41E6E873DE60}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
